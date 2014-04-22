@@ -1,0 +1,116 @@
+<?php 
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2011 Amasty (http://www.amasty.com)
+* @package Amasty_Social
+*/
+?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+
+
+<div class="amsocial-popup">
+    <div class="amsocial-header" style="position: relative;"><?php echo $this->getHeader(); ?>
+        <div style="position: absolute; top: 3px; left: 555px;"><a href="#" onclick="amsocialPopupHide(); return false;">X</a></div>
+    </div>
+    <div class="amsocial-note"><?php echo $this->getMessage(); ?></div>
+    <hr class="amsocial-hr"  />
+    <div class="amsocial-icons">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+                <td width="53%" class="title"><?php echo $this->__('Please choose one'); ?></td>
+                <td class="title"><?php echo $this->__('Get the promo code'); ?></td>
+            </tr>
+            <tr><td colspan="2" height="4"></td></tr>
+            <tr>
+                <td>
+                    <div class="amsocial-items">
+                    
+                        <?php if ($this->isEnabled('facebook')) : ?>
+                            <div id="do_facebook">
+                                <div class="fb-like" data-href="<?php echo $this->getFacebookUrl(); ?>" data-send="false" data-layout="box_count" data-width="55" data-show-faces="false" data-font="tahoma"></div>
+                            </div>
+                        <?php endif; ?>
+                        
+                        <?php if ($this->isEnabled('google')) : ?>
+                            <div id="do_google" style="padding-right: 11px;">
+                                <g:plusone size="tall" callback="doGoogle" href="<?php echo $this->getGoogleUrl(); ?>"></g:plusone>
+                            </div>
+                        <?php endif; ?>
+                        
+                        <?php if ($this->isEnabled('twitter')) : ?>
+                            <div id="do_twitter">
+                                <a href="http://twitter.com/share" class="twitter-share-button"
+                                          data-url="<?php echo $this->getTwitterUrl(); ?>"
+                                          data-counturl="<?php echo $this->getTwitterCountUrl(); ?>"
+                                          data-via="<?php echo $this->getTwitterVia(); ?>"
+                                          data-text="<?php echo $this->getTwitterText(); ?>"
+                                          data-related="<?php echo $this->getTwitterRelated(); ?>"
+                                          data-count="vertical"><?php echo $this->__('Tweet'); ?></a>
+                            </div>
+                            <script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                        <?php endif; ?>
+                    </div>
+                </td>
+                <td>
+                    <div id="ccode_loading_text" style="display: none;"><?php echo $this->__('Loading Coupon...'); ?></div>
+                    <div id="ccode_placeholder" class="<?php if (!$this->getCookieCoupon()): ?>amsocial-nocode<?php endif; ?>">
+                        <?php if ($this->getCookieCoupon()): ?><?php echo $this->getCookieCoupon(); ?><?php else: ?><?php echo $this->__('Code will appear here'); ?><?php endif; ?>
+                    </div>
+                    <div class="amsocial-codecomment"><?php echo $this->__('Copy the code and use it in cart'); ?></div>
+                </td>
+            </tr>
+        </table>
+    </div>   
+    <hr class="amsocial-hr" />
+</div>
+
+
+
+
+
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+
+<script type="text/javascript">
+
+function doGoogle(object)
+{
+    if ("on" == object.state)
+    {
+        amSocial.doGoogle();
+    }
+}
+
+
+FB.init({appId: '<?php echo $this->getFacebookAppId(); ?>', status: true, cookie: true, xfbml: true});
+FB.Event.subscribe('edge.create',
+    function(response) {
+        amSocial.doFacebook();
+    }
+);
+
+
+twttr.events.bind('tweet', function(event) {
+    amSocial.doTwitter();
+});
+
+</script>
+
+<script type="text/javascript">
+var amSocial = new amSocialPromo("ccode_placeholder", "ccode_loading_text", "<?php echo $this->getCouponUrl(); ?>");
+</script>
+

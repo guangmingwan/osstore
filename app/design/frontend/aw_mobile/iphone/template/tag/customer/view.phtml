@@ -1,0 +1,79 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="account-box">
+    <div class="page-head">
+        <h3><?php echo $this->__('My Tags') ?></h3>
+    </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <p>
+        <?php echo $this->__('Tag Name: %s', $this->htmlEscape($this->getTagInfo()->getName())) ?>
+        <button type="button" class="button" onclick="if(confirm('<?php echo $this->__('Are you sure you want to delete this tag?') ?>')) window.location='<?php echo $this->getTagInfo()->getRemoveTagUrl(); ?>';"><span><?php echo $this->__('Delete') ?></span></button>
+    </p>
+    <?php echo $this->getToolbarHtml() ?>
+    <table class="data-table box-table" id="my-tags-table" cellspacing="0">
+    <?php if( sizeof($this->getMyProducts()) > 0 ): ?>
+        <col width="100" />
+        <col />
+        <col width="75" />
+        <tbody>
+        <?php $iterator = 0 ?>
+        <?php foreach($this->getMyProducts() as $_product): ?>
+            <tr<?php if($iterator % 2 == 0): ?> class="odd"<?php $iterator++;endif; ?>>
+                <td><a href="<?php echo $_product->getProductUrl(); ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(100, 100); ?>" alt="" height="100" width="100" /></a></td>
+                <td>
+                    <a href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
+                    <?php echo $this->getSummaryHtml($_product, 'short') ?>
+                    <?php echo $this->getPriceHtml($_product) ?>
+                    <?php echo $this->htmlEscape($_product->getDescription()) ?>
+                </td>
+                <td class="a-center">
+                    <?php if($_product->isSaleable()): ?>
+                        <button type="button" class="form-button" onclick="setLocation('<?php echo $this->getUrl('checkout/cart/add',array('product'=>$_product->getId())) ?>')"><span><?php echo $this->__('Add to Cart') ?></span></button>
+                    <?php endif; ?>
+                    <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                    <br /><a href="<?php echo $this->getUrl('wishlist/index/add',array('product'=>$_product->getId())) ?>"><?php echo $this->__('Add to Wishlist') ?></a>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    <?php else: ?>
+            <tr>
+            <td><p><?php echo $this->__("Unable to find any products tagged with '%s' in the current store.", $this->htmlEscape($this->getTagInfo()->getName()) ) ?></p></td>
+            </tr>
+    <?php endif; ?>
+    </table>
+    <script type="text/javascript">decorateTable('my-tags-table')</script>
+    <?php echo $this->getToolbarHtml() ?>
+    <div class="button-set a-left">
+        <a href="<?php echo $this->getUrl('*/*/')?>">&laquo;<?php echo $this->__('Back to Tags List')?></a>
+    </div>
+</div>

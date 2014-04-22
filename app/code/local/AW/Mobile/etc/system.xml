@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sections>
+		<awmobile translate="label" module="awmobile">
+			<label>Mobile</label>
+			<tab>awall</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>130</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<design translate="label">
+					<label>Design</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>20</sort_order>
+					<fields>
+						<logo_src translate="label">
+							<label>Catalog Logo Image</label>
+							<frontend_type>image</frontend_type>
+							<backend_model>adminhtml/system_config_backend_image</backend_model>
+							<upload_dir config="system/filesystem/media" scope_info="1">awmobile</upload_dir>
+							<base_url type="media" scope_info="1">awmobile</base_url>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</logo_src>
+						<logo_alt translate="label">
+							<label>Catalog Logo Alt</label>
+							<frontend_type></frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</logo_alt>
+						<bootmarks_src translate="label">
+							<label>Bookmarks Icon Source </label>
+							<frontend_type>image</frontend_type>
+							<backend_model>adminhtml/system_config_backend_image</backend_model>
+							<upload_dir config="system/filesystem/media" scope_info="1">awmobile</upload_dir>
+							<base_url type="media" scope_info="1">awmobile</base_url>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</bootmarks_src>
+                        <custom_design>
+							<label>Custom Design</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>awmobile/system_config_source_core_design</source_model>
+                            <comment>If not defined, default mobile design is used</comment>
+                        </custom_design>
+						<footer_links_block translate="label">
+							<label>Footer Links Block</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+                            <source_model>awmobile/system_config_source_catalog_page</source_model>
+                            <comment>If not defined, default mobile links are used. Use automatically created 'Mobile Footer Links (Example)' static block as an example</comment>
+						</footer_links_block>
+						<copyright translate="label">
+							<label>Footer Copyright</label>
+							<frontend_type></frontend_type>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</copyright>
+                    </fields>
+                </design>
+                <product_page translate="label">
+					<label>Product Page</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>20</sort_order>
+					<fields>
+						<catalog_additional_data>
+							<label>Display Additional Data</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</catalog_additional_data>
+                    </fields>
+                </product_page>
+                <behaviour translate="label">
+					<label>Behaviour</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>30</sort_order>
+					<fields>
+						<switcher>
+							<label>Desktop/Mobile Switcher</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</switcher>
+						<mobile_detect>
+							<label>iPhone Detect</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</mobile_detect>
+                        <ipad_detect>
+                            <label>iPad Detect</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <depends><mobile_detect>1</mobile_detect></depends>
+                        </ipad_detect>
+						<mobile_cache>
+							<label>iPhone Cache</label>
+							<frontend_type>select</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</mobile_cache>
+                    </fields>
+                </behaviour>
+            </groups>
+        </awmobile>
+    </sections>
+</config>

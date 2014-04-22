@@ -1,0 +1,9 @@
+<?php $order = $this->getOrder();?>
+<div class="entry-edit">
+	<div class="entry-edit-head">
+		<h4 class="icon-head"><?php echo $this->__('Customer Comment') ?></h4>
+	</div>
+	<fieldset>
+		<?php echo nl2br($order->getCustomerComment()); ?>
+	</fieldset>
+</div>

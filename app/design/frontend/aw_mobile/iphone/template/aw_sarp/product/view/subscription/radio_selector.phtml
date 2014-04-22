@@ -1,0 +1,52 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php $subscription = $this->getSubscription() ?>
+<?php if ($subscription->getProduct()->getAwSarpEnabled()): ?>
+
+<ul class="sarp-subscription options-list">
+    <?php echo $this->__('Subscription type') ?>:
+
+    <?php if (($types = $subscription->getSubscriptionTypes()) && (sizeof($types) > 1)): ?>
+
+    <?php foreach ($types as $item): ?>
+        <li><input class="radio" type="radio" name="aw_sarp_subscription_type" value="<?php echo $item['value']?>"
+                   id="sarp_period_type_id<?php echo $item['value']?>"<?php if ($item['value'] == $subscription->getDefaultPeriodId()): ?>
+                   checked="checked"<?php endif;?>/><span class="label"><label
+                for="sarp_period_type_id<?php echo $item['value']?>"> <?php echo $item['label']?></label></span></li>
+        <?php endforeach; ?>
+
+    <?php elseif ($types && (count($types) == 1)): ?>
+    <span><input type="hidden" name="aw_sarp_subscription_type"
+                 value="<?php echo $types[0]['value']?>"/><?php echo $types[0]['label']?></span>
+    <?php endif;?>
+</ul>
+
+<?php endif; ?>

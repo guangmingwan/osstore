@@ -1,0 +1,18 @@
+    <div class="a-zbar">
+    		<ul>
+            	  <?php
+		$taglist=Mage::helper('lbtags')->getAlphabet();
+		$request = $this->getRequest();
+		 $identifier=$request->getParam('identifier');
+		 foreach($taglist as $tag):
+		 ?>
+         
+         <li <?php echo $identifier==$tag?"class='active_alphaindex'":"";?>><a href="<?php echo Mage::helper('lbtags')->getURL();?><?php echo $tag;?>"><?php echo $tag;?></a></li>
+         <?php
+		 endforeach;
+		 ?>
+         <li><a  href="<?php echo Mage::helper('lbtags')->getURL();?>0-9"><?php echo Mage::helper('lbtags')->getIntegers();?></a></li>
+         <li><a  href="<?php echo Mage::helper('lbtags')->getURL();?>"><?php echo $this->__("ALL Tags");?></a></li>
+            </ul>
+            
+    </div>

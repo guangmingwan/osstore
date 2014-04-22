@@ -1,0 +1,88 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   design_default
+ * @package    Mage
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php $_product = $this->getProduct() ?>
+<input id="isbuynow" type="hidden" value="0" name="isbuynow">
+<?php if($_product->isSaleable()): ?>
+    <fieldset class="add-to-cart-box">
+        <legend><?php echo $this->__('Add Items to Cart') ?></legend>
+        <?php if(!$_product->isGrouped()): ?>
+
+        <div style="width:100%;float:left;">
+        <span class="qty-box" style="float:left;padding-right:20px;"><label for="qty"><?php echo $this->__('Qty') ?>:</label>
+        <input name="qty" type="text" class="input-text qty" id="qty" maxlength="12" value="<?php if ($this->getMinimalQty($_product) == '') { echo '1'; } else {echo $this->getMinimalQty($_product); } ?>" /></span>
+        <?php endif; ?>
+		<?php //echo $this->getChildHtml('product_type_data') ?>
+<?php if (function_exists('getQuantityOrderedBySku')):?>
+ <?php else: ?> 
+		<?php 
+		function  getQuantityOrderedBySku($sku)
+			{
+			try {
+			$_product = Mage::getResourceModel('reports/product_collection')
+			->addOrderedQty()
+			->addAttributeToFilter('sku', $sku)
+			->setOrder('ordered_qty', 'desc')
+			->getFirstItem();
+			if (!$_product) {
+			throw new Exception('No product matches the given SKU');
+			}
+			return (int)$_product->getOrderedQty();
+			}
+			catch (Exception $e) {
+			return 0;
+			}
+			}
+		?>
+ <?php endif; ?> 
+ 		<?php $buttonTitle = $this->__('Add to Cart'); ?>
+		<?php $_product = $this->getProduct() ?>
+
+		<?php if($_product->isSaleable()): ?>
+		    <p class="availability"><?php echo $this->__('Availability: In stock.') ?> [QTY:<?=Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getQty() *1?>] &nbsp; [Sold: <?php echo (int)getQuantityOrderedBySku($_product->getSku()) ?>]</p> 
+		<?php else: ?>
+		    <p class="availability"><?php echo $this->__('Availability: Out of stock.') ?></p>
+		<?php endif; ?>
+		<p style="float:left;padding-left:45px;font-size:14px;font-weight:bold;">Usually ships within 24 hours</p>
+		</div>
+		
+		<div style="clear:both;margin:20px 0 10px 0;float:left;width:100%">
+		<?php echo $this->getPriceHtml($_product) ?>
+
+		<div style="float:left;">
+        <button style="height:27px;" type="button" title="Buy it Now" class="button btn-cart" onclick="javascript:$('isbuynow').value = 1; productAddToCartForm.submit()"><span><span><?php echo $this->__('Buy it Now') ?></span></span>
+		</button>
+        <button style="height:27px;" type="button" title="Add to Cart" class="button btn-cart" onclick="javascript:productAddToCartForm.submit()"><span><span><?php echo $this->__('Add To Cart') ?></span></span>
+		</button>
+		</div>
+		<div style="float:right;margin-right:110px;*padding-top:-50px;"><img src="<?php echo $this->getskinurl()?>images/worldwide.jpg"/></div>
+		</div>
+		
+		
+		
+    </fieldset>
+<?php endif; ?>

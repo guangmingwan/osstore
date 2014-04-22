@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * MageWorx
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageWorx EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.mageworx.com/LICENSE-1.0.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.mageworx.com/ for more information
+ *
+ * @category   MageWorx
+ * @package    MageWorx_CustomOptions
+ * @copyright  Copyright (c) 2012 MageWorx (http://www.mageworx.com/)
+ * @license    http://www.mageworx.com/LICENSE-1.0.html
+ */
+
+/**
+ * Advanced Product Options extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_CustomOptions
+ * @author     MageWorx Dev Team
+ */
+-->
+<layout version="0.1.0">
+    <mageworx_customoptions_options_edit>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>tbt/enhancedgrid/enhancedgrid.js</name></action> 
+            <action method="removeItem"><type>js</type><name>tbt/enhancedgrid/egsupplemental.js</name></action> 
+            <action method="removeItem"><type>js</type><name>tbt/enhancedgrid/customfunctions/catalog_products.js</name></action> 
+        </reference>
+    </mageworx_customoptions_options_edit>
+
+    <mageworx_customoptions_options_index>
+        <reference name="content">
+            <block type="mageworx/customoptions_options" name="customoptions_options" template="customoptions/options.phtml" />
+        </reference>
+    </mageworx_customoptions_options_index>
+    
+    
+    <ADMINHTML_CATALOG_PRODUCT_COMPOSITE_CONFIGURE>
+        <reference name="product.composite.fieldset.options">
+            <action method="addOptionRenderer" ifconfig="mageworx_catalog/customoptions/enabled"><type>text</type><block>catalog/product_view_options_type_text</block><template>customoptions/composite/fieldset-options-type-text.phtml</template></action>
+            <action method="addOptionRenderer" ifconfig="mageworx_catalog/customoptions/enabled"><type>file</type><block>catalog/product_view_options_type_file</block><template>customoptions/composite/fieldset-options-type-file.phtml</template></action>
+            <action method="addOptionRenderer" ifconfig="mageworx_catalog/customoptions/enabled"><type>select</type><block>catalog/product_view_options_type_select</block><template>customoptions/composite/fieldset-options-type-select.phtml</template></action>
+            <action method="addOptionRenderer" ifconfig="mageworx_catalog/customoptions/enabled"><type>date</type><block>catalog/product_view_options_type_date</block><template>customoptions/composite/fieldset-options-type-date.phtml</template></action>
+            <action method="setTemplate" ifconfig="mageworx_catalog/customoptions/enabled"><template>customoptions/composite/fieldset-options.phtml</template></action>
+        </reference>
+    </ADMINHTML_CATALOG_PRODUCT_COMPOSITE_CONFIGURE> 
+    
+</layout>

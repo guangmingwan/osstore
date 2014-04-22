@@ -1,0 +1,54 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Language switcher template
+ *
+ * @see Mage_Page_Block_Switch
+ */
+
+?>
+<?php if(count($this->getStores())>1): ?>
+
+<?php /* <div class="language-switcher"> */?>
+    <?php /* <label for="select-language"><?php echo $this->__('Language') ?>: </label> */ ?>
+    <select id="select-language" onchange="setLocation(this.value)">
+    <?php foreach ($this->getStores() as $_lang): ?>
+        <?php $_selected = ($_lang->getId()==$this->getCurrentStoreId()) ? 'selected="selected"' : '' ?>
+        <option value="<?php echo $_lang->getCurrentUrl() ?>" <?php echo $_selected ?>><?php echo $this->htmlEscape($_lang->getName()) ?></option>
+    <?php endforeach; ?>
+    </select>
+    <?php echo $this->getChildHtml('switcher_links'); ?>
+<?php /* </div> */ ?>
+<?php else: ?>
+    <?php echo $this->getChildHtml('switcher_links'); ?>
+<?php endif; ?>
+

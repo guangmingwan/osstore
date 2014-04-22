@@ -1,0 +1,4 @@
+change buy it now redirect to checkout/cart
+--This line, and those below, will be ignored--
+
+M    Observer.php

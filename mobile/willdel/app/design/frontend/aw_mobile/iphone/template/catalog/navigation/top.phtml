@@ -1,0 +1,104 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
+ */
+?>
+<!--<div class="debug"></div>-->
+<div class="header-nav-container">
+    <div id="home" class="header-nav current">
+        <script type="text/javascript">
+            homeCatId = <?php echo $this->getHomeId(); ?>;
+        </script>
+        <?php $i = 0; ?>
+        <div><?php echo $this->getChildHtml('nav_messages'); ?></div>
+        <ul id="nav">
+        <?php foreach ($this->getStoreCategories() as $category): ?>
+            <li class="arrow">
+                <?php $link = ($this->isParent($category) ? '#category'.$category->getId() : $this->getCategoryUrl($category)); ?>
+                <a href="<?php echo $link; ?>"<?php if ($this->isParent($category)) echo " class=\"to_child\""?>><?php echo $this->htmlEscape($category->getName()); ?></a>
+                <script type="text/javascript">
+                    catPath[<?php echo $category->getId(); ?>] = '<?php echo(Mage::getStoreConfig('catalog/frontend/flat_catalog_category') ? $category->getPath() : $category->getPathId());?>';
+                    catUrl[<?php echo $category->getId(); ?>] = '<?php echo $this->getCategoryUrl($category); ?>';
+                </script>
+            </li>
+            <?php $i ++ ; ?>
+        <?php endforeach ?>
+        </ul>
+        <?php if ($i ==0 ): ?>
+        <div><ul class="messages"><li class="notice-msg"><ul><li><?php echo $this->__('There are no categories.'); ?></li></ul></li></ul></div>
+        <?php endif; ?>
+        <?php echo $this->getChildHtml('navigation.newsletter'); ?>
+    </div>
+
+    <?php if (Mage::getStoreConfig('catalog/frontend/flat_catalog_category')): ?>
+            <?php if (count($frames = Mage::registry(AW_Mobile_Block_Catalog_Navigation::NAVIGATION_FRAMES))): ?>
+                <?php foreach ($frames as $frame):?>
+                    <?php if ($this->__getChildrenCount($frame) > 0): ?>
+                        <?php echo $this->getDir($frame);?>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        <?php else: ?>
+            <?php if (count($frames = Mage::registry(AW_Mobile_Block_Catalog_Navigation::NAVIGATION_FRAMES))): ?>
+                <?php foreach ($frames as $frame):?>
+                    <?php if ($this->__getChildrenCount($frame) > 0): ?>
+                        <div class="header-nav" id="<?php echo $frame->getFrameId(); ?>">
+                            <ul id="nav">
+                            <?php foreach ($frame->getChildren() as $category): ?>
+                                <li class="arrow">
+                                    <?php $link = ($this->isParent($category) ? '#category'.$category->getId() : $this->getCategoryUrl($category)); ?>
+                                    <a href="<?php echo $link; ?>"<?php if ($this->isParent($category) ) echo " class=\"to_child\""?>><?php echo $this->htmlEscape($category->getName()); ?></a>
+                                    <script type="text/javascript">
+                                        catPath[<?php echo $category->getId(); ?>] = '<?php echo $category->getPathId(); ?>';
+                                        catUrl[<?php echo $category->getId(); ?>] = '<?php echo $this->getCategoryUrl($category); ?>';
+                                    </script>
+                                </li>
+                            <?php endforeach ?>
+                            <script type="text/javascript">
+                                $('<?php echo $frame->getFrameId(); ?>').category_id = <?php echo $frame->getFrameCategoryId() ?>;
+                            </script>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        <?php endif; ?>
+</div>
+<div style="clear: both;"></div>
+
+
+<script type="text/javascript">
+    var navigation = new MobileNavigation();
+</script>

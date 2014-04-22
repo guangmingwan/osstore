@@ -1,0 +1,30 @@
+<?php
+
+if(count($this->getTags())>0):
+
+?><div class="box-collateral box-tags">
+    <h2><?php echo $this->__('Product Tags') ?></h2>
+   
+  
+    <ul id="product-tags_list" class="product-tags">
+       <?php 
+	   
+	    foreach($this->getTags() as $tag):
+	   
+	     $url=Mage::helper("lbtags")->makeTagsUrl($tag->getIdentifier()); 
+                $title=$tag->getName();
+                
+	   ?>
+       
+       	<li><a href="<?php echo $url;?>"><?php echo $title;?></a></li>
+       <?php  endforeach; ?>
+    </ul>
+    <script type="text/javascript">
+        decorateGeneric($("product-tags_list").select('li'), ['first', 'last']);
+    </script>
+  
+     
+</div>
+<?php
+endif;
+?>

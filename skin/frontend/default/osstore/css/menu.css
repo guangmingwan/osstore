@@ -1,0 +1,251 @@
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+ul, li {
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+.minframe {
+	width:184px;
+}
+
+.fl {
+	float:left;
+}
+.menu {
+	background:none repeat scroll 0 0 #CCCCCC;
+	float:left;
+	font-size:12px;
+	position:relative;
+	width:200px;
+	z-index:500;
+}
+.menu ul {
+	background:none repeat scroll 0 0 transparent;
+	float:left;
+}
+.menu ul ul {
+	width:183px;
+}
+.menu ul li {
+	border-top:1px solid #A6A6A6;
+	display:block;
+	float:left;
+	font-weight:bold;
+	height:24px;
+	line-height:24px;
+	width:200px;
+	background-color:#f5f5f5;
+}
+.menu ul li.parent{
+	background:url("../images/osstore/menu_arrow_bg.gif") no-repeat scroll -1px -121px #F5F5F5;
+}
+.menu ul ul li {
+	background-color:#FFFFFF;
+	background-position:0 -52px;
+	border:none;
+	border-right:solid 2px #A6A6A6;
+	display:block;
+	font-weight:normal;
+	height:auto;
+	line-height:140%;
+	padding:2px 0 2px 20px;
+	width:175px;
+}
+.menu ul ul .b_top {
+	background-position:0 0;
+	border-right:2px solid #A6A6A6;
+	border-top:1px solid #A6A6A6;
+	padding-top:10px;
+}
+.menu a, .menu a:visited {
+color:#333333 !important;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:normal;
+white-space:nowrap;
+	display:block;
+	float:left;
+	height:100%;
+	padding:0;
+	text-decoration:none;
+	text-indent:1em;
+	width:197px;
+}
+.menu ul ul li a, .menu ul ul li a:visited {
+	background:none repeat scroll 0 0 transparent;
+	color:#000000;
+	display:inline;
+	text-indent:0;
+	width:auto;
+}
+.menu ul ul li.parent a:hover {
+	background:none repeat scroll 0 0 transparent;
+	color:#8D0011;
+	text-decoration:underline;
+}
+.menu ul ul :hover > a {
+	background:none repeat scroll 0 0 transparent;
+	color:#8D0011;
+	text-decoration:underline;
+}
+.menu table {
+	border-collapse:collapse;
+	font-size:1em;
+	height:0;
+	margin:-1px;
+	padding:0;
+	width:0;
+	z-index:1;
+}
+* html .menu a:hover {
+	background:url("../images/osstore/menu_arrow_bg.gif?37084") no-repeat scroll -1px -150px #FFFFFF;
+	color:#000000;
+	position:relative;
+	text-decoration:none;
+	z-index:100;
+}
+.menu li.parent:hover {
+	position:relative;
+}
+.menu li.parent:hover > a {
+	background:url("../images/osstore/menu_arrow_bg.gif?37084") no-repeat scroll -1px -150px #FFFFFF;
+	color:#000000;
+}
+.menu ul ul {
+	background:url("../images/osstore/menu_arrow_bg.gif?37084") no-repeat scroll 0 100% transparent;
+	height:auto;
+	left:176px;
+	padding-bottom:4px;
+	position:absolute;
+	top:-10000000px;
+	width:197px;
+}
+.menu ul :hover ul {
+	top:-1px;
+}
+
+#nav_v {  font-size:0.9em;}
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+#nav_v li { position:relative; text-align:left; }
+#nav_v li.over { z-index:999; }
+#nav_v a,
+#nav_v a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav_v span { display:block; cursor:pointer; white-space:nowrap; }
+#nav_v li ul span {white-space:normal; }
+
+/************ 0 LEVEL  ***************/
+#nav_v li { float:left; }
+#nav_v li.active a { color:#d96708; }
+#nav_v a { float:left; color:#FFF;  }
+#nav_v li.over a,
+#nav_v a:hover { color:#d96708; }
+
+/************ 1ST LEVEL ************/
+#nav_v ul li,
+#nav_v ul li.active { float:none; margin:0; padding-bottom:1px; background:#ecf3f6 url(../images/osstore/nav_divider.gif) repeat-x 0 100%; }
+/*#nav_v ul li.over { background:#d5e4eb url(../images/osstore/nav_divider.gif) repeat-x 0 100%; }*/
+#nav_v ul li.last { background:#ecf3f6; padding-bottom:0; }
+
+#nav_v ul a,
+#nav_v ul a:hover { float:none; padding:0; background:none; }
+#nav_v ul li a { font-weight:normal !important; }
+
+/************ 2ND LEVEL ************/
+#nav_v ul { position:absolute; width:14em; top:25px; left:-10000px; border:1px solid #899ba5; }
+
+/* Show menu */
+#nav_v li.over > ul { left:0; }
+#nav_v li.over > ul li.over > ul { left:100px; }
+#nav_v li.over ul ul { left:-10000px; }
+
+#nav_v ul li a { background:#ecf3f6; }
+#nav_v ul li a:hover { background:#d5e4eb; }
+#nav_v ul li a,
+#nav_v ul li a:hover { color:#2f2f2f !important; }
+#nav_v ul span, #nav_v ul li.last li span { padding:3px 15px 4px 15px;}
+
+/************ 3RD+ LEVEL ************/
+#nav_v ul ul { top:5px; }
+
+#nav_v ul li.parent a,
+#nav_v ul li.parent li.parent a { background-image:url(../images/osstore/nav2_parent_arrow.gif); background-position:100% 100%; background-repeat:no-repeat; }
+#nav_v ul li.parent li a,
+#nav_v ul li.parent li.parent li a { background-image:none; }
+
+
+
+
+
+
+
+
+
+#nav { padding:6px 20px; font-size:0.9em; }
+
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+#nav li { position:relative; text-align:left; }
+#nav li.over { z-index:999; }
+#nav a,
+#nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+#nav li ul span {white-space:normal; }
+
+/************ 0 LEVEL  ***************/
+#nav li { float:left; }
+#nav li.active a { color:#d96708; }
+#nav a { float:left; padding:5px 12px 6px 8px; color:#FFF;  }
+#nav li.over a,
+#nav a:hover { color:#d96708; }
+
+/************ 1ST LEVEL ************/
+#nav ul li,
+#nav ul li.active { float:none; margin:0; padding-bottom:1px; background:#ecf3f6 url(../images/osstore/nav_divider.gif) repeat-x 0 100%; }
+/*#nav ul li.over { background:#d5e4eb url(../images/osstore/nav_divider.gif) repeat-x 0 100%; }*/
+#nav ul li.last { background:#ecf3f6; padding-bottom:0; }
+
+#nav ul a,
+#nav ul a:hover { float:none; padding:0; background:none; }
+#nav ul li a { font-weight:normal !important; }
+
+/************ 2ND LEVEL ************/
+#nav ul { position:absolute; width:14em; top:25px; left:-10000px; border:1px solid #899ba5; }
+
+/* Show menu */
+#nav li.over > ul { left:0; }
+#nav li.over > ul li.over > ul { left:100px; }
+#nav li.over ul ul { left:-10000px; }
+
+#nav ul li a { background:#ecf3f6; }
+#nav ul li a:hover { background:#d5e4eb; }
+#nav ul li a,
+#nav ul li a:hover { color:#2f2f2f !important; }
+#nav ul span, #nav ul li.last li span { padding:3px 15px 4px 15px;}
+
+/************ 3RD+ LEVEL ************/
+#nav ul ul { top:5px; }
+
+#nav ul li.parent a,
+#nav ul li.parent li.parent a { background-image:url(../images/osstore/nav2_parent_arrow.gif); background-position:100% 100%; background-repeat:no-repeat; }
+#nav ul li.parent li a,
+#nav ul li.parent li.parent li a { background-image:none; }

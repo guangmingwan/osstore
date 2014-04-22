@@ -1,0 +1,68 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div>
+    <div class="dashboard-block">
+        <div class="page-head">
+            <h3><?php echo $this->__('Points & Rewards Invitation') ?></h3>
+            <a class="edit" href="<?php echo $this->getUrl('points/invitation/index') ?>"><img src="<?php echo $this->getSkinUrl('images/edit.gif') ?>" alt="<?php echo $this->__('Edit') ?>" /></a>
+        </div>
+        <?php $block = $this->getLayout()->createBlock('points/customer_invitation_list');?>
+        <div class="content">
+            <?php if ($block->hasInvitees()): ?>
+                    <fieldset>
+                    <table class="data-table" id="invitelist-table">
+                        <thead>
+                            <tr>
+                                <th><?php echo $this->__('E-mail') ?></th>
+                                <th><?php echo $this->__('Status') ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($block->getCollection() as $item): ?>
+                                <tr>
+                                    <td>
+                                        <span class="nobr"><?php echo $item->getEmail() ?></span>
+                                    </td>
+                                    <td>
+                                        <span class="nobr"><?php echo $item->getStatus() ?></span>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+                            </tbody>
+                        </table>
+                        <script type="text/javascript">decorateTable('invitelist-table')</script>
+                </fieldset>
+            <?php else: ?>
+              <p><?php echo $this->__("You haven't sent any invitation yet") ?></p>
+            <?php endif ?>
+        </div>
+    </div>
+</div>

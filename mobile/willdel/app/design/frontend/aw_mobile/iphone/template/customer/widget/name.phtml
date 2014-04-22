@@ -1,0 +1,128 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+/**
+USAGE:
+
+Simple:
+
+<?php echo $this->getLayout()->createBlock('customer/widget_name')
+   ->setObject($this->getAddress())
+   ->toHtml() ?>
+
+For checkout/onepage/shipping.phtml:
+
+<?php echo $this->getLayout()->createBlock('customer/widget_name')
+   ->setObject($this->getAddress())
+   ->setFieldIdFormat('shipping:%s')
+   ->setFieldNameFormat('shipping[%s]')
+   ->setFieldParams('onchange="shipping.setSameAsBilling(false);"')
+   ->toHtml() ?>
+*/
+?>
+<div class="<?php echo $this->getContainerClassName()?>">
+<?php if ($this->showPrefix()): ?>
+        <div>
+        <label for="<?php echo $this->getFieldId('prefix')?>">
+            <?php echo $this->__('Prefix') ?>
+            <?php if ($this->isPrefixRequired()):?><span class="required">*</span><?php endif ?>
+        </label>
+        </div>
+        <?php if ($this->getPrefixOptions()===false): ?>
+        <div class="input-box name-prefix">
+        <input type="text" id="<?php echo $this->getFieldId('prefix')?>" name="<?php echo $this->getFieldName('prefix')?>" value="<?php echo $this->htmlEscape($this->getObject()->getPrefix()) ?>" title="<?php echo $this->__('Prefix') ?>" class="<?php if ($this->isPrefixRequired()):?>required-entry<?php endif ?> input-text" <?php echo $this->getFieldParams() ?> />
+        </div>
+        <?php else: ?>
+        <select id="<?php echo $this->getFieldId('prefix')?>" name="<?php echo $this->getFieldName('prefix')?>" title="<?php echo $this->__('Prefix') ?>"
+            <?php if ($this->isPrefixRequired()):?>class="required-entry"<?php endif ?> <?php echo $this->getFieldParams() ?> >
+        <?php foreach ($this->getPrefixOptions() as $_option): ?>
+            <option value="<?php echo $_option?>"
+                <?php if ($this->getObject()->getPrefix()==$_option):?>selected="selected"<?php endif ?>
+            ><?php echo $this->__($_option)?></option>
+        <?php endforeach ?>
+        </select>
+        <?php endif ?>
+    
+<?php endif ?>
+    <div>
+        <label for="<?php echo $this->getFieldId('firstname')?>">
+            <?php echo $this->__('First Name') ?>
+            <span class="required">*</span>
+        </label>
+    </div>
+    <div class="input-box name-firstname">
+        <input type="text" id="<?php echo $this->getFieldId('firstname')?>" name="<?php echo $this->getFieldName('firstname')?>" value="<?php echo $this->htmlEscape($this->getObject()->getFirstname()) ?>" title="<?php echo $this->__('First Name') ?>" class="required-entry input-text" <?php echo $this->getFieldParams() ?> />
+    </div>
+
+<?php if ($this->showMiddlename()): ?>
+    <div>
+        <label for="<?php echo $this->getFieldId('middlename')?>">
+            <?php echo $this->__('M.I.') ?>
+        </label>
+     </div>
+     <div class="input-box name-middlename">
+        <input type="text" id="<?php echo $this->getFieldId('middlename')?>" name="<?php echo $this->getFieldName('middlename')?>" value="<?php echo $this->htmlEscape($this->getObject()->getMiddlename()) ?>" title="<?php echo $this->__('M.I.') ?>" class="input-text" <?php echo $this->getFieldParams() ?> />
+     </div>
+<?php endif ?>
+
+    <div>
+        <label for="<?php echo $this->getFieldId('lastname')?>">
+            <?php echo $this->__('Last Name') ?>
+            <span class="required">*</span>
+        </label>
+    </div>
+    <div class="input-box name-lastname">
+        <input type="text" id="<?php echo $this->getFieldId('lastname')?>" name="<?php echo $this->getFieldName('lastname')?>" value="<?php echo $this->htmlEscape($this->getObject()->getLastname()) ?>" title="<?php echo $this->__('Last Name') ?>" class="required-entry input-text" <?php echo $this->getFieldParams() ?> />
+    </div>
+
+<?php  if ($this->showSuffix()): ?>
+    <div>
+        <label for="<?php echo $this->getFieldId('suffix')?>">
+            <?php echo $this->__('Suffix') ?>
+            <?php if ($this->isSuffixRequired()):?><span class="required">*</span><?php endif ?>
+        </label>
+     </div>
+      <?php if ($this->getSuffixOptions()===false): ?>
+        <div class="input-box name-suffix">
+            <input type="text" id="<?php echo $this->getFieldId('suffix')?>" name="<?php echo $this->getFieldName('suffix')?>" value="<?php echo $this->htmlEscape($this->getObject()->getSuffix()) ?>" title="<?php echo $this->__('Suffix') ?>" class="<?php if ($this->isSuffixRequired()):?>required-entry<?php endif ?> input-text"
+            <?php echo $this->getFieldParams() ?> />
+         </div>  
+        <?php else: ?>
+            <select id="<?php echo $this->getFieldId('suffix')?>" name="<?php echo $this->getFieldName('suffix')?>" title="<?php echo $this->__('Suffix') ?>"
+                <?php if ($this->isSuffixRequired()):?>class="required-entry"<?php endif ?> <?php echo $this->getFieldParams() ?> >
+            <?php foreach ($this->getSuffixOptions() as $_option): ?>
+                <option value="<?php echo $_option?>"
+                    <?php if ($this->getObject()->getSuffix()==$_option):?>selected="selected"<?php endif ?>
+                ><?php echo $this->__($_option)?></option>
+            <?php endforeach ?>
+            </select>
+        <?php endif ?>
+    
+<?php endif ?>
+</div>

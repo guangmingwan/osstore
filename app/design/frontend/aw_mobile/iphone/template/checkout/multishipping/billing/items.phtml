@@ -1,0 +1,60 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+
+<?php if ($this->getQuote()->hasVirtualItems()): ?>
+
+    <div class="page-head">
+        <h3><?php echo $this->__('Other Items in Your Order') ?></h3>
+    </div> 
+
+    <div class="multishipping-container cart">
+        <div class="top-header"><?php echo $this->__('Items') ?>&nbsp;(<a href="<?php echo $this->getVirtualProductEditUrl() ?>"><?php echo $this->__('Edit') ?></a>)</div>
+        <table class="shopping-cart" id="unavailable-shipping-table" cellspacing="0">
+            <col />
+            <col width="1" />
+            <thead>
+                <tr>
+                    <th><div class="rounded"><?php echo $this->__('Product Name') ?></div></th>
+                    <th class="a-center"><div class="rounded"><?php echo $this->__('Qty') ?></div></th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($this->getVirtualQuoteItems() as $_item): ?>
+                <tr>
+                    <td><?php echo $this->getItemHtml($_item) ?></td>
+                    <td class="a-right"><?php echo $_item->getQty() ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+        <script type="text/javascript">decorateTable('unavailable-shipping-table')</script>
+    </div>
+<?php endif; ?>

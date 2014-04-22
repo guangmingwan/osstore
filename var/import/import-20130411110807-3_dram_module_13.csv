@@ -1,0 +1,276 @@
+name,price,qty,sku,condition,weight,memory_capacity,memory_card_brand,memory_speed
+Qimonda   DDR3 4GB  PC3-8500R 1066MHZ  Server RAM Dram ECC REG ,75,59,osst-20110920083859,New & Unused,99,4GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda  DDR3 1GB PC3-10600E 1333MHZ  Server DRAM Memory ECC,25,59,osst-20110920085852,New & Unused,99,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda  DDR3 2GB PC3-10600 1333MHZ  Server RAM Dram ECC REG,38,59,osst-20110920084218,New & Unused,99,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda  DDR3 2GB PC3-8500 1066MHZ Server RAM Dram ECC REG,38,59,osst-20110920084624,New & Unused,99,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda  DDR3 2GB PC3-8500E 1066MHZ Server DRAM Memory ECC,38,59,osst-20110920085328,New & Unused,99,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda  DDR3 4GB PC3-10600 1333MHZ  Server RAM Dram ECC REG,75,59,osst-20110920083507,New & Unused,99,4GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR1 1GB 1024MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20110511073947,New & Unused,51,1GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 1GB PC 2100E 266Mhz Server DRAM Memory Module ECC,38,59,osst-20110906083108,New & Unused,99,1GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 1GB PC 2100R 266Mhz Server DRAM Memory Module ECC REG,38,59,osst-20110906060247,New & Unused,99,1GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 1GB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin ,35,59,osst-20110511101014,New & Unused,51,1GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 1GB PC 2700E 333Mhz Server DRAM Memory Module ECC,38,59,osst-20110906083621,New & Unused,99,1GB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 1GB PC 2700R 333Mhz Server DRAM Memory Module ECC REG,38,59,osst-20110906060051,New & Unused,99,1GB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 1GB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin ,35,59,osst-20110511100907,New & Unused,51,1GB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 1GB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20110511074401,New & Unused,51,1GB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 1GB PC 3200E 400Mhz Server DRAM Memory Module ECC,38,59,osst-20110906083800,New & Unused,99,1GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 1GB PC 3200R 400Mhz Server DRAM Memory Module ECC REG,38,59,osst-20110906055525,New & Unused,99,1GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 1GB PC 3200S 400MHz Lodimm Desktop Memory DRAM 184pin ,35,59,osst-20110511100700,New & Unused,51,1GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 1GB PC 3200S 400MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20110511074846,New & Unused,51,1GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 256MB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin ,9.5,59,osst-20110511081713,New & Unused,51,256MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 256MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,9.5,59,osst-20110511071342,New & Unused,51,256MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 256MB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin ,9.5,59,osst-20110511081953,New & Unused,51,256MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 256MB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,9.5,59,osst-20110511072615,New & Unused,51,256MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 2GB 2048MB PC 2100R 266MHz Server Memory ECC REG 184pin,55,59,osst-20110126034641,New & Unused,99,2GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 2GB 2048MB PC 3200R 400MHz Server Memory ECC REG 184pin,55,59,osst-20110126034643,New & Unused,99,2GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 2GB PC 2100R 266Mhz Server DRAM Memory Module ECC REG,55,59,osst-20110906061535,New & Unused,99,2GB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 2GB PC 2700R 333Mhz Server DRAM Memory Module ECC REG,55,59,osst-20110906073801,New & Unused,99,2GB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 2GB PC 3200R 400Mhz Server DRAM Memory Module ECC REG,55,59,osst-20110906074101,New & Unused,99,2GB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 512MB PC 2100E 266Mhz Server DRAM Memory Module ECC,22,59,osst-20110906080106,New & Unused,99,512MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 512MB PC 2100R 266Mhz Server DRAM Memory Module ECC REG,22,59,osst-20110906035316,New & Unused,99,512MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 512MB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin,18.5,59,osst-20110511082220,New & Unused,51,512MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 512MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,18.5,59,osst-20110511073108,New & Unused,51,512MB,Qimonda / Infineon,PC-2100 / 266MHz
+Qimonda DDR1 512MB PC 2700E 333Mhz Server DRAM Memory Module ECC,22,59,osst-20110906075745,New & Unused,99,512MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 512MB PC 2700R 333Mhz Server DRAM Memory Module ECC REG,22,59,osst-20110906054456,New & Unused,99,512MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 512MB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin,18.5,59,osst-20110511094731,New & Unused,51,512MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 512MB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,18.5,59,osst-20110511073524,New & Unused,51,512MB,Qimonda / Infineon,PC-2700 / 333MHz
+Qimonda DDR1 512MB PC 3200E 400Mhz Server DRAM Memory Module ECC,22,59,osst-20110906074709,New & Unused,99,512MB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR1 512MB PC 3200R 400Mhz Server DRAM Memory Module ECC REG,22,59,osst-20110906054704,New & Unused,99,512MB,Qimonda / Infineon,PC-3200 / 400MHz
+Qimonda DDR2 1GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110511102131,New & Unused,51,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 1GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110521032421,New & Unused,51,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 1GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110511080426,New & Unused,51,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 1GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110521031201,New & Unused,51,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 1GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110511102343,New & Unused,51,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 1GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110521033135,New & Unused,51,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 1GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110511093440,New & Unused,51,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 1GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110521031401,New & Unused,51,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 1GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110511102607,New & Unused,51,1GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 1GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110521033430,New & Unused,51,1GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 1GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110511093631,New & Unused,51,1GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 1GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110521031613,New & Unused,51,1GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 2GB 2048MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110511080832,New & Unused,51,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 2GB 2048MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521035037,New & Unused,51,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 2GB 2048MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110511083740,New & Unused,51,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 2GB 2048MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521035258,New & Unused,51,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 2GB 2048MB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110511084631,New & Unused,51,2GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 2GB 2048MB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521035453,New & Unused,51,2GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 2GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110512023218,New & Unused,51,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 2GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521041622,New & Unused,51,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 2GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110512023410,New & Unused,51,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 2GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521042009,New & Unused,51,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 2GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110512024009,New & Unused,51,2GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 2GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521042151,New & Unused,51,2GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 4GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521043955,New & Unused,51,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 4GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110512024738,New & Unused,51,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 4GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521044005,New & Unused,51,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 4GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110511081358,New & Unused,51,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 4GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521045515,New & Unused,51,4GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 4GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110512025029,New & Unused,51,4GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 4GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521044935,New & Unused,51,4GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 4GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110511094203,New & Unused,51,4GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 4GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521045702,New & Unused,51,4GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 4GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110512030236,New & Unused,51,4GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 4GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521045143,New & Unused,51,4GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 4GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110511094349,New & Unused,51,4GB,Qimonda / Infineon,PC2-6400 / 800MHz
+Qimonda DDR2 512MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110511101609,New & Unused,51,512MB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 512MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110521025734,New & Unused,51,512MB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 512MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook ,5.5,59,osst-20110511075528,New & Unused,51,512MB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 512MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook ,5.5,59,osst-20110521024635,New & Unused,51,512MB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 512MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110511101917,New & Unused,51,512MB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 512MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110521030150,New & Unused,51,512MB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 512MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook ,5.5,59,osst-20110511075749,New & Unused,51,512MB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 512MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook ,5.5,59,osst-20110521025003,New & Unused,51,512MB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 1GB PC2-3200E 400MHZ  DRAM Memory Module ECC,22,59,osst-20111028082104,New & Unused,99,1GB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 1GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,22,59,osst-20110913024644,New & Unused,99,1GB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 1GB PC2-4200E 533MHZ  DRAM Memory Module ECC ,22,59,osst-20111028081514,New & Unused,99,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 1GB PC2-4200F 533MHZ  DRAM Memory Module FB Dimm FBD ,22,59,osst-20111028082323,New & Unused,99,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 1GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,22,59,osst-20110916074727,New & Unused,99,1GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 1GB PC2-5300E 667MHZ  DRAM Memory Module ECC ,22,59,osst-20111028080827,New & Unused,99,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 1GB PC2-5300F 667MHZ  DRAM Memory Module FB Dimm FBD ,22,59,osst-20111028083124,New & Unused,99,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 1GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,22,59,osst-20111028080005,New & Unused,99,1GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 2GB PC2-3200E 400MHZ  DRAM Memory Module ECC,38,59,osst-20111105085834,New & Unused,99,2GB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 2GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,38,59,osst-20111105042831,New & Unused,99,2GB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 2GB PC2-4200E 533MHZ  DRAM Memory Module ECC,38,59,osst-20111105085652,New & Unused,99,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 2GB PC2-4200F 533MHZ  DRAM Memory Module FB Dimm FBD,38,59,osst-20111105042131,New & Unused,99,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 2GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,38,59,osst-20111105043151,New & Unused,99,2GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 2GB PC2-5300E 667MHZ  DRAM Memory Module ECC,38,59,osst-20111105085505,New & Unused,99,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 2GB PC2-5300F 667MHZ  DRAM Memory Module FB Dimm FBD,38,59,osst-20111105042015,New & Unused,99,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 2GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,38,59,osst-20111105043320,New & Unused,99,2GB,Qimonda / Infineon,PC2-5300 / 667MHz
+Qimonda DDR2 Server 2GB PC2-6400E 800MHZ  DRAM Memory Module ECC,48,59,osst-20111105043635,New & Unused,99,2GB,Qimonda / Infineon,PC2-6400 / 800MHZ
+Qimonda DDR2 Server 2GB PC2-6400F 800MHZ  DRAM Memory Module FB Dimm FBD,48,59,osst-20111105041330,New & Unused,99,2GB,Qimonda / Infineon,PC2-6400 / 800MHZ
+Qimonda DDR2 Server 2GB PC2-6400R 800MHZ  DRAM Memory Module ECC REG,48,59,osst-20111105043505,New & Unused,99,2GB,Qimonda / Infineon,PC2-6400 / 800MHZ
+Qimonda DDR2 Server 4GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,68,59,osst-20111107015157,New & Unused,99,4GB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 4GB PC2-4200F 533MHZ  DRAM Memory Module FB Dimm FBD,68,59,osst-20111107014924,New & Unused,99,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 4GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,68,59,osst-20111107015510,New & Unused,99,4GB,Qimonda / Infineon,PC2-4200 / 533MHz
+Qimonda DDR2 Server 4GB PC2-5300F 667MHZ  DRAM Memory Module FB Dimm FBD,68,59,osst-20111107014741,New & Unused,99,4GB,Qimonda / Infineon,PC2-5300 / 667MHZ
+Qimonda DDR2 Server 4GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,68,59,osst-20111107015642,New & Unused,99,4GB,Qimonda / Infineon,PC2-5300 / 667MHZ
+Qimonda DDR2 Server 4GB PC2-6400F 800MHZ  DRAM Memory Module FB Dimm FBD,85,59,osst-20111107014250,New & Unused,99,4GB,Qimonda / Infineon,PC2-6400 / 800MHZ
+Qimonda DDR2 Server 4GB PC2-6400R 800MHZ  DRAM Memory Module ECC REG,85,59,osst-20111107015809,New & Unused,99,4GB,Qimonda / Infineon,PC2-6400 / 800MHZ
+Qimonda DDR2 Server 512MB PC2-3200E 400MHZ  DRAM Memory Module ECC ,15,59,osst-20110913023205,New & Unused,99,512MB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 512MB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,15,59,osst-20110906071719,New & Unused,99,512MB,Qimonda / Infineon,PC2-3200 / 400MHZ
+Qimonda DDR2 Server 512MB PC2-4200E 533MHZ  DRAM Memory Module ECC ,15,59,osst-20110913023002,New & Unused,99,512MB,Qimonda / Infineon,PC2-4200 / 533MHZ
+Qimonda DDR2 Server 512MB PC2-4200F 533MHZ  DRAM Memory Module FB Dimm,15,59,osst-20110913023445,New & Unused,99,512MB,Qimonda / Infineon,PC2-4200 / 533MHZ
+Qimonda DDR2 Server 512MB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,15,59,osst-20110909083039,New & Unused,99,512MB,Qimonda / Infineon,PC2-4200 / 533MHZ
+Qimonda DDR2 Server 512MB PC2-5300E 667MHZ  DRAM Memory Module ECC ,15,59,osst-20110909083512,New & Unused,99,512MB,Qimonda / Infineon,PC2-5300 / 667MHZ
+Qimonda DDR2 Server 512MB PC2-5300F 667MHZ  DRAM Memory Module FB Dimm,15,59,osst-20110913024140,New & Unused,99,512MB,Qimonda / Infineon,PC2-5300 / 667MHZ
+Qimonda DDR2 Server 512MB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,15,59,osst-20110909083237,New & Unused,99,512MB,Qimonda / Infineon,PC2-5300 / 667MHZ
+Qimonda DDR3 1GB 1024MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,9.5,59,osst-20110517022919,New & Unused,51,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 1GB 1024MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,18.5,59,osst-20110518084511,New & Unused,51,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 1GB 1024MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,9.5,59,osst-20110517022033,New & Unused,51,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 1GB 1024MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,18.5,59,osst-20110518083605,New & Unused,51,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 1GB 1024MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,9.5,59,osst-20110517022712,New & Unused,51,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 1GB 1024MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,18.5,59,osst-20110518084216,New & Unused,51,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 1GB 1024MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,9.5,59,osst-20110517021650,New & Unused,51,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 1GB 1024MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,18.5,59,osst-20110518083135,New & Unused,51,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 1GB PC3-10600E 1333MHZ Server RAM Dram ECC REG,25,59,osst-20110920090610,New & Unused,99,1GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 1GB PC3-8500 1066MHZ Server RAM Dram ECC REG,25,59,osst-20110920085559,New & Unused,99,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 1GB PC3-8500E 1066MHZ Server DRAM Memory ECC,25,59,osst-20110920090413,New & Unused,99,1GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 2GB 2048MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,18.5,99,osst-20110518095730,New & Unused,51,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 2GB 2048MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,28,99,osst-20110518094648,New & Unused,51,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 2GB 2048MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook 8ic,18.5,99,osst-20110518024833,New & Unused,51,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 2GB 2048MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,18.5,99,osst-20110518095521,New & Unused,51,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 2GB 2048MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,28,99,osst-20110518094242,New & Unused,51,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 2GB 2048MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook 8ic,28,99,osst-20110518024554,New & Unused,51,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Qimonda DDR3 2GB PC3-10600E 1333MHZ  Server DRAM Memory ECC,38,59,osst-20110920085049,New & Unused,99,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 2GB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,28,99,osst-20110518025331,New & Unused,51,2GB,Qimonda / Infineon,PC3-10600 / 1333MHz
+Qimonda DDR3 2GB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,28,99,osst-20110518025053,New & Unused,51,2GB,Qimonda / Infineon,PC3-8500 / 1066MHz
+Samsung DDR1 1GB 1024MB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin,35,59,osst-20101229054418,New & Unused,51,1GB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 1GB 1024MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20101229054409,New & Unused,51,1GB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 1GB 1024MB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin,35,59,osst-20101229054410,New & Unused,51,1GB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 1GB 1024MB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20101229054411,New & Unused,51,1GB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 1GB 1024MB PC 3200S 400MHz Lodimm Desktop Memory DRAM 184pin,35,59,osst-20101229054419,New & Unused,51,1GB,Samsung,PC-3200 / 400MHZ
+Samsung DDR1 1GB PC 2100E 266MHz Server DRAM Memory Module ECC,38,59,osst-20110803073835,New & Unused,99,1GB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 1GB PC 2700E 333MHz Server DRAM Memory Module ECC,38,59,osst-20110803080129,New & Unused,99,1GB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 1GB PC 3200E 400MHz Server DRAM Memory Module ECC,38,59,osst-20110803080618,New & Unused,99,1GB,Samsung,PC-3200 / 400MHZ
+Samsung DDR1 1GB PC 3200S 400MHz Sodimm Laptop Memory DRAM 200pin Notebook,45,59,osst-20110507024907,New & Unused,51,1GB,Samsung,PC-3200 / 400MHZ
+Samsung DDR1 256MB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin,9.5,59,osst-20101229054402,New & Unused,51,256MB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 256MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,9.5,59,osst-20101229054401,New & Unused,51,256MB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 256MB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin,9.5,59,osst-20101229054403,New & Unused,51,256MB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 256MB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,9.5,59,osst-20101229054400,New & Unused,51,256MB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 2GB PC 2100R 266MHz Server DRAM Memory Module ECC REG,55,59,osst-20110902075954,New & Unused,99,2GB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 2GB PC 2700R 333MHz Server DRAM Memory Module ECC REG,55,59,osst-20110902080957,New & Unused,99,2GB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 512MB PC 2100E 266MHz Server DRAM Memory ModuleECC,22,59,osst-20110803062104,New & Unused,99,512MB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 512MB PC 2100S 266MHz Lodimm Desktop Memory DRAM 184pin,18.5,59,osst-20101229054406,New & Unused,51,512MB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 512MB PC 2100S 266MHz Sodimm Laptop Memory DRAM 200pin Notebook,18.5,59,osst-20110506085119,New & Unused,51,512MB,Samsung,PC-2100 / 266MHZ
+Samsung DDR1 512MB PC 2700E 333MHz Server DRAM Memory Module ECC,22,59,osst-20110803071536,New & Unused,99,512MB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 512MB PC 2700S 333MHz Lodimm Desktop Memory DRAM 184pin,18.5,59,osst-20101229054407,New & Unused,51,512MB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 512MB PC 2700S 333MHz Sodimm Laptop Memory DRAM 200pin Notebook,18.5,59,osst-20101229054404,New & Unused,51,512MB,Samsung,PC-2700 / 333MHZ
+Samsung DDR1 512MB PC 3200E 400MHz Server DRAM Memory Module ECC,22,59,osst-20110803073247,New & Unused,99,512MB,Samsung,PC-3200 / 400MHZ
+Samsung DDR2 1GB 1024MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20101229054442,New & Unused,51,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 1GB 1024MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110520103251,New & Unused,51,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 1GB 1024MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20101229054432,New & Unused,51,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 1GB 1024MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110520102229,New & Unused,51,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 1GB 1024MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20101229054443,New & Unused,51,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 1GB 1024MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20101229054433,New & Unused,51,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 1GB 1024MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110520102512,New & Unused,51,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 1GB 1024MB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20101229054444,New & Unused,51,1GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 1GB 1024MB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20101229054434,New & Unused,51,1GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 1GB 1024MB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,15,59,osst-20110520102707,New & Unused,51,1GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 1GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110520103537,New & Unused,51,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 1GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,15,59,osst-20110520103707,New & Unused,51,1GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 2GB 2048MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20101229054446,New & Unused,51,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 2GB 2048MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20101229054436,New & Unused,51,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 2GB 2048MB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20101229054447,New & Unused,51,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 2GB 2048MB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20101229054437,New & Unused,51,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 2GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110506084201,New & Unused,51,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 2GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521020148,New & Unused,51,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 2GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110506080357,New & Unused,51,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 2GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521014506,New & Unused,51,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 2GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521020355,New & Unused,51,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 2GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521014755,New & Unused,51,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 2GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,28,59,osst-20110521020604,New & Unused,51,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 2GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,28,59,osst-20110521015118,New & Unused,51,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 4GB 4096MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20101229054448,New & Unused,51,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 4GB 4096MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20101229054438,New & Unused,51,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 4GB 4096MB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20101229054449,New & Unused,51,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 4GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521022348,New & Unused,51,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 4GB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110506084644,New & Unused,51,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 4GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521021345,New & Unused,51,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 4GB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110506082035,New & Unused,51,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 4GB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521022557,New & Unused,51,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 4GB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521021607,New & Unused,51,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 4GB PC2-6400S 800MHz Lodimm Desktop Memory DRAM 240pin,65,59,osst-20110521022742,New & Unused,51,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 4GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110521021759,New & Unused,51,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 4GB PC2-6400S 800MHz Sodimm Laptop Memory DRAM 200pin Notebook,65,59,osst-20110506082315,New & Unused,51,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 512MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20101229054440,New & Unused,51,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 512MB PC2-4200S 533MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110520101506,New & Unused,51,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 512MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin,5.5,59,osst-20110507022414,New & Unused,51,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 512MB PC2-4200S 533MHz Sodimm Laptop Memory DRAM 200pin,5.5,59,osst-20110520100316,New & Unused,51,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 512MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20110520100930,New & Unused,51,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 512MB PC2-5300S 667MHz Lodimm Desktop Memory DRAM 240pin,7.5,59,osst-20101229054441,New & Unused,51,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 512MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin,5.5,59,osst-20110507024535,New & Unused,51,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 512MB PC2-5300S 667MHz Sodimm Laptop Memory DRAM 200pin,5.5,59,osst-20110520095925,New & Unused,51,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 1GB PC2-3200E 400MHZ  DRAM Memory Module ECC,22,59,osst-20110909024148,New & Unused,99,1GB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 1GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,22,59,osst-20110909024721,New & Unused,99,1GB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 1GB PC2-4200E 533MHZ  DRAM Memory Module ECC,22,59,osst-20110909025208,New & Unused,99,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 1GB PC2-4200F 533MHZ  DRAM Memory Module FBD,22,59,osst-20110908081205,New & Unused,99,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 1GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,22,59,osst-20110909025753,New & Unused,99,1GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 1GB PC2-5300E 667MHZ  DRAM Memory Module ECC,22,59,osst-20110909025438,New & Unused,99,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 1GB PC2-5300F 667MHZ  DRAM Memory Module FBD,22,59,osst-20110909044927,New & Unused,99,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 1GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,22,59,osst-20110909040618,New & Unused,99,1GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 2GB PC2-3200E 400MHZ  DRAM Memory Module ECC,38,59,osst-20110909071108,New & Unused,99,2GB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 2GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,38,59,osst-20110909072108,New & Unused,99,2GB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 2GB PC2-4200E 533MHZ  DRAM Memory Module ECC,38,59,osst-20110909071409,New & Unused,99,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 2GB PC2-4200F 533MHZ  DRAM Memory Module FB Dimn,38,59,osst-20110909073315,New & Unused,99,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 2GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,38,59,osst-20110909072253,New & Unused,99,2GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 2GB PC2-5300E 667MHZ  DRAM Memory Module ECC,38,59,osst-20110909071549,New & Unused,99,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 2GB PC2-5300F 667MHZ  DRAM Memory Module FB Dimn,38,59,osst-20110909073547,New & Unused,99,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 2GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,38,59,osst-20110909072519,New & Unused,99,2GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 2GB PC2-6400E 800MHZ  DRAM Memory Module ECC,48,59,osst-20110909071746,New & Unused,99,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 Server 2GB PC2-6400F 800MHZ  DRAM Memory Module FB Dimn,48,59,osst-20110909073717,New & Unused,99,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 Server 2GB PC2-6400R 800MHZ  DRAM Memory Module ECC REG,48,59,osst-20110909072700,New & Unused,99,2GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 Server 4GB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,68,59,osst-20110909074101,New & Unused,99,4GB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 4GB PC2-4200F 533MHZ  DRAM Memory Module FB Dimn,68,59,osst-20110909080217,New & Unused,99,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 4GB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,68,59,osst-20110909074325,New & Unused,99,4GB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 4GB PC2-5300F 667MHZ  DRAM Memory Module FB Dimn,68,59,osst-20110909075249,New & Unused,99,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 4GB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,68,59,osst-20110909074701,New & Unused,99,4GB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 4GB PC2-6400F 800MHZ  DRAM Memory Module FB Dimn,85,0,osst-20110909075959,New & Unused,99,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 Server 4GB PC2-6400R 800MHZ  DRAM Memory Module ECC REG,85,59,osst-20110909075005,New & Unused,99,4GB,Samsung,PC2-6400 / 800MHZ
+Samsung DDR2 Server 512MB PC2-3200E 400MHZ  DRAM Memory Module ECC,15,59,osst-20110908032712,New & Unused,99,512MB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 512MB PC2-3200R 400MHZ  DRAM Memory Module ECC REG,15,59,osst-20110906041722,New & Unused,99,512MB,Samsung,PC2-3200 / 400MHZ
+Samsung DDR2 Server 512MB PC2-4200E 533MHZ  DRAM Memory Module ECC ,15,59,osst-20110908090700,New & Unused,99,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 512MB PC2-4200F 533MHZ  DRAM Memory Module FBD,15,59,osst-20111110020204,New & Unused,99,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 512MB PC2-4200R 533MHZ  DRAM Memory Module ECC REG,15,59,osst-20110908082151,New & Unused,99,512MB,Samsung,PC2-4200 / 533MHZ
+Samsung DDR2 Server 512MB PC2-5300E 667MHZ  DRAM Memory Module ECC ,15,59,osst-20110908090505,New & Unused,99,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 512MB PC2-5300F 667MHZ  DRAM Memory Module FBD,15,59,osst-20110908083152,New & Unused,99,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR2 Server 512MB PC2-5300R 667MHZ  DRAM Memory Module ECC REG,15,59,osst-20110908083122,New & Unused,99,512MB,Samsung,PC2-5300 / 667MHZ
+Samsung DDR3 1GB 1024MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,9.5,59,osst-20101229054480,New & Unused,51,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB 1024MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,18.5,59,osst-20110518073335,New & Unused,51,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB 1024MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,9.5,59,osst-20101229054474,New & Unused,51,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB 1024MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,18.5,59,osst-20110518034501,New & Unused,51,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB 1024MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,9.5,59,osst-20101229054479,New & Unused,51,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 1GB 1024MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,18.5,59,osst-20110518072400,New & Unused,51,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 1GB 1024MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,9.5,59,osst-20101229054473,New & Unused,51,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 1GB 1024MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,18.5,59,osst-20110518025930,New & Unused,51,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 1GB PC3-10600 1333 Server RAM Dram ECC REG,25,59,osst-20110906074611,New & Unused,99,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB PC3-10600E 1333MHZ  Server DRAM Memory ECC,25,59,osst-20110906073456,New & Unused,99,1GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 1GB PC3-8500 1066 Server RAM Dram ECC REG,25,59,osst-20110906075632,New & Unused,99,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 1GB PC3-8500E 1066 Mhz Server DRAM Memory Module ECC ,25,59,osst-20110903085036,New & Unused,99,1GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB 2048MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,18.5,99,osst-20101229054482,New & Unused,51,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB 2048MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,28,99,osst-20110518080108,New & Unused,51,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB 2048MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,28,99,osst-20110518064509,New & Unused,51,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB 2048MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook 8ic,18.5,99,osst-20101229054476,New & Unused,51,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB 2048MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,18.5,99,osst-20101229054481,New & Unused,51,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB 2048MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,28,99,osst-20110518075336,New & Unused,51,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB 2048MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,28,99,osst-20110518063717,New & Unused,51,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB 2048MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook 8ic,18.5,99,osst-20101229054475,New & Unused,51,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB PC3-10600 1333MHZ  Server RAM Dram ECC REG,38,59,osst-20110906084218,New & Unused,99,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB PC3-10600E 1333MHZ  Server DRAM Memory ECC,38,59,osst-20110906082318,New & Unused,99,2GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 2GB PC3-8500 1066MHZ Server RAM Dram ECC REG,38,59,osst-20110906083543,New & Unused,99,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 2GB PC3-8500E 1066MHZ Server DRAM Memory ECC,38,59,osst-20110906081243,New & Unused,99,2GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB  PC3-8500R 1066MHZ  Server RAM Dram ECC REG ,58,59,osst-20110907084311,New & Unused,99,4GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB 4096MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,35,99,osst-20101229054484,New & Unused,51,4GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 4GB 4096MB PC3-10600S 1333MHz Lodimm Desktop Memory DRAM 240pin,45,99,osst-20110518080643,New & Unused,51,4GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 4GB 4096MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,35,99,osst-20101229054478,New & Unused,51,4GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 4GB 4096MB PC3-10600S 1333MHz Sodimm Laptop Memory DRAM 204pin Notebook,45,99,osst-20110518071036,New & Unused,51,4GB,Samsung,PC3-10600 / 1333MHZ
+Samsung DDR3 4GB 4096MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,35,99,osst-20101229054483,New & Unused,51,4GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB 4096MB PC3-8500S 1066MHz Lodimm Desktop Memory DRAM 240pin,45,99,osst-20110518080410,New & Unused,51,4GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB 4096MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,35,98,osst-20101229054477,New & Unused,51,4GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB 4096MB PC3-8500S 1066MHz Sodimm Laptop Memory DRAM 204pin Notebook,45,99,osst-20110518070409,New & Unused,51,4GB,Samsung,PC3-8500 / 1066MHz
+Samsung DDR3 4GB PC3-10600 1333MHZ  Server RAM Dram ECC REG,58,59,osst-20110907091101,New & Unused,99,4GB,Samsung,PC3-10600 / 1333MHZ
+SpecTek DDR2 4GB 4096MB PC2-4200s 533MHz Sodimm So-Dimm DRAM Memory Module 200pin Laptop Notebook,65,99,osst-20130102091422,New & Unused,51,4GB,SpecTek,PC2-4200 / 533Mhz
+SpecTek DDR2 4GB 4096MB PC2-5300s 667MHz Sodimm So-Dimm DRAM Memory Module 200pin Laptop Notebook,65,99,osst-20130102032335,New & Unused,51,4GB,SpecTek,PC2-5300 / 667Mhz
+SpecTek DDR2 4GB 4096MB PC2-6400s 800MHz Sodimm So-Dimm DRAM Memory Module 200pin Laptop Notebook,65,99,osst-20130102092640,New & Unused,51,4GB,SpecTek,PC2-6400 / 800Mhz
+SpecTek DDR2 4GB PC2-4200S 533MHz DRAM Lodimm Lo-Dimm Desktop Memory Module 240pin,65,99,osst-20130102095416,New & Unused,51,4GB,SpecTek,PC2-4200 / 533Mhz
+SpecTek DDR2 4GB PC2-5300S 667MHz DRAM Lodimm Lo-Dimm Desktop Memory Module 240pin,65,99,osst-20130102100407,New & Unused,51,4GB,SpecTek,PC2-5300 / 667Mhz
+SpecTek DDR2 4GB PC2-6400S 800MHz DRAM Lodimm Lo-Dimm Desktop Memory Module 240pin,65,99,osst-20130102101929,New & Unused,51,4GB,SpecTek,PC2-6400 / 800Mhz

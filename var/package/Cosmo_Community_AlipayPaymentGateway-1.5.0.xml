@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Cosmo_Community_AlipayPaymentGateway</name>
+    <version>1.5.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Alipay for magento payment gateway from CosmoCommerce</summary>
+    <description>Alipay for magento payment gateway from CosmoCommerce</description>
+    <notes>Add support for international payment credit cards.&#xD;
+&#xD;
+Add updater for module.</notes>
+    <authors><author><name>Cosmo Mao</name><user>auto-converted</user><email>gongyuan.mao@cosmocommerce.com</email></author></authors>
+    <date>2013-08-04</date>
+    <time>17:56:42</time>
+    <contents><target name="magecommunity"><dir name="CosmoCommerce"><dir name="Alipay"><dir name="Block"><file name="Error.php" hash="4350b189d1fa2b246288af23c0b9647d"/><file name="Form.php" hash="caed8eb9bb734eeb6604fbf892f11f66"/><file name="Redirect.php" hash="654292e7eed5ceb569555385863064a4"/></dir><dir name="Helper"><file name="Data.php" hash="ffeb76ef5e1f5899b7764642c8f8d53d"/></dir><dir name="Model"><dir name="Api"><file name="Debug.php" hash="44e7f77d1845aefa58d3a828f5595a0f"/></dir><dir name="Mysql4"><dir name="Api"><dir name="Debug"><file name="Collection.php" hash="e49187a644dd9400170164eabfe5da19"/></dir><file name="Debug.php" hash="0dfd720a7b17d74e23117cb1b3ccd4bb"/></dir><file name="Setup.php" hash="549584bfec4351129df78431aef5c215"/></dir><dir name="Source"><file name="Language.php" hash="71a9ba2616d003fb8bf960e20229b778"/><file name="Servicetype.php" hash="59d44d4b1a8d122ded55e7838cc815dc"/><file name="Transport.php" hash="c445cb4b8b3653bb0fce9c29bb02459e"/></dir><file name="Payment.php" hash="570a3c03c32cc2a93afd2b6ac1abc32a"/></dir><dir name="controllers"><file name="PaymentController.php" hash="faba636e5e2dec5eabb2aa7334358513"/></dir><dir name="etc"><file name="config.xml" hash="60c8a576a8f973d3e7cfce6fa4ad396c"/><file name="system.xml" hash="c873aed10fd162de801d06e757c1c50d"/></dir><dir name="sql"><dir name="alipay_setup"><file name="mysql4-install-0.1.0.php" hash="9c55d00743e11c399131a5f551c517b5"/><file name="mysql4-install-0.9.2.php" hash="4ac10426fb68e49ef7152df0f7122fbd"/></dir></dir></dir><dir name="Updates"><dir name="Helper"><file name="Data.php" hash="c7eac59b50b02be7aaf4eb59986aed08"/></dir><dir name="Model"><file name="Feed.php" hash="c29278c2223fbb59691f61c7be277a6f"/></dir><dir name="etc"><file name="adminhtml.xml" hash="eb44d4aee2b6b51be173930328ae5b46"/><file name="config.xml" hash="6fd6857d1dab8c22aa00f2ccfbda7123"/><file name="system.xml" hash="6f96c34f5ed61143e377d8142cf139b4"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="CosmoCommerce_Alipay.xml" hash="d1fdbde8a9074cac4edc527fae080fea"/><file name="CosmoCommerce_Updates.xml" hash="ec62936984215a2815bb81052be4a47e"/></dir></target><target name="magelocale"><dir name="en_US"><file name="CosmoCommerce_Alipay.csv" hash="3ab19412641b6649ee4ea1fca6a9c017"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

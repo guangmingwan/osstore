@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+-->
+<layout version="0.1.0">
+<!--    <customer_account>
+        <reference name="customer_account_navigation" >
+            <action method="addLink" translate="label"><name>recurring_profiles</name><path>sales/recurring_profile/</path><label>Recurring Profiles</label></action>
+        </reference>
+    </customer_account>-->
+
+    <sales_recurring_profile_index>
+<!--        <update handle="customer_account"/>-->
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="sales/recurring_profiles" name="sales.recurring.profiles" template="sales/recurring/profiles.phtml">
+<!--                <block type="sales/recurring_profiles" name="sales.recurring.profiles.grid" as="grid" template="sales/recurring/grid.phtml">
+                    <action method="prepareProfilesGrid"/>
+                    <action method="setEmptyGridMessage" translate="value"><value>There are no recurring profiles yet.</value></action>
+                    <action method="setGridHtmlId"><value>recurring_profile_list_view</value></action>
+                </block>-->
+            </block>
+        </reference>
+    </sales_recurring_profile_index>
+</layout>

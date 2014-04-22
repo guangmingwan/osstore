@@ -1,0 +1,42 @@
+/* CSS Document */
+
+ul.magasia_alpha_block_list,
+ul.magasia_alpha_block_list li{ margin:0px; padding:0px;}
+ul.magasia_alpha_block_list li{ float:left; padding:2px;}
+
+h1.tagheadh1{ padding:6px 0px; font-size:17px; font-weight:bold;}
+
+.mageasia_tags_widget .a-zbar ul,
+.mageasia_tags_widget .a-zbar ul li{ padding:0px; margin:0px; list-style:none;}
+.mageasia_tags_widget .a-zbar ul li{ float:left; padding:2px 7px;}
+.mageasia_tags_widget .a-zbar ul li a{ display:block; font-size:13px; }
+.mageasia_tags_widget .productlist ul{ overflow:hidden; border-bottom:1px dashed #CCCCCC;}
+.mageasia_tags_widget .productlist ul,
+.mageasia_tags_widget .productlist ul li{ padding:0px; margin:0px; list-style:none;  }
+.mageasia_tags_widget .productlist ul li {  text-align:center; float:left; width:170px; height:240px; padding:2px 5px 10px 5px;  border-right:1px dashed #CCCCCC;}
+.mageasia_tags_widget .productlist ul li.last{ border:0px;}
+.mageasia_tags_widget .productlist ul{ float:left;   clear:both; padding-bottom:0px;}
+.mageasia_tags_widget .productlist,
+.tagdescription{ overflow:hidden; clear:both; }
+
+.a-zbar{ padding:4px; overflow:hidden; border:1px solid #DDD;  border-right:0px; border-left:0px;}
+
+.noitem,
+.azIndexItems-block{ clear:both;}
+div.azIndexItems-block{ overflow:hidden; padding:10px 2px;}
+
+div.azIndexItems-block ul{ padding-left:10px;}
+div.azIndexItems-block ul li{ padding:2px 0px 4px 0px;; padding-right:7px; width:100%; float:left;}
+
+
+ul.producttagsul li{ float:left; width:22px; height:28px; text-align:center;}
+.producttagsul{ overflow:hidden;}
+.producttags h3,
+.polulartags h3{ padding:4px 0px 2px 2px; border-bottom:#DDD 1px solid; text-align:center; font-size:13px; font-weight:bold; background:#CCC;}
+.polulartags ul li{ padding:4px 3px;}
+.tagslist{ overflow:hidden;}
+.tagslist ul li{ width:330px; float:left; padding:4px 2px 4px 2px;}
+.pagenav{ text-align:center; padding:6px 0px;}
+.pagenav a{ display:inline; padding:2px 4px;}
+
+

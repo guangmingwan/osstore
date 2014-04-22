@@ -1,0 +1,14 @@
+.main { width:1020px; margin:0 auto; min-height:400px; padding:10px 0;  text-align:left; }\
+.product-collateral{width:1020px; float:left;}
+
+/************product-detail-additional**********/
+.sp_bg_amy{margin-top:10px;width:1020px;float:left;font-family:Verdana, Arial, Helvetica, sans-serif;background:url(http://www.os-store.com/html/description/aa.png) repeat 0 0;margin-bottom:10px;}
+.shipping_amy{float:left;}
+.shipping_title_amy{background:#ff0000;color:#ffffff;text-align:center;font-weight:bold;font-size:20px;height:30px;}
+.shipping_text_amy{border:#ff0000 1px solid;border-top:none;text-align:center;padding:5px;}
+.text_amy{text-align:left;line-height:20px;font-size:13px;margin:10px;}
+.red_amy{color:#ff0000;}
+.blue_amy{color:#0000ff;}
+.payment_amy{float:right;}
+.payment_title_amy{background:#0000ff;color:#ffffff;text-align:center;font-weight:bold;font-size:20px;height:30px;}
+.payment_text_amy{border:#0000ff 1px solid;border-top:none;text-align:center;padding:5px;}

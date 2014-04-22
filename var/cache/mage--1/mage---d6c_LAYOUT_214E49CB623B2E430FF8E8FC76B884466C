@@ -1,0 +1,396 @@
+<block name="formkey" type="core/template" template="core/formkey.phtml"/>
+<block type="page/html" name="root" output="toHtml" template="page/1column.phtml">
+   <block type="page/html_head" name="head" as="head">
+      <action method="addJs">
+         <script>prototype/prototype.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/ccard.js</script>
+      </action>
+      <action method="addJs">
+         <script>prototype/validation.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/builder.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/effects.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/dragdrop.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/controls.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/slider.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/js.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/form.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/menu.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/translate.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/cookies.js</script>
+      </action>
+      <action method="addJs">
+         <script>aw_mobile/jquery.1.3.2.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>aw_mobile/aw_mobile_iphone.js</script>
+      </action>
+      <action method="addJs">
+         <script>aw_mobile/cart.js</script>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/iphone.css</stylesheet>
+      </action>
+      <remove name="optional_zip_countries"/>
+   </block>
+   <block type="core/text_list" name="after_body_start" as="after_body_start"/>
+   <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml"/>
+   <block type="page/html_header" name="header" as="header">
+      <block name="user_links" as="user_links" type="page/template_links"/>
+   </block>
+   <block type="awmobile/page_template_links" name="awmobile.top.links" as="awTopLinks" template="page/template/links.phtml"/>
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+   <block type="core/text_list" name="content" as="content"/>
+   <block type="core/template" name="cart.links" as="cartLinks" template="page/template/cart/links.phtml"/>
+   <block type="core/text_list" name="cart.content" as="cartContent">
+      <block type="checkout/cart" name="checkout.cart">
+         <action method="setCartTemplate">
+            <value>checkout/cart.phtml</value>
+         </action>
+         <action method="setEmptyTemplate">
+            <value>checkout/cart/noItems.phtml</value>
+         </action>
+         <action method="chooseTemplate"/>
+         <action method="addItemRender">
+            <type>bundle</type>
+            <block>bundle/checkout_cart_item_renderer</block>
+            <template>checkout/cart/item/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>grouped</type>
+            <block>checkout/cart_item_renderer_grouped</block>
+            <template>checkout/cart/item/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>configurable</type>
+            <block>checkout/cart_item_renderer_configurable</block>
+            <template>checkout/cart/item/default.phtml</template>
+         </action>
+         <action method="addItemRender">
+            <type>downloadable</type>
+            <block>downloadable/checkout_cart_item_renderer</block>
+            <template>downloadable/checkout/cart/item/default.phtml</template>
+         </action>
+         <block type="checkout/multishipping_link" name="checkout.cart.methods.multishipping" as="multishipping_link" template="checkout/multishipping/link.phtml"/>
+         <block type="core/text_list" name="checkout.cart.top_methods" as="top_methods">
+            <block type="checkout/onepage_link" name="checkout.cart.methods.onepage" template="checkout/onepage/link.phtml"/>
+         </block>
+         <block type="core/text_list" name="checkout.cart.methods" as="methods"/>
+         <block type="awmobile/checkout_cart_totals" name="checkout.cart.totals" as="totals" template="checkout/cart/totals.phtml"/>
+         <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="checkout/cart/coupon.phtml"/>
+      </block>
+   </block>
+   <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+      <action method="setData">
+         <key>cache_lifetime</key>
+         <value>0</value>
+      </action>
+      <block type="page/template_links" name="aw_footer_links" as="aw_footer_links" template="page/template/footer/links.phtml">
+         <action method="addLink" translate="label title" module="cms">
+            <label>About</label>
+            <url>about-magento-demo-store</url>
+            <title>About</title>
+            <prepare>true</prepare>
+         </action>
+         <action method="addLink" translate="label title" module="cms">
+            <label>Customer Service</label>
+            <url>customer-service</url>
+            <title>Customer Service</title>
+            <prepare>true</prepare>
+         </action>
+      </block>
+      <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+      <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
+      <block type="page/template_links" name="switcher_links" as="switcher_links" template="page/template/footer/switcher.phtml">
+         <action method="addLink" translate="label title" module="awmobile" ifconfig="awmobile/behaviour/switcher">
+            <label>Desktop Version</label>
+            <url>awmobile/switch/toDesktop</url>
+            <title>Desktop Version</title>
+            <prepare>true</prepare>
+            <position>1</position>
+            <liParams>id=&quot;desktop_switcher&quot;</liParams>
+         </action>
+      </block>
+   </block>
+   <block type="core/text_list" name="before_body_end" as="before_body_end"/>
+</block>
+<block type="core/profiler" output="toHtml" name="core_profiler"/>
+<reference name="footer">
+   <block type="awmobile/directory_currency" name="currency" before="switcher_links" template="directory/currency.phtml"/>
+</reference>
+<reference name="footer">
+
+        </reference>
+<reference name="awmobile.top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>Catalog</label>
+      <url>http://www.os-store.ru/categories</url>
+      <title>Catalog</title>
+      <prepare/>
+      <urlParams/>
+      <position>9</position>
+      <liParams/>
+      <aParams>class=&quot;button grey&quot;</aParams>
+   </action>
+</reference>
+<reference name="user_links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>My Account</label>
+      <url helper="customer/getAccountUrl"/>
+      <title>My Account</title>
+      <prepare/>
+      <urlParams/>
+      <position>2</position>
+   </action>
+</reference>
+<reference name="top.menu">
+
+        </reference>
+<reference name="left">
+   <block type="core/template" name="left.permanent.callout" template="callouts/left_col.phtml">
+      <action method="setImgSrc">
+         <src>images/media/col_left_callout.jpg</src>
+      </action>
+      <action method="setImgAlt" translate="alt" module="catalog">
+         <alt>Our customer service is available 24/7. Call us at (555) 555-0123.</alt>
+      </action>
+      <action method="setLinkUrl">
+         <url>checkout/cart</url>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+   <block type="core/template" name="right.permanent.callout" template="callouts/right_col.phtml"/>
+</reference>
+<block type="catalog/product_price_template" name="catalog_product_price_template"/>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>msrp</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_item</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_item.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_noform</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_noform.phtml</template>
+   </action>
+</reference>
+<reference name="header">
+   <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+</reference>
+<reference name="awmobile.top.links">
+   <action method="addLink" translate="label title" module="catalogsearch">
+      <label>Search</label>
+      <url>#</url>
+      <title>Search</title>
+      <prepare/>
+      <urlParams/>
+      <position>45</position>
+      <liParams/>
+      <aParams>class=&quot;button grey search&quot; onclick=&quot;showSearchForm(1); return false;&quot;</aParams>
+   </action>
+</reference>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
+<reference name="awmobile.top.links">
+   <block type="awmobile/checkout_links" name="checkout_cart_link">
+      <action method="addCartLink"/>
+   </block>
+</reference>
+<reference name="right">
+   <block type="checkout/cart_sidebar" name="cart_sidebar" before="-" template="checkout/cart/sidebar.phtml">
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions"/>
+   </block>
+</reference>
+<reference name="head">
+   <block type="core/template" name="optional_zip_countries" as="optional_zip_countries" template="directory/js/optional_zip_countries.phtml"/>
+</reference>
+<reference name="checkout.cart">
+   <block type="paypal/express_shortcut" as="paypal_checkout_button" name="checkout.cart.methods.paypal_express.top" before="-" template="paypal/express/shortcut.phtml">
+      <action method="setIsQuoteAllowed">
+         <value>1</value>
+      </action>
+   </block>
+</reference>
+<reference name="left">
+   <block type="tag/popular" name="tags_popular" template="tag/popular.phtm">
+      <action method="setTemplate">
+         <template>tag/popular.phtml</template>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml"/>
+   <block type="reports/product_compared" before="right.permanent.callout" name="right.reports.product.compared" template="reports/product_compared.phtml"/>
+</reference>
+<reference name="after_body_start">
+   <block type="googleanalytics/ga" name="google_analytics" as="google_analytics"/>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="aw_footer_links">
+   <action method="addLink" translate="label title" module="contacts" ifconfig="contacts/contacts/enabled">
+      <label>Contact</label>
+      <url>contacts</url>
+      <title>Contact</title>
+      <prepare>true</prepare>
+   </action>
+</reference>
+<reference name="aw_footer_links">
+   <action method="addLink" translate="label title" module="rss" ifconfig="rss/config/active">
+      <label>RSS</label>
+      <url>rss</url>
+      <title>RSS testing</title>
+      <prepare>true</prepare>
+      <urlParams/>
+      <position/>
+      <li/>
+      <a>class=&quot;link-feed&quot;</a>
+   </action>
+</reference>
+<block type="rss/list" name="head_rss" ifconfig="rss/config/active"/>
+<reference name="wishlist_sidebar">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="cart_sidebar">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/sidebar/default.phtml</template>
+   </action>
+</reference>
+<reference name="checkout.cart">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/item/default.phtml</template>
+   </action>
+</reference>
+<reference name="checkout.cart.crosssell">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<remove name="right.reports.product.viewed"/>
+<reference name="right">
+   <block type="reports/product_viewed" before="right.permanent.callout" name="left.reports.product.viewed" template="reports/product_viewed.phtml"/>
+</reference>
+<reference name="product_list">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="left">
+   <block type="catalog/navigation" name="catalog.leftnav" after="currency" template="catalog/navigation/left.phtml"/>
+</reference>
+<reference name="content">
+   <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
+      <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
+         <block type="awmobile/catalog_product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+            <block type="awmobile/catalog_product_list_toolbar_pager" name="product_list_toolbar_pager"/>
+         </block>
+         <action method="setToolbarBlockName">
+            <name>product_list_toolbar</name>
+         </action>
+      </block>
+   </block>
+</reference>
+<reference name="head">
+   <action method="addItem" ifconfig="sales/msrp/enabled">
+      <type>skin_js</type>
+      <name>js/msrp.js</name>
+   </action>
+</reference>
+<reference name="content">
+   <block type="core/template" template="catalog/msrp/popup.phtml" name="product.tooltip"/>
+</reference>
+<update handle="MAP_popup"/>
+<reference name="content">
+   <block type="paypal/logo" name="paypal.partner.right.logo" template="paypal/partner/logo.phtml" after="-">
+      <action method="setLogoType">
+         <value>nowAccepting_150x40</value>
+      </action>
+   </block>
+</reference>
+<reference name="product.tooltip">
+   <block type="page/html_wrapper" name="product.info.addtocart.paypaluk.wrapper" translate="label">
+      <block type="paypaluk/express_shortcut" name="product.info.addtocart.paypaluk" template="paypal/express/shortcut.phtml">
+         <action method="setIsInCatalogProduct">
+            <value>1</value>
+         </action>
+         <action method="setShowOrPosition">
+            <value>after</value>
+         </action>
+      </block>
+   </block>
+</reference>
+<update handle="SHORTCUT_uk_popup"/>
+<reference name="product_list">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="user_links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>Log In</label>
+      <url helper="customer/getLoginUrl"/>
+      <title>Log In</title>
+      <prepare/>
+      <urlParams/>
+      <position>1</position>
+   </action>
+</reference>
+<remove name="wishlist_sidebar"/>
+<remove name="reorder"/>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>

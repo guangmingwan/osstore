@@ -1,0 +1,63 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+$_cards = $this->getTotal()->getGiftCards();
+if (!$_cards) {
+    $_cards = $this->getQuoteGiftCards();
+}
+?>
+<?php if ($this->getTotal()->getValue()): ?>
+<?php foreach ($_cards as $_c): ?>
+    <tr>
+        <th colspan="<?php echo $this->getColspan(); ?>" style="<?php echo $this->getTotal()->getStyle() ?>" class="a-right">
+            <?php if ($this->getRenderingArea() == $this->getTotal()->getArea()): ?><strong><?php endif; ?>
+                <?php $_title = $this->__('Remove'); ?>
+                
+               <?php if (Mage::app()->getRequest()->getRouteName() == 'checkout'): ?>
+                    <?php $_url = Mage::getUrl('enterprise_giftcardaccount/cart/remove', array('code'=>$_c['c'])); ?>
+                    <?php $_onclick = ''; ?>
+               <?php else: ?>
+                    <?php $_url = Mage::getUrl('awmobile/cart/removeGiftcard', array('code'=>$_c['c'])); ?>
+                    <?php $_onclick = "mobileCart.postGiftcardForm('$_url'); return false;"; ?>
+                    <?php $_url = '#'; ?>
+               <?php endif; ?>
+                <a href="<?php echo $_url ?>" onclick="<?php echo $_onclick; ?>" title="<?php echo $_title; ?>" class="btn-remove"><img src="<?php echo $this->getSkinUrl('images/btn_remove.gif') ?>" alt="<?php echo $this->__('Remove')?>" /></a>
+                <?php echo $this->__('Gift Card (%s)', $_c['c']); ?>
+            <?php if ($this->getRenderingArea() == $this->getTotal()->getArea()): ?></strong><?php endif; ?>
+        </th>
+        <td style="<?php echo $this->getTotal()->getStyle() ?>" class="a-right">
+            <?php if ($this->getRenderingArea() == $this->getTotal()->getArea()): ?><strong><?php endif; ?>
+                -<?php echo $this->helper('checkout')->formatPrice($_c['a']) ?>
+            <?php if ($this->getRenderingArea() == $this->getTotal()->getArea()): ?></strong><?php endif; ?>
+        </td>
+    </tr>
+<?php endforeach; ?>
+<?php endif; ?>

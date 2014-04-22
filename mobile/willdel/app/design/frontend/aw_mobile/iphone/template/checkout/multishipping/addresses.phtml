@@ -1,0 +1,77 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Ship to multiple address template
+ *
+ * @see Mage_Checkout_Block_Multishipping_Addresses
+ */
+?>
+<div class="in-page">
+    <form id="checkout_multishipping_form" action="<?php echo $this->getPostActionUrl() ?>" method="post">
+        <div class="page-head">
+            <h3><?php echo $this->__('Ship to Multiple Addresses') ?></h3>
+        </div>
+        <div class="a-center bottom-space">        
+            <button class="form-button" type="button" onclick="$('add_new_address_flag').value=1; $('checkout_multishipping_form').submit();"><span><span><?php echo $this->__('New Address') ?></span></span></button>
+            <button class="form-button" type="submit" onclick="$('can_continue_flag').value=0"><span><span><?php echo ' '.$this->__('Update').' ' ?></span></span></button>
+        </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <fieldset>
+        <input type="hidden" name="continue" value="0" id="can_continue_flag"/>
+        <input type="hidden" name="new_address" value="0" id="add_new_address_flag" />             
+        <?php foreach ($this->getItems() as $_index => $_item): ?>
+            <div class="multishipping-address-container">
+                <div class="item-info">                
+                    <?php echo $this->getItemHtml($_item->getQuoteItem())?>
+                </div>
+                <div class="address-list select280inner">
+                    <?php if ($_item->getProduct()->getIsVirtual()): echo $this->__('Shipping selection is not applicable.'); else: echo $this->getAddressesHtmlSelect($_item, $_index); endif; ?>
+                </div>
+                <div class="qty">
+                    <span>
+                        <label for="<?php echo "item-qty-".$_item->getQuoteItemId() ?>"><strong><?php echo $this->__('Qty:').' ' ?></strong></label>
+                        <input id="<?php echo "item-qty-".$_item->getQuoteItemId() ?>" name="ship[<?php echo $_index ?>][<?php echo $_item->getQuoteItemId() ?>][qty]" value="<?php echo $this->htmlEscape($_item->getQty()) ?>" size="2" class="input-text qty" />
+                    </span>
+                </div>
+                <div class="delete-button">
+                    <a class="button red delete" href="<?php echo $this->getItemDeleteUrl($_item) ?>"><?php echo $this->__('Remove Item'); ?></a>
+                </div>                    
+            </div>  
+        <?php endforeach; ?>
+        <script type="text/javascript">decorateGeneric($$('div.multishipping-address-container'), ['first','last']);</script>
+        <div class="a-center button-space" >
+            <button class="form-button" type="submit" onclick="$('can_continue_flag').value=1"><span><span><?php echo $this->__('Continue to Shipping Information') ?></span></span></button>
+        </div>
+        <br />
+    </fieldset>
+    </form>
+</div>

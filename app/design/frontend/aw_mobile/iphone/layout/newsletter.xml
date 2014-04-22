@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+-->
+<layout version="0.1.0">
+
+<!--
+Default layout, loads most of the pages
+-->
+
+    <default>
+
+        <!-- Mage_Newsletter -->
+        <!-- reference name="left">
+            <block type="newsletter/subscribe" name="right.newsletter" template="newsletter/subscribe.phtml"/>
+        </reference -->
+
+    </default>
+
+<!--
+Customer account pages, rendered for all tabs in dashboard
+-->
+
+    <customer_account>
+        <!-- Mage_Newsletter -->
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="newsletter"><name>newsletter</name><path>newsletter/manage/</path><label>Newsletter Subscriptions</label></action>
+        </reference>
+    </customer_account>
+
+    <customer_account_index>
+
+        <reference name="right">
+            <action method="unsetChild"><name>right.newsletter</name></action>
+        </reference>
+    </customer_account_index>
+
+    <newsletter_manage_index>
+        <update handle="customer_account"/>
+        <reference name="content">
+            <block type="customer/newsletter" name="customer_newsletter"/>
+        </reference>
+    </newsletter_manage_index>
+
+<cms_index_index>
+            <reference name="cms_page">
+                <block type="newsletter/subscribe" as="navigation.newsletter" name="bottom.newsletter" template="newsletter/subscribe.phtml"/>
+        </reference>
+</cms_index_index>
+</layout>

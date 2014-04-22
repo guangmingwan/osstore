@@ -1,0 +1,1458 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>yulinmufeng</LastAuthor>
+  <Created>2013-07-25T07:37:48Z</Created>
+  <LastSaved>2013-07-26T02:17:38Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s22">
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet 1">
+  <Table ss:ExpandedColumnCount="64" ss:ExpandedRowCount="22" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="16.5">
+   <Column ss:Index="7" ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="121.5"/>
+   <Column ss:Index="10" ss:StyleID="s21" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="370.5"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="157.5"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Span="7"/>
+   <Column ss:Index="21" ss:StyleID="s22" ss:AutoFitWidth="0"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">store</Data></Cell>
+    <Cell><Data ss:Type="String">websites</Data></Cell>
+    <Cell><Data ss:Type="String">attribute_set</Data></Cell>
+    <Cell><Data ss:Type="String">type</Data></Cell>
+    <Cell><Data ss:Type="String">category_ids</Data></Cell>
+    <Cell><Data ss:Type="String">has_options</Data></Cell>
+    <Cell><Data ss:Type="String">sku</Data></Cell>
+    <Cell><Data ss:Type="String">qty</Data></Cell>
+    <Cell><Data ss:Type="String">is_in_stock</Data></Cell>
+    <Cell><Data ss:Type="String">price</Data></Cell>
+    <Cell><Data ss:Type="String">name</Data></Cell>
+    <Cell><Data ss:Type="String">model_number</Data></Cell>
+    <Cell><Data ss:Type="String">resolution</Data></Cell>
+    <Cell><Data ss:Type="String">meta_title</Data></Cell>
+    <Cell><Data ss:Type="String">meta_description</Data></Cell>
+    <Cell><Data ss:Type="String">meta_keyword</Data></Cell>
+    <Cell><Data ss:Type="String">product_name</Data></Cell>
+    <Cell><Data ss:Type="String">image</Data></Cell>
+    <Cell><Data ss:Type="String">small_image</Data></Cell>
+    <Cell><Data ss:Type="String">thumbnail</Data></Cell>
+    <Cell><Data ss:Type="String">condition</Data></Cell>
+    <Cell><Data ss:Type="String">url_key</Data></Cell>
+    <Cell><Data ss:Type="String">gift_message_available</Data></Cell>
+    <Cell><Data ss:Type="String">url_path</Data></Cell>
+    <Cell><Data ss:Type="String">options_container</Data></Cell>
+    <Cell><Data ss:Type="String">image_label</Data></Cell>
+    <Cell><Data ss:Type="String">small_image_label</Data></Cell>
+    <Cell><Data ss:Type="String">thumbnail_label</Data></Cell>
+    <Cell><Data ss:Type="String">connector</Data></Cell>
+    <Cell><Data ss:Type="String">lcd_size</Data></Cell>
+    <Cell><Data ss:Type="String">status</Data></Cell>
+    <Cell><Data ss:Type="String">visibility</Data></Cell>
+    <Cell><Data ss:Type="String">enable_googlecheckout</Data></Cell>
+    <Cell><Data ss:Type="String">description</Data></Cell>
+    <Cell><Data ss:Type="String">short_description</Data></Cell>
+    <Cell><Data ss:Type="String">custom_layout_update</Data></Cell>
+    <Cell><Data ss:Type="String">special_from_date</Data></Cell>
+    <Cell><Data ss:Type="String">weight</Data></Cell>
+    <Cell><Data ss:Type="String">min_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_min_qty</Data></Cell>
+    <Cell><Data ss:Type="String">is_qty_decimal</Data></Cell>
+    <Cell><Data ss:Type="String">backorders</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_backorders</Data></Cell>
+    <Cell><Data ss:Type="String">min_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_min_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">max_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_max_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">low_stock_date</Data></Cell>
+    <Cell><Data ss:Type="String">notify_stock_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_notify_stock_qty</Data></Cell>
+    <Cell><Data ss:Type="String">manage_stock</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_manage_stock</Data></Cell>
+    <Cell><Data ss:Type="String">stock_status_changed_auto</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_enable_qty_inc</Data></Cell>
+    <Cell><Data ss:Type="String">enable_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">is_decimal_divided</Data></Cell>
+    <Cell><Data ss:Type="String">stock_status_changed_automatically</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_enable_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">store_id</Data></Cell>
+    <Cell><Data ss:Type="String">product_type_id</Data></Cell>
+    <Cell><Data ss:Type="String">product_status_changed</Data></Cell>
+    <Cell><Data ss:Type="String">product_changed_websites</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040277</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X12 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LQ12X12</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X12 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X12 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X12 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X12 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040278</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X24 LQ12X24N 1024*768 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LQ12X24 LQ12X24N</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X24 LQ12X24N 1024*768 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X24 LQ12X24N 1024*768 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X24 LQ12X24N 1024*768 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X24 LQ12X24N 1024*768 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040279</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X43 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LQ12X43</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X43 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X43 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X43 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X43 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040280</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X54 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LQ12X54</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">12.1&quot; Sharp LQ12X54 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X54 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X54 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LQ12X54 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040281</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE2P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121DEE2P00</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE2P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE2P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE2P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE2P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040282</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE3P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121DEE3P00</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE3P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE3P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE3P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Toshiba LT121DEE3P00 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040283</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SI 105 153 T01 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121SI 105 153 T01</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SI 105 153 T01 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SI 105 153 T01 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SI 105 153 T01 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SI 105 153 T01 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040284</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SL-105 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121SL-105</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SL-105 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SL-105 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SL-105 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SL-105 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040285</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SU-121 123 125 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121SU-121 123 125</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SU-121 123 125 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SU-121 123 125 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SU-121 123 125 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121SU-121 123 125 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040286</Data></Cell>
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121X1 121 L01 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LT121X1 121 L01</Data></Cell>
+    <Cell><Data ss:Type="String">1024*768&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121X1 121 L01 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121X1 121 L01 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121X1 121 L01 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Samsung LT121X1 121 L01 1024*768&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040633</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-01 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">FLC31SVC6S-01</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-01 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-01 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-01 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-01 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040634</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-02 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">FLC31SVC6S-02</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-02 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-02 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-02 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-02 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040635</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-04 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">FLC31SVC6S-04</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-04 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-04 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-04 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-04 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040636</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-05 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">FLC31SVC6S-05</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-05 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-05 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-05 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Fujitsu FLC31SVC6S-05 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040658</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121M2 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LC121M2</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121M2 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121M2 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121M2 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121M2 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040659</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121S2 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LC121S2</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121S2 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121S2 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121S2 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; LG / Philips LC121S2 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040660</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SS1T5J-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LM121SS1T5J-E</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SS1T5J-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SS1T5J-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SS1T5J-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SS1T5J-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040661</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSET53 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LM121SSET53</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSET53 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSET53 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSET53 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSET53 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040662</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSIT53-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LM121SSIT53-E</Data></Cell>
+    <Cell><Data ss:Type="String">800*600</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSIT53-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSIT53-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSIT53-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM121SSIT53-E 800*600 LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040663</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S41 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LM12S41</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S41 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S41 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S41 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S41 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,118,219,463</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20130724040664</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S44 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">LM12S44</Data></Cell>
+    <Cell><Data ss:Type="String">800*600&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S44 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S44 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S44 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">12.1&quot; Sharp LM12S44 800*600&#160; LCD LED Display Screen Panel</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">/lcd/11_15_inch_LCD_nEO_IMG.jpg</Data></Cell>
+    <Cell><Data ss:Type="String">Refurbished</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:Index="25"><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:Index="30"><Data ss:Type="String">12.1&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">&lt;div class=&quot;ds_bg&quot;&gt;&#10;&lt;div class=&quot;lefttop&quot;&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;ds_border&quot;&gt;&#10;&lt;table style=&quot;width: 968px;&quot; border=&quot;0&quot;&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;120&quot;&gt;&lt;img src=&quot;http://www.os-store.com/html/description/hot.gif&quot; alt=&quot;&quot; width=&quot;85&quot; height=&quot;85&quot; /&gt;&lt;/td&gt;&#10;&lt;td style=&quot;margin-right: 15px;&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;color: #3366ff;&quot;&gt;&lt;em&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Original LCD Display Panel Screen offer &amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;This LCD Screen is 100% Original.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;New A+ is 100% unused &amp;amp; No Dead-Pixels ; &lt;br /&gt;Refurbished item has tested or A- Class with a light point.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Please be sure condition before order.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Notice correct model, version or apply device after ordered.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: x-large;&quot;&gt;Warranty is doa 30days.&lt;/span&gt;&lt;/li&gt;&#10;&lt;li&gt;&lt;span style=&quot;font-size: x-large; font-family: arial, helvetica, sans-serif;&quot;&gt;Need more this item or out of stock, please&amp;nbsp;&lt;a href=&quot;mailto:sales@os-store.com&quot;&gt;contact us&lt;/a&gt;.&lt;/span&gt;&amp;nbsp;&lt;br /&gt;&amp;nbsp;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;leftbottom&quot;&gt;&#10;&lt;div class=&quot;left4&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left3&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left2&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;div class=&quot;left1&quot;&gt;&amp;nbsp;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;</Data></Cell>
+    <Cell><Data ss:Type="String">液晶显示屏 液晶顯示屏 شاشة Bildschirm экран Ecran tabing 화면 skrin tela 画面 Skärm จอภาพ ekran οθόνη pantalla Schermo</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">451</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Selected/>
+   <LeftColumnVisible>2</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>14</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <x:ExcelWorkbook></x:ExcelWorkbook>
+</Workbook>

@@ -1,0 +1,61 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+    $_product = $this->getProduct();
+    $_id = $_product->getId();
+?>
+<?php if ($_product->getCanShowPrice() !== false):?>
+    <div class="price-box">
+    <?php if (($_min = $this->getMinAmount()) && ($_max = $this->getMaxAmount()) && ($_min == $_max)): ?>
+        <span class="price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+            <?php echo Mage::helper('core')->currency($_min, true, false) ?>
+        </span>
+    <?php /* elseif (($_min = $this->getMinAmount()) && ($_max = $this->getMaxAmount())): ?>
+        <span class="price" id="min-product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+            <?php echo Mage::helper('core')->currency($_min, true, false) ?>
+        </span>
+        <span class="label">...</span>
+        <span class="price" id="max-product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+            <?php echo Mage::helper('core')->currency($_max, true, false) ?>
+        </span>
+    <?php */ elseif (($_min = $this->getMinAmount()) && $_min != 0): ?>
+        <span class="label"><?php echo Mage::helper('enterprise_giftcard')->__('From') ?></span>
+        <span class="price" id="min-product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+            <?php echo Mage::helper('core')->currency($_min,true,false) ?>
+        </span>
+    <?php /*elseif ($_max = $this->getMaxAmount()): ?>
+        <span class="label"><?php echo Mage::helper('enterprise_giftcard')->__('Up To') ?></span>
+        <span class="price" id="max-product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+            <?php echo Mage::helper('core')->currency($_max,true,false) ?>
+        </span>
+    <?php */endif; ?>
+    </div>
+<?php endif; ?>

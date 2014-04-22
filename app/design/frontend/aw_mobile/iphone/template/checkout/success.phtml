@@ -1,0 +1,57 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+    $_helper = Mage::helper('awmobile');
+?>
+<div class="page-head">
+    <h3><?php echo $this->__('Your order has been received') ?></h3>
+</div>
+<div class="login-box">
+    <p><strong><?php echo $this->__('Thank you for your purchase!') ?></strong></p>
+    <?php if ($this->getOrderId()):?>
+        <?php if ($this->getCanViewOrder()) :?>
+            <p><?php echo $this->__('Your order # is: %s.', sprintf('<a href="%s">%s</a>', $_helper->escapeHtml($this->getViewOrderUrl()), $_helper->escapeHtml($this->getOrderId()))) ?></p>
+        <?php  else :?>
+            <p><?php echo $this->__('Your order # is: %s.', $_helper->escapeHtml($this->getOrderId())) ?></p>
+        <?php endif;?>
+            <p><?php echo $this->__('You will receive an order confirmation email with details of your order and a link to track its progress.') ?></p>
+        <?php if ($this->getViewOrder() && $this->getCanPrintOrder()) :?>
+            <p>
+                <?php echo $this->__('Click <a href="%s" onclick="this.target=\'_blank\'">here to print</a> a copy of your order confirmation.', $this->getPrintUrl()) ?>
+                <?php echo $this->getChildHtml() ?>
+            </p>
+        <?php endif;?>
+    <?php endif;?>
+    
+    <div class="button-set a-center">
+        <button type="button" class="form-button" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
+    </div>
+</div>

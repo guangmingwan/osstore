@@ -1,0 +1,26 @@
+<div class="polulartags block">
+	<h3>Polular Tags</h3>
+    <div class="content">
+    	
+        <ul class="months"> 
+              <?php
+			  
+			  foreach($this->getLatestTags() as $tag){
+				  
+				    $url=Mage::helper("lbtags")->makeTagsUrl($tag->getIdentifier()); 
+                $title=$tag->getName();
+                
+				
+				
+			  ?>
+              
+                <li><a href="<?php echo $url;?>" title="<?php echo $title;?>"><?php echo $title;?></a></li>
+                <?php
+			  }
+				?>
+                
+                            </ul>
+    
+    </div>
+    
+</div>

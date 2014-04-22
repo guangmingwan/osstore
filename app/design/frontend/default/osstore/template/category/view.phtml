@@ -1,0 +1,66 @@
+﻿<?php /* $count = $this->countParents();
+$numCol = 3;
+$pct = (100/$numCol);
+$resource = Mage::getSingleton('core/resource'); 
+$read = $resource->getConnection('catalog_read'); 
+*/ ?>
+<div style="width:953px;float:left;">
+<?php 
+	$baseUrl = Mage::getBaseUrl();
+	$baseUrl = str_replace('/index.php', '', $baseUrl);
+ ?>
+	<?php $i=0; foreach ($this->getAllCategory() as $cat):
+		if ($cat->getIsActive()): ?>
+			<div class="category-list" >
+				
+				<?php/*
+					$category = Mage::getModel("catalog/category")->load($cat->getId());
+					$catImageUrl = $this->helper('catalog/image')->init($category, 'image')->keepFrame(false)->resize(100);
+			    	if($category->getImage())
+			    	{
+						$_imgHtml = '<div style="width:20%;float:left;" align="left"><a href = '.Mage::helper('catalog/category')->getCategoryUrl($cat).'>'.'<img src="'.$catImageUrl.'" width="100" height="80" alt="'.$this->htmlEscape($cat->getName()).'" /></a></div>';
+				    	echo ($_imgHtml);
+			    	}
+			    */?>
+			    <?php	
+			    $category = Mage::getModel("catalog/category")->load($cat->getId());			
+			    $catImageUrl = $this->getCatImageUrl($cat->getId());
+			    if($category->getImage())
+			    {
+		    	$_imgHtml = '<div style="width:20%;float:left;" align="left"><a href = '.Mage::helper('catalog/category')->getCategoryUrl($cat).'>'.'<img src="'.$catImageUrl.'" alt="'.$this->htmlEscape($cat->getName()).'" width="100px" height="80"/></a></div>';
+		    	echo ($_imgHtml);
+		    	}
+		    	?>
+		    	
+			    <div style="width:70%;float:left">
+				    <h6 class="category-title"><a href = '<?php echo Mage::helper('catalog/category')->getCategoryUrl($cat) ?>'><?php echo $cat->getName() ?></a></h6>
+				    <?php 
+			     	if ($this->getAllSubCategory($cat))
+			    	{
+			    	 $allsub = $this->getAllSubCategory($cat);
+					 $j=0;
+			    	 }
+			    	?>	
+			    	<div class="sub-category-item">
+			    		<ul>
+					<?php
+					   foreach ($allsub as $als){
+					   if($j++<=8){
+					   	 $amy='<li><a href='.Mage::helper('catalog/category')->getCategoryUrl($als).'>'.$als->getName() .'</a></li>';
+					   	 $amy2='<li class="amymore"><a href='.Mage::helper('catalog/category')->getCategoryUrl($cat).'>More >></a></li>';
+						 echo ($amy);}
+						 else{
+						 echo ($amy2);
+						 break;
+						 
+						 }
+						 ?>
+						 <?php /*$j++;if($j>=4) break;*/}?>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		<?php endif ?>
+	<?php endforeach ?> 
+	
+</div>

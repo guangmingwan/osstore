@@ -1,0 +1,166 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="footer-container">
+	<div class="footer">
+
+         <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('community-block')->toHtml() ?>
+	 <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-cms-links')->toHtml() ?>
+
+<div class="footer_block">
+			<ul class="mar_t2">
+				<li><span>企业信息</span>
+					<ul class="mar_t1">
+						<li><a 
+							href="<?php echo $this->getbaseurl() ?>about">关于我们</a></li>
+						<li><a 
+							href="<?php echo $this->getbaseurl() ?>category">网站导航</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>about">工作时间</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">在线洽谈</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">联系我们</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>公司政策</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">用户协议</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">退款政策</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">保密协议</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">贸易经理人</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">联署计划</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>付款&运费</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">支付方式</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">货运向导</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">发货地点</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">交货时间</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">订单查询</a></li>
+					</ul></li>
+			</ul>
+
+			<ul class="mar_t2">
+				<li><span>售后服务</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow"
+							href="<?php echo $this->getbaseurl() ?>">帮助页面</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">提交请求</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">保修服务</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">购物流程</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">寻求供应商</a></li>
+					</ul></li>
+			</ul>
+			
+			
+			
+			<ul class="follow_box">
+				<li><span>关注我们</span></li>
+					<ul class="follow_us">
+						<li><a rel="nofollow"
+							class="icn fb"
+							href="https://www.facebook.com/osstore001">facebook</a></li>
+						<li><a rel="nofollow"
+							class="icn b"
+							href="http://t.qq.com/osstore">腾讯微博</a></li>
+						<li><a rel="nofollow"
+							class="icn tw"
+							href="http://www.twitter.com/osstore/">twitter</a></li>
+						<li><a rel="nofollow"
+							class="icn tb"
+							href="http://weibo.com/osstore">新浪微博</a></li>
+						<li><a rel="nofollow"
+							class="icn db"
+							href="http://blog.os-store.com.cn">osblog</a></li>
+						<li><a rel="nofollow"
+							class="icn g"
+							href="https://plus.google.com/106733744390762472275/posts">google+</a></li>
+					</ul>
+					
+					<?php echo $this->getChildHtml('footer.newsletter')?>
+			</ul>
+
+			
+		<ul  class="allsites" >
+		<div class="sites0">
+			<div class="sites">
+			<?php /*
+				United States
+					<b class="gf-if gspr flus"></b>
+					<b id="gf-fbtn-arr"></b>
+				*/ ?>
+					<a href="<?php echo $this->getbaseurl() ?>site"><img src="<?php echo $this->getskinurl() ?>images/USA_icon.jpg" /></a>
+			</div>
+			<?php /*
+			<div class="subsites" id="site">
+			<a href="<?php echo $this->getbaseurl() ?>site"><img src="<?php echo $this->getskinurl() ?>images/allsites.jpg" /></a>
+			</div>
+			*/ ?>
+		</div>
+		
+		
+		</ul>
+			
+		<ul style="float:left;margin-left:0;">
+		<?php echo $this->getChildHtml('topSearch2') ?>
+		</ul>
+		
+					<div class="os_b2b">
+					<a href="http://www.os-trade.com">
+					<img src="<?php echo $this->getskinurl() ?>images/os_b2b.gif">
+					</a>
+					</div>
+		
+
+			<div class="clear">&nbsp;</div>
+		</div>
+
+		<?php /* 
+		<div class="tag-newsletter">
+	     <?php //echo $this->getChildHtml('tags_popular') ?>
+	     <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('map')->toHtml()?>
+	     <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('secure')->toHtml()?>
+	     <?php //echo $this->getChildHtml('footer.newsletter')?>
+	 </div>
+	 */ ?>
+		<div style="text-align: center;">
+			<img src="<?php echo $this->getSkinUrl('images/payment.gif') ?>" />
+		</div>
+
+		<address><?php echo $this->getCopyright() ?>
+		<span style="margin-left:5px;"><script src="http://s11.cnzz.com/stat.php?id=2937650&web_id=2937650&show=pic" language="JavaScript"></script></spans>
+		</address>
+	</div>
+<div id="scroll" onclick="goTop();return false;"></div>
+</div>
+

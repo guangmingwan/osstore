@@ -1,0 +1,21 @@
+<div class="block producttags">
+	<h3><?php echo $this->__("Product Tags");?></h3>
+    <div class="producttaglist">
+    	
+        <ul class="producttagsul">
+          <?php
+		$taglist=Mage::helper('lbtags')->getAlphabet();
+		 
+		 foreach($taglist as $tag):
+		 ?>
+         
+         <li <?php echo $identifier==$tag?"class='active_alphaindex'":"";?>><a href="<?php echo Mage::helper('lbtags')->getURL();?><?php echo $tag;?>"><?php echo $tag;?></a></li>
+         <?php
+		 endforeach;
+		 ?>
+         <li><a  href="<?php echo Mage::helper('lbtags')->getURL();?>0-9"><?php echo Mage::helper('lbtags')->getIntegers();?></a></li>
+         
+        </ul>
+    
+    </div>
+</div>

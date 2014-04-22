@@ -1,0 +1,56 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="a-right"><a href="" onclick="window.close();return false;"><?php echo $this->__('Close Window') ?></a></div>
+<?php $_width=$this->getImageWidth() ?>
+<div class="a-center"><?php if($_prevUrl = $this->getPreviusImageUrl()): ?>
+<a href="<?php echo $_prevUrl ?>" class="product-gallery-nav"><strong>&laquo; <?php echo $this->__('Prev') ?></strong></a>
+<?php endif; ?>
+<?php if($_nextUrl = $this->getNextImageUrl()): ?>
+<a href="<?php echo $_nextUrl ?>" class="product-gallery-nav"><strong><?php echo $this->__('Next') ?> &raquo;</strong></a>
+<?php endif; ?>
+</div>
+<div class="a-left"><?php echo $this->htmlEscape($this->getCurrentImage()->getLabel()) ?></div>
+<div class="clear"></div>
+<p><img<?php if($_width): ?> width="<?php echo $_width ?>"<?php endif; ?> src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $this->getImageFile()); ?>" alt="<?php echo $this->htmlEscape($this->getCurrentImage()->getLabel()) ?>" title="<?php echo $this->htmlEscape($this->getCurrentImage()->getLabel()) ?>" id="product-gallery-image" /></p>
+<div class="a-center"><?php if($_prevUrl = $this->getPreviusImageUrl()): ?>
+<a href="<?php echo $_prevUrl ?>" class="product-gallery-nav"><strong>&laquo; <?php echo $this->__('Prev') ?></strong></a>
+<?php endif; ?>
+<?php if($_nextUrl = $this->getNextImageUrl()): ?>
+<a href="<?php echo $_nextUrl ?>" class="product-gallery-nav"><strong><?php echo $this->__('Next') ?> &raquo;</strong></a>
+<?php endif; ?>
+</div>
+<div class="a-right"><a href="" onclick="window.close();return false;"><?php echo $this->__('Close Window') ?></a></div>
+<script type="text/javascript">
+Event.observe(window, 'load', function(){
+    var demensions = $('product-gallery-image').getDimensions();
+    window.resizeTo(demensions.width+100, demensions.height+160);
+});
+</script>

@@ -1,0 +1,132 @@
+<!--<div class="debug"></div>-->
+ <div class="category-images">
+     
+<div class="mobile_home">
+        
+            <li class="item">
+            <div>
+                                <a href="http://www.os-trade.com/apple-iphone-ipad-ipod.html?___SID=U" title="Apple iPhone iPad iPod" class="product-image" >
+                	                    	<img src="http://www.os-trade.com/media/catalog/category/np_thumb2.gif"  height="120" width="160" alt="Apple iPhone iPad iPod" />
+					                </a>
+                                <h2><a href="http://www.os-trade.com/apple-iphone-ipad-ipod.html?___SID=U" title="Apple iPhone iPad iPod"  class="easycategoriesroot">Apple iPhone iPad iPod</a></h2>
+            </div>
+        </li>   
+    	                <li class="item">
+            <div>
+                                <a href="http://www.os-trade.com/3g-wireless-card.html?___SID=U" title="3G &amp; Wireless Card" class="product-image" >
+                	                    	<img src="http://www.os-trade.com/media/catalog/category/np_thumb2.gif"  height="120" width="160" alt="3G &amp; Wireless Card" />
+					                </a>
+                                <h2><a href="http://www.os-trade.com/3g-wireless-card.html?___SID=U" title="3G &amp; Wireless Card"  class="easycategoriesroot">3G &amp; Wireless Card</a></h2>
+            </div>
+        </li>   
+    	                <li class="item">
+            <div>
+                                <a href="http://www.os-trade.com/mid-tablet-pc.html?___SID=U" title="MID Tablet PC" class="product-image" >
+                	                    	<img src="http://www.os-trade.com/media/catalog/category/np_thumb2.gif"  height="120" width="160" alt="MID Tablet PC" />
+					                </a>
+                                <h2><a href="http://www.os-trade.com/mid-tablet-pc.html?___SID=U" title="MID Tablet PC"  class="easycategoriesroot">MID Tablet PC</a></h2>
+            </div>
+        </li>   
+    	                <li class="item">
+            <div>
+                                <a href="http://www.os-trade.com/computer.html?___SID=U" title="Computer" class="product-image" >
+                	                    	<img src="http://www.os-trade.com/media/catalog/category/np_thumb2.gif"  height="120" width="160" alt="Computer" />
+					                </a>
+                                <h2><a href="http://www.os-trade.com/computer.html?___SID=U" title="Computer"  class="easycategoriesroot">Computer</a></h2>
+            </div>
+        </li>   
+        	 
+
+</div>
+        
+</div>
+
+
+<div class="header-nav-container">
+    <div id="home" class="header-nav current">
+        <script type="text/javascript">
+            homeCatId = 427;
+        </script>
+                <div></div>
+        <ul id="nav">
+                    <li class="arrow">
+                                <a href="http://www.os-trade.com/apple-iphone-ipad-ipod.html?___SID=U">Apple iPhone iPad iPod</a>
+                <script type="text/javascript">
+                    catPath[429] = '1/427/429';
+                    catUrl[429] = 'http://www.os-trade.com/apple-iphone-ipad-ipod.html?___SID=U';
+                </script>
+            </li>
+                                <li class="arrow">
+                                <a href="http://www.os-trade.com/3g-wireless-card.html?___SID=U">3G &amp; Wireless Card</a>
+                <script type="text/javascript">
+                    catPath[430] = '1/427/430';
+                    catUrl[430] = 'http://www.os-trade.com/3g-wireless-card.html?___SID=U';
+                </script>
+            </li>
+                                <li class="arrow">
+                                <a href="http://www.os-trade.com/mid-tablet-pc.html?___SID=U">MID Tablet PC</a>
+                <script type="text/javascript">
+                    catPath[431] = '1/427/431';
+                    catUrl[431] = 'http://www.os-trade.com/mid-tablet-pc.html?___SID=U';
+                </script>
+            </li>
+                                <li class="arrow">
+                                <a href="http://www.os-trade.com/computer.html?___SID=U">Computer</a>
+                <script type="text/javascript">
+                    catPath[432] = '1/427/432';
+                    catUrl[432] = 'http://www.os-trade.com/computer.html?___SID=U';
+                </script>
+            </li>
+            			<li>
+			  <a href="http://www.os-trade.com/categories">See All Categories</a>
+			 </li>
+        </ul>
+                <div class="newsletter-box a-center">
+    <div class="head">
+        <h4 class="subscription-header">Sign up for our newsletter:<a name="newsletter-box"></a></h4>
+    </div>
+<form action="http://www.os-trade.com/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
+    <fieldset class="content">
+            <div class="input-box bottom-space"><input name="email" type="text" id="newsletter" class="required-entry validate-email input-text" /></div>
+            <button type="submit" class="form-button button-space"><span><span>Subscribe</span></span></button>
+    </fieldset>
+</form>
+<script type="text/javascript">
+<!--    
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+
+    Event.observe($('newsletter-validate-detail'), 'submit', function(ev){
+
+        var suTimer = setInterval(function(){
+           if ($('newsletter').hasClassName('validation-failed')){
+               $j('div.header-nav-container').height($j('div.current').height());          
+           }
+           clearInterval(suTimer);
+        }, 300);       
+       
+    });
+    Event.observe($('newsletter'), 'focus', function(ev){
+        var suTimer = setInterval(function(){
+           if ($('newsletter').hasClassName('validation-failed')){
+               if ($('advice-required-entry-newsletter')){
+                   $j('div.header-nav-container').height($j('div.current').height());
+               }           
+           }
+           clearInterval(suTimer);
+       }, 300); 
+    });    
+//-->
+</script>
+</div>
+<div class="clear"></div>
+   
+
+   </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+<div style="clear: both;"></div>
+
+
+<script type="text/javascript">
+    var navigation = new MobileNavigation();
+</script>

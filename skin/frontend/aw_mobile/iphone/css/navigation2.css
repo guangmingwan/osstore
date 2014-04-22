@@ -1,0 +1,199 @@
+/*
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+div.col-main.is_cms > *{
+margin:0px;}
+div.debug {
+    background-color:#A5ADBC;
+    border:1px solid grey;
+    color:black;
+    display:block;
+    height:40px;
+    left:0;
+    position:absolute;
+    top:0;
+    width:280px;
+    z-index:777;
+}
+
+div.debug.red {
+    background-color: #ffaaaa;
+}
+
+
+
+div.header-nav-container > * {
+    display: none;
+}
+
+div.header-nav-container div.current, div.header-nav-container div.visible {
+    display: block;
+}
+
+body.wide .header-nav {
+/*    width: 480px;*/
+    
+}
+
+.header-nav {
+/*    width: 320px;*/
+    width: 100%;
+    float: left;
+    /*position: absolute;*/
+}
+
+.header-nav-container {
+    position: relative;
+    float:none;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+
+body.wide .header-nav-container {
+/*    width: 480px;*/
+}
+
+
+.go-to#cat {    
+    background-color:#CCCCCC;
+    bottom:30px;
+    float:right;
+    height:22px;
+    font-size:16px;
+    left:-29px;
+    position:relative;
+    width:27px;
+    z-index:33;    
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -webkit-box-shadow:1px 2px 5px -1px #888888 inset;
+    -moz-box-shadow:1px 2px 5px -1px #888888 inset;
+}
+
+.go-to#cat a, .go-to#cat a:hover {
+    background-image:none;
+    border:medium none;
+    height:25px;
+    margin:0;
+    padding:0;
+    padding-top: 2px;
+    text-decoration:none;
+    text-align: center;
+    width:27px;
+
+}
+
+ul#nav li.arrow a {
+    -webkit-tap-highlight-color: rgba(100%,100%,100%, 0) !important;
+}
+
+ul#nav li.arrow a.to_child {
+    background:transparent url(../images/menu-arrow.gif) no-repeat 100% 50%;
+}
+
+ul#nav li.arrow a.to_child:hover{
+    background:transparent url(../images/menu-arrow-swap.gif) no-repeat 100% 50%;
+	background-color: #f12f23;
+	color: #FFFFFF;
+}
+ul#nav li.arrow a.hover{
+	background-color: #f12f23;
+	color: #FFFFFF;
+}
+
+#nav { font:bold 20px Helvetica;}
+#nav li{
+    padding:0px;
+    border-bottom:1px solid #E0E0E0;
+}
+#nav ul li { font-weight:normal; padding:1px 0; }
+
+#nav a, #nav a:hover { 
+    display:block;
+    text-decoration:none;
+    padding:8px 0px 9px 10px;
+}
+
+#nav span { display:block; cursor:pointer; white-space:nowrap; }
+
+#nav li ul span { white-space:normal; }
+#nav li.active a { color:#7d90ae; }
+#nav a { padding:8px 0px 9px 10px; color:#7d90ae;color:#797c7f; }
+#nav .level0 li a { padding-left:10px; }
+#nav .level1 li a { padding-left:20px; }
+#nav .level3 li a { padding-left:30px; }
+#nav .level4 li a { padding-left:40px; }
+#nav .level5 li a { padding-left:50px; }
+
+.touchBack {
+    display: block;
+    -webkit-transition-property: -webkit-transform;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 210ms;
+}
+
+.parking {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 170ms;
+}
+
+.slide.animated {
+    position: absolute;
+}
+
+.in, .out {
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 350ms;
+}
+
+.slide.in {
+	-webkit-animation-name: slideinfromright;
+}
+
+.slide.out {
+	-webkit-animation-name: slideouttoleft;
+}
+
+.slide.in.reverse {
+	-webkit-animation-name: slideinfromleft;
+}
+
+.slide.out.reverse {
+	-webkit-animation-name: slideouttoright;
+}
+
+
+@-webkit-keyframes slideinfromright {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideinfromleft {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideouttoleft {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slideouttoright {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}

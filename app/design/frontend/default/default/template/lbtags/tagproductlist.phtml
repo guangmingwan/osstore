@@ -1,0 +1,58 @@
+<?php 
+
+//echo $this-getChildHtml("azbar"); 
+$tag=$this->getTags();
+  $_helper = $this->helper('catalog/output');
+$_productCollection=$this->getProductListing();
+$_columnCount=4;
+$_collectionSize=12;
+$currentPage = (int)$this->getRequest()->getParam('identifier_page');
+if($currentPage>1){
+	$pagehtml=" - page ".$currentPage." ";
+}
+
+?>
+<div class="mageasia_tags_widget">
+
+<h1 class="tagheadh1">You Are Shopping For "<?php echo $tag->getName();?>"<?php echo $pagehtml;?> </h1>
+<div class="productlist">
+	
+    
+     <?php $i=0; foreach ($_productCollection as $_product): ?>
+        <?php if ($i++%$_columnCount==0): ?>
+        <ul >
+        <?php endif ?>
+            <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
+                <?php if($_product->getRatingSummary()): ?>
+                <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                <?php endif; ?>
+                <?php echo $this->getPriceHtml($_product, true) ?>
+               <?php /*?> <div>Item: <?php echo $_product->getSku();?></div><?php */?>
+            </li>
+        <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
+        </ul>
+        <?php endif ?>
+        <?php endforeach ?>
+
+</div>
+   <?php  
+  $pagehtml= $this->getPages();
+  if($this->pagetotal>1){
+	?>   <div class="pagenav"> <?php echo $pagehtml; ?></div>
+ 
+  <?php
+  }
+  
+   ?>  
+<div class="tagdescription">
+
+<div class="intagscommont">
+ 
+<?php
+ 
+
+ echo nl2br($tag->getComments());?>
+</div>
+</div></div>

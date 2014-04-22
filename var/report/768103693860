@@ -1,0 +1,11 @@
+a:4:{i:0;s:63:"SQLSTATE[HY000]: General error: 2006 MySQL server has gone away";i:1;s:1558:"#0 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#2 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `core_we...', Array)
+#4 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `core_we...', Array)
+#5 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/lib/Zend/Db/Adapter/Abstract.php(773): Varien_Db_Adapter_Pdo_Mysql->query(Object(Varien_Db_Select), Array)
+#6 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/app/code/core/Mage/Core/Model/Resource/Config.php(63): Zend_Db_Adapter_Abstract->fetchAssoc(Object(Varien_Db_Select))
+#7 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/app/code/core/Mage/Core/Model/Config.php(354): Mage_Core_Model_Resource_Config->loadToXml(Object(Mage_Core_Model_Config))
+#8 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/app/code/core/Mage/Core/Model/Config.php(260): Mage_Core_Model_Config->loadDb()
+#9 /var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/cron.php(44): Mage_Core_Model_Config->init()
+#10 {main}";s:11:"script_name";s:69:"/var/www/vhosts/ns5001601.ip-192-95-33.net/www.os-store.com/index.php";s:4:"skin";s:5:"admin";}

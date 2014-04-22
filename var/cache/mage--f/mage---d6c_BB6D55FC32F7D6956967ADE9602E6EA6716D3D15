@@ -1,0 +1,195 @@
+﻿<div class="footer-container">
+	<div class="footer">
+
+         	 
+<div class="footer_block">
+			<ul class="mar_t2">
+				<li><span>Compnay Info</span>
+					<ul class="mar_t1">
+						<li><a 
+							href="http://www.os-store.ca/about">About Us</a></li>
+						<li><a 
+							href="http://www.os-store.ca/category">Site Map</a></li>
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/about">Location & Working Hours</a></li>
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/contacts">Online Live Chat</a></li>
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/contacts">Contact Us</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>Company Policies</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/contacts">User Agreement</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Return Policy</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Privacy Policy</a></li>
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/contacts">Trade Brokers</a></li>
+						<li><a rel="nofollow" 
+							href="http://www.os-store.ca/contacts">Affiliate Program</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>Payment & Shipping</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Payment Methods</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Shipping Method Guide</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Locations We Ship To</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Estimated Delivery Time</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Track Order</a></li>
+					</ul></li>
+			</ul>
+
+			<ul class="mar_t2">
+				<li><span>Customer Service</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Help & Knowledge Page</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Submit Request</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">RMA Request</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">How to Buy</a></li>
+						<li><a rel="nofollow" href="http://www.os-store.ca/">Supplier 寻求供应商</a></li>
+					</ul></li>
+			</ul>
+			
+			
+			
+			<ul class="follow_box">
+				<li><span>Follow Us</span></li>
+					<ul class="follow_us">
+						<li><a rel="nofollow"
+							class="icn fb"
+							href="https://www.facebook.com/osstore">facebook</a></li>
+						<li><a rel="nofollow"
+							class="icn b"
+							href="http://www.linkedin.com/in/osstore">linkedin</a></li>
+						<li><a rel="nofollow"
+							class="icn tw"
+							href="http://www.twitter.com/osstore/">twitter</a></li>
+						<li><a rel="nofollow"
+							class="icn tb"
+							href="http://www.youtube.com/osstore">youtube</a></li>
+						<li><a rel="nofollow"
+							class="icn db"
+							href="http://blog.os-store.com">osblog</a></li>
+						<li><a rel="nofollow"
+							class="icn g"
+							href="https://plus.google.com/106733744390762472275/posts">google+</a></li>
+					</ul>
+					
+					    <div class="newsletterbox">
+    <div class="newsletter_info">
+        Newsletter to get exclusive offers !!    </div>
+    <div class="newsletter_subscribe">
+    <form action="http://www.os-store.ca/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
+
+               <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" maxlength="100" class="txt_mail txtNewsLetter" />
+
+                <input type="submit" title="go" value="go" class="btn_go btnNewsletter" name="button">
+
+
+    </form>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+
+</div>
+    
+  					
+
+			</ul>
+
+			
+		<ul  class="allsites" >
+		<div class="sites0">
+			<div class="sites">
+								<a href="http://www.os-store.ca/site"><img src="http://www.os-store.ca/skin/frontend/default/se101/images/USA_icon.jpg" /></a>
+			</div>
+					</div>
+		
+
+		</ul>
+			
+		<ul style="float:left;margin-left:0;margin-top:10px;margin-bottom:-10px;">
+		<form id="search_mini_form" action="http://www.os-store.ca/catalogsearch/result/?___SID=U" method="get">
+	<fieldset>
+	   <table height="33" cellspacing="0" cellpadding="0" border="0" width="472">
+	        <tbody>
+		  <tr>
+
+		    <td id="nav-search-field" align="left" width="260"> <input id="search" type="text" class="input-live-search" name="q" value="" /></td>
+		   <td class="category_search_select" width="90">
+		    <select name="cat" id="cat" >
+			<option value="">All Categories</option>
+			<option class="parent-cat" value="13" >Mobile Phone & Parts</option>
+<option class="parent-cat" value="118" >Computer</option>
+<option class="parent-cat" value="130" >IC Chipset</option>
+<option class="parent-cat" value="133" >Projector</option>
+<option class="parent-cat" value="134" >Digital Products</option>
+<option class="parent-cat" value="135" >Video Game</option>
+<option class="parent-cat" value="136" >Camera & Parts</option>
+<option class="parent-cat" value="137" >Software</option>
+<option class="parent-cat" value="142" >HouseHold & Office Item</option>
+<option class="parent-cat" value="221" >3G & Wireless Card</option>
+<option class="parent-cat" value="238" >Professional Tools</option>
+<option class="parent-cat" value="255" >Tablet PC & Parts</option>
+<option class="parent-cat" value="275" >Apple STORE</option>
+<option class="parent-cat" value="309" >Converter</option>
+<option class="parent-cat" value="310" >Other</option>
+<option class="parent-cat" value="318" >Special Offer</option>
+<option class="parent-cat" value="372" >Connectors</option>
+<option class="parent-cat" value="377" >Security Products</option>
+<option class="parent-cat" value="413" >FoodStuff</option>
+<option class="parent-cat" value="479" >Motors & Accessories</option>
+		    </select>
+		    </td>
+		   
+		   <td align="center" width="45" style="text-align:center">
+		      <input type="image" style="margin-top:1px;" src="http://www.os-store.ca/skin/frontend/default/se101/images/nav_searchbar_submit.gif" alt="search" />
+		   </td>
+		    <td align="center" width:="77">
+			<a href="http://www.os-store.ca/catalogsearch/advanced/?___SID=U">Advanced</a>
+		   </td>
+			<div id="search_autocomplete" class="search-autocomplete"></div>
+			<script type="text/javascript">
+			//<![CDATA[
+				var searchForm = new Varien.searchForm('search_mini_form', 'search', 'search site...');
+				searchForm.initAutocomplete('http://www.os-store.ca/catalogsearch/ajax/suggest/?___SID=U', 'search_autocomplete');
+			//]]>
+			</script>
+			</div>
+		  </tr>
+		</tbody>
+	    </table>
+	</fieldset>
+</form>		</ul>
+		
+					<div class="os_b2b">
+					<a href="http://www.os-trade.com">
+					<img src="http://www.os-store.ca/skin/frontend/default/se101/images/os_b2b.gif">
+					</a>
+					</div>
+		
+		
+
+			<div class="clear">&nbsp;</div>
+		</div>
+
+				<div style="text-align: center;">
+			<img src="http://www.os-store.ca/skin/frontend/default/se101/images/payment.gif" />
+		</div>
+
+		<address>Since 2008-2014 Original Source Trade Co., Ltd. All Rights Reserved.
+ 
+			  <div style="text-align:center;margin-left:5px;float:left;"><script src="http://s11.cnzz.com/stat.php?id=2937650&web_id=2937650&show=pic" language="JavaScript"></script></div></address>
+
+
+
+	</div>
+<div id="scroll" onclick="goTop();return false;"></div>
+</div>
+

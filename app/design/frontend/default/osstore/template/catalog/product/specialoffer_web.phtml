@@ -1,0 +1,77 @@
+	<div class="offer_amy">
+		<div class="offer_name">
+		<div class="offer_title">Special offer >>></div>
+		<div class="offer_more"><a href="special-offer.html">More>>></a></div>
+		</div>
+<ul>
+<?php
+$bestseller =Mage::getModel('catalog/category')->load(3);	
+$best_collection = $bestseller->getProductCollection();	
+$arr1=array();
+foreach ($best_collection as $best_product)
+{
+	$best_product_id =  $best_product->getId();
+	$arr1[]=$best_product_id;
+}
+?>
+<?php 
+if(sizeof($arr1) >= 5) 
+{ 
+	$arr2 = array_rand($arr1,5); 
+	foreach($arr2 as $id){
+	$product_model = Mage::getModel('catalog/product');
+	$product_amy = $product_model->load($arr1[$id])->setOrder('SKU', 'desc');								
+?>
+					<?php if($product_amy->isSaleable()):?>
+					<li>
+						<div class="content_amy">
+							<div class="image_amy">
+								<a href="<?php echo $product_amy->getProductUrl() ?>" title="<?php echo $product_amy->getName(); ?>">
+									<img src="<?php echo $this->helper('catalog/image')->init($product_model, 'image')->resize(95,95); ?>" width="95" height="95" alt="<?php echo $product_amy->getName(); ?>" title="<?php echo $product_amy->getName(); ?>" />
+								</a>
+							</div>
+							
+							<div class="name_amy">
+								<a title='<?php echo $product_amy->getName(); ?>' href='<?php echo $product_amy->getProductUrl() ?>'>
+								<span>
+									<?php 
+									if(strlen($product_amy->getName())<=55)
+									echo $product_amy->getName();
+									else
+									echo substr($product_amy->getName(),0,55).'...';
+									?>
+								</span></a>
+							</div>
+							
+							<div>
+							
+								<!--Price-->
+												<?php $_taxHelper  = $this->helper('tax');?>
+												<?php $_coreHelper  = $this->helper('core');?>
+												<?php $_simplePricesTax = ($_taxHelper->displayPriceIncludingTax() || $_taxHelper->displayBothPrices());?>
+												<?php $_regularPrice = $_taxHelper->getPrice($product_amy, $product_amy->getPrice(), $_simplePricesTax) ?>
+												<?php $_finalPrice = $_taxHelper->getPrice($product_amy, $product_amy->getData('special_price')) ?>
+								<!--Price end-->
+
+								<div class="original_price">
+									<span ><?php echo $_coreHelper->currency($_regularPrice,true,false);?></span>
+								</div>
+						
+							</div>
+			                <p >			
+							<?php //if($product_amy->isSaleable()): ?>		
+							<button  class="btn-cart" type="button"  title="<?php echo $this->__('Add to Cart') ?>" onclick="setLocation('<?php echo $this->getAddToCartUrl($product_amy) ?>')">
+							<span class="text-cart"><?php echo $this->__('Add to Cart') ?></span></button>
+			                <?php //endif; ?>	
+							</P>
+						</div>
+						
+					</li>
+					<?php endif; ?>
+					<?php  } }?>
+</ul>
+
+
+		<div class="clear"></div>	
+	</div>
+

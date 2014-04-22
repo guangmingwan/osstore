@@ -1,0 +1,44 @@
+<?php 
+$code=trim($this->getRequest()->getParam('identifier_code'));
+$page=trim($this->getRequest()->getParam('identifier_page'));
+$tagslist= $this->getTagsList(); 
+
+?>
+<div class="mageasia_tags_widget">
+
+	<?php 
+    
+    echo $this->getChildHtml("azbar"); 
+    
+    ?>
+<h1 class="tagheadh1">TAG LIST <?php echo $code;?> <?php if($page>1){ echo " - page ".$page." ";}?></h1>
+    <div class="tagslist">
+    
+        <ul>
+            <?php $tags = $this->getTagsList(); ?>
+        <?php if(count($tags)): ?>
+            <?php foreach ($tags as $tag):  
+            
+            
+            $url=Mage::helper("lbtags")->makeTagsUrl($tag->getIdentifier()); 
+                $title=$tag->getName();
+                
+                 
+            ?>
+            <li>
+                <a href="<?php echo $url;?>" title="<?php echo $title;?>"><?php echo $title;?></a>
+            </li>
+            
+            
+            <?php endforeach; ?>
+        <?php else: ?>  
+        <?php echo Mage::helper('lbtags')->__('No Tags in this List.');?>
+        <?php endif; ?>
+       
+        </ul>
+    
+    </div>
+
+    <div class="pagenav"> <?php $this->getPages(); ?> </div>
+
+</div>

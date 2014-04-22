@@ -1,0 +1,65 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php if($this->getProductData()->getId()): ?>
+    <div class="page-head">
+        <h4><?php echo $this->__('Review Details') ?></h4>
+    </div>
+    <div class="my-review-detail">
+        <div class="product-image">
+            <p><a href="<?php echo $this->getProductData()->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($this->getProductData(), 'small_image')->resize(125, 125); ?>" alt="<?php echo $this->htmlEscape($this->getProductData()->getName()) ?>" height="100" width="100" /></a></p>
+            <?php if( $this->getRating() && $this->getRating()->getSize()): ?>
+              <small><?php echo $this->__('Average Customer Rating') ?>:</small>
+              <?php echo $this->helper('review/product')->getSummaryHtml($this->getProductData()) ?>
+            <?php endif; ?>
+        </div>
+    <div class="details">
+        <h3><?php echo $this->htmlEscape($this->getProductData()->getName()) ?></h3>
+        <?php if( $this->getRating() && $this->getRating()->getSize()): ?>
+        <strong><?php echo $this->__('Product Rating:') ?></strong>
+            <?php foreach ($this->getRating() as $_rating): ?>
+            <?php if($_rating->getPercent()): ?>
+                <div class="ratings">
+                   <?php echo $this->__($this->escapeHtml($_rating->getRatingCode())) ?>
+                    <div class="rating-box">
+                        <div class="rating" style="width:<?php echo ceil($_rating->getPercent()) ?>%;"></div>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <div class="clear"></div>
+        <?php echo $this->__('Product Review (submitted on %s):', $this->dateFormat($this->getReviewData()->getCreatedAt())) ?>
+            <div class="description">
+                <p><?php echo nl2br($this->htmlEscape($this->getReviewData()->getDetail())) ?></p>
+            </div>
+    </div></div>
+    <div class="button-set"><a href="<?php echo $this->getBackUrl() ?>" class="left">&laquo; <?php echo $this->__('Back to Product Reviews') ?></a></div><br />
+<?php endif; ?>

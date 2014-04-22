@@ -1,0 +1,66 @@
+<div class="informational">
+                    <div class="foooter_menu">
+                            <span  class="item first"><a href="http://www.os-store.fr/about-magento-demo-store/?___SID=U" title="About" >About</a></span>
+                <span class="sep">|</span>                            <span  class="item"><a href="http://www.os-store.fr/customer-service/?___SID=U" title="Customer Service" >Customer Service</a></span>
+                <span class="sep">|</span>                            <span  class="item"><a href="http://www.os-store.fr/contacts/?___SID=U" title="Contact" >Contact</a></span>
+                <span class="sep">|</span>                            <span  class="item last"><a href="http://www.os-store.fr/rss/?___SID=U" title="RSS testing" class="link-feed">RSS</a></span>
+                                    </div>
+        
+    <select name="currency" title="Votre devise" onchange="setLocation(this.value)">
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/AUD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar australien - AUD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/GBP/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            livre sterling - GBP        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/CAD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar canadien - CAD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/CNY/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            yuan renminbi chinois - CNY        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/CZK/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            couronne tchèque - CZK        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/EUR/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U" selected="selected">
+            euro - EUR        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/HKD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar de Hong Kong - HKD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/HUF/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            forint hongrois - HUF        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/INR/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            roupie indienne - INR        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/JPY/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            yen japonais - JPY        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/MOP/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            pataca macanaise - MOP        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/MXN/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            peso mexicain - MXN        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/TWD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            nouveau dollar taïwanais - TWD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/NZD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar néo-zélandais - NZD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/NOK/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            couronne norvégienne - NOK        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/PHP/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            peso philippin - PHP        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/PLN/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            zloty polonais - PLN        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/RUB/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            rouble russe - RUB        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/SGD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar de Singapour - SGD        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/ZAR/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            rand sud-africain - ZAR        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/SEK/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            couronne suédoise - SEK        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/CHF/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            franc suisse - CHF        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/THB/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            baht thaïlandais - THB        </option>
+            <option value="http://www.os-store.fr/directory/currency/switch/currency/USD/uenc/aHR0cDovL3d3dy5vcy1zdG9yZS5mci90b29scy9zb2xkZXItdG9vbHMvYmdhLXN0YXRpb24uaHRtbA,,/?___SID=U">
+            dollar des États-Unis - USD        </option>
+        </select>
+    <span class="switcher_menu">
+                    <span  class="item first"><a href="http://www.os-store.fr/awmobile/switch/toDesktop/?___SID=U" title="Desktop Version" >Desktop Version</a></span>
+            </span>
+</div>
+<div class="clear"></div>
+<p class="legality">
+    &copy; 2014 aheadWorks Co.		  <script src="http://s11.cnzz.com/stat.php?id=2937650&web_id=2937650&show=pic" language="JavaScript"></script></div>
+</p>

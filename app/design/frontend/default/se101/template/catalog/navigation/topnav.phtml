@@ -1,0 +1,95 @@
+
+<div class="menutop">
+
+<div class="menutop1">
+
+<span class="menuall"><a href="<?php echo $this->getUrl('category') ?>">Categories</a></span>
+
+
+
+<div class="menutop2">
+	<div class="nav2">
+	<?php $_categories=$this->getStoreCategories(); ?>
+			<ul>
+					<?php 
+					$i=0; 
+					$a='leftnav';
+					foreach ($_categories as $_category){?>				
+					<?php $i++; if ($i>=1){ if($_category->getIsActive()): ?>
+						<li class="<?php echo "$a $i"?>">
+						<h2>
+						<a href="<?php echo $this->getCategoryUrl($_category)?>"><?php echo $_category->getName()?></a>
+						</h2>
+							<ul >
+							<?php 
+							$e=0;	
+							$t='b_top';
+							foreach($_category->getChildren() as $_childCategory){?>
+							<?php $e++; if($e>=1) { if($_childCategory->getIsActive()) :?>  
+
+							<li class="<?php if($e==1){echo "$t";} else {echo " ";} ?>">
+							<h2>
+								<a href="<?php echo $this->getCategoryUrl($_childCategory)?>"><?php echo $_childCategory->getName()?></a>
+							</h2>
+								<ul >
+								<?php 
+								$m=0;	
+								$j='j_top';
+								foreach($_childCategory->getChildren() as $_cchildCategory){?>
+								<?php $m++; if($m>=1) { if($_cchildCategory->getIsActive()) :?> 
+									<li class="<?php if($m==1){echo "$j";}else{echo" ";} ?>">
+									<h2>
+										<a href="<?php echo $this->getCategoryUrl($_cchildCategory)?>"><?php echo $_cchildCategory->getName()?></a>
+									</h2>
+									<ul >
+									<?php 
+									$m=0;	
+									$j='j_top';
+									foreach($_cchildCategory->getChildren() as $_ccchildCategory){?>
+									<?php $m++; if($m>=1) { if($_ccchildCategory->getIsActive()) :?> 
+										<li class="<?php if($m==1){echo "$j";}else{echo" ";} ?>">
+										<h2>
+											<a href="<?php echo $this->getCategoryUrl($_ccchildCategory)?>"><?php echo $_ccchildCategory->getName()?></a>
+										</h2>
+										</li>
+									 <?php endif;?>
+									 <?php } } ?>
+									</ul>
+									
+									
+									
+									
+									
+									</li>
+								 <?php endif;?>
+								 <?php } } ?>
+								</ul>
+							</li>			
+ 							<?php endif;?>
+							<?php } } ?>
+							</ul> 
+						</li>
+					<?php if ($i>=16) break;?>
+
+					<?php endif; ?>	
+					<?php } }  ?> 
+					<?php $i++; {if($i>=16): ?>
+					<li class="leftnav">
+					<a style="font-weight:bold;" href="<?php echo $this->getbaseUrl()?>category">See All Categories</a>
+					</li> 
+					<?php endif; ?>
+					<?php } ?>
+			</ul>
+	</div>
+<div style="clear:both"></div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+			

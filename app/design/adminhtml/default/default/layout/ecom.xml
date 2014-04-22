@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_sales_order_view>
+	    <reference name="order_info">
+			<action method="setTemplate"><template>ecom/sales/order/view/info.phtml</template>
+			</action>
+        </reference>
+	    <reference name="order_totals">
+			<action method="setTemplate"><template>ecom/sales/order/view/totals.phtml</template>
+			</action>
+        </reference>
+    </adminhtml_sales_order_view>
+
+</layout>

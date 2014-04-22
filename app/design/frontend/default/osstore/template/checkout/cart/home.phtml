@@ -1,0 +1,56 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   design_default
+ * @package    Mage
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Shoping cart sidebar
+ *
+ * @see Mage_Checkout_Block_Cart_Sidebar
+ */
+?>
+<div class="home-cart">
+    <div class="head">
+        <?php $_cartQty = $this->getSummaryCount() ?>
+         <?php echo $this->__('My Cart') ?> 
+        
+    </div>
+ 
+ 
+    <?php if ($_cartQty>0): ?>
+    <div class="content1"><p>
+   
+            <?php if ($_cartQty==1): ?>
+                <?php echo $this->__('Have <a href="%s"><strong>1 item</strong></a> in your shopping cart.', $this->getUrl('checkout/cart')) ?>
+            <?php else: ?>
+                <?php echo $this->__('Have <a href="%s"><strong>%s items</strong></a> in your shopping cart.', $this->getUrl('checkout/cart'), $_cartQty) ?>
+            <?php endif ?>
+    
+    </p></div>
+    <?php else: ?>
+    <div class="content1"><p><?php echo $this->__('You have no items in your shopping cart.') ?></p></div>
+    <?php endif ?>
+    
+</div>
+<!-- [ends] .cart-sidebar // -->

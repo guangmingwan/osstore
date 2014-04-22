@@ -1,0 +1,52 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php if($this->getItemCollection()->getSize()): ?>
+<br />
+<h4><?php echo $this->__('You may also be interested in the following product(s)') ?></h4>
+<table cellspacing="0" class="up-sell">
+<?php $this->resetItemsIterator() ?>
+<?php for($_i=0;$_i<$this->getRowCount();$_i++): ?>
+    <tr>
+    <?php for($_j=0;$_j<$this->getColumnCount();$_j++): ?>
+        <?php if($_link=$this->getIterableItem()): ?>
+        <td style="padding-right:5px;" valign="top">
+            <p class="product-image"><a href="<?php echo $_link->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_link, 'small_image')->resize(90) ?>" width="90" height="90" alt="<?php echo $this->htmlEscape($_link->getName()) ?>" title="<?php echo $this->htmlEscape($_link->getName()) ?>" /></a></p>
+            <h5><a href="<?php echo $_link->getProductUrl() ?>"><?php echo $this->htmlEscape($_link->getName()) ?></a></h5>
+            <?php echo $this->getPriceHtml($_link, true, '-upsell') ?>
+        </td>
+        <?php else: ?>
+        <td class="empty-product">&nbsp;</td>
+        <?php endif; ?>
+    <?php endfor; ?>
+    </tr>
+<?php endfor; ?>
+</table>
+<?php endif; ?>

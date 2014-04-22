@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Magento Delivery Date & Customer Comment Extension
+	@copyright:	EcommerceTeam (http://www.ecommerce-team.com)
+	@version:	2.0
+-->
+<config>
+    <modules>
+        <EcommerceTeam_Ddc>
+            <version>2.0</version>
+        </EcommerceTeam_Ddc>
+    </modules>
+    <global>
+		<helpers>
+			<ecommerceteam_ddc><class>EcommerceTeam_Ddc_Helper</class></ecommerceteam_ddc>
+		</helpers>
+    	<blocks>
+	        <ecommerceteam_ddc><class>EcommerceTeam_Ddc_Block</class></ecommerceteam_ddc>
+	        <adminhtml>
+            	<rewrite>
+            		<sales_order_view_info>EcommerceTeam_Ddc_Block_Adminhtml_Sales_Order_View_Info</sales_order_view_info>
+            	</rewrite>
+            </adminhtml>
+	    </blocks>
+	    <models>
+            <ecommerceteam_ddc>
+                <class>EcommerceTeam_Ddc_Model</class>
+                <resourceModel>ecommerceteam_ddc_mysql4</resourceModel>
+            </ecommerceteam_ddc>
+            <ecommerceteam_ddc_mysql4>
+		        <class>EcommerceTeam_Ddc_Model_Resource_Mysql4</class>
+		        <entities>
+		            <order><table>sales_ddc_order</table></order>
+		            <quote><table>sales_ddc_quote</table></quote>
+		        </entities>
+		    </ecommerceteam_ddc_mysql4>
+		</models>
+        <resources>
+            <ecommerceteam_ddc_setup>
+                <setup>
+                    <module>EcommerceTeam_Ddc</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ecommerceteam_ddc_setup>   
+            <ecommerceteam_ddc_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ecommerceteam_ddc_write>
+            <ecommerceteam_ddc_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ecommerceteam_ddc_read>
+		</resources>
+		<!--<fieldsets>
+    		<sales_convert_quote>
+    			<delivery_date><to_order>*</to_order></delivery_date>
+    			<customer_comment><to_order>*</to_order></customer_comment>
+    		</sales_convert_quote>
+    	</fieldsets>-->
+    	<events>
+    		<sales_order_load_after>
+            	<observers>
+                    <ecommerceteam_ddc_order_load>
+                        <type>singleton</type>
+                        <class>EcommerceTeam_Ddc_Model_Observer</class>
+                        <method>loadOrderData</method>
+                    </ecommerceteam_ddc_order_load>
+                </observers>
+            </sales_order_load_after>
+    	</events>
+	</global>
+	<adminhtml>
+		<layout>
+            <updates>
+                <ecommerceteam_ddc module="ecommerceteam_ddc">
+                    <file>ecommerceteam-ddc.xml</file>
+                </ecommerceteam_ddc>
+            </updates>
+        </layout>
+        <acl>
+	        <resources>
+	            <admin>
+	                <children>
+	                    <system>
+	                        <children>
+	                            <config>
+	                                <children>
+	                                    <ecommerceteam_ddc/>
+	                                </children>
+	                            </config>
+	                        </children>
+	                    </system>
+	                </children>
+	            </admin>
+	        </resources>
+	    </acl>
+	</adminhtml>
+	<frontend>
+		<layout>
+            <updates>
+                <ecommerceteam_ddc module="ecommerceteam_ddc">
+                    <file>ecommerceteam-ddc.xml</file>
+                </ecommerceteam_ddc>
+            </updates>
+        </layout>
+        <events>
+        	
+            <sales_quote_load_after>
+            	<observers>
+                    <ecommerceteam_ddc_quote_load>
+                        <type>singleton</type>
+                        <class>EcommerceTeam_Ddc_Model_Observer</class>
+                        <method>loadQuoteData</method>
+                    </ecommerceteam_ddc_quote_load>
+                </observers>
+            </sales_quote_load_after>
+            
+            <sales_order_save_after>
+            	<observers>
+                    <ecommerceteam_ddc_order_save>
+                        <type>singleton</type>
+                        <class>EcommerceTeam_Ddc_Model_Observer</class>
+                        <method>saveOrderData</method>
+                    </ecommerceteam_ddc_order_save>
+                </observers>
+            </sales_order_save_after>
+            
+            <sales_quote_save_after>
+            	<observers>
+                    <ecommerceteam_ddc_quote_save>
+                        <type>singleton</type>
+                        <class>EcommerceTeam_Ddc_Model_Observer</class>
+                        <method>saveQuoteData</method>
+                    </ecommerceteam_ddc_quote_save>
+                </observers>
+            </sales_quote_save_after>
+        </events>
+	</frontend>
+	<default>
+		<checkout>
+			<deliverydatecomment>
+				<comment_label>Customer Comment</comment_label>
+				<deliverydate_label>Delivery Date</deliverydate_label>
+				<disable_week_days>1,7</disable_week_days>
+			</deliverydatecomment>
+		</checkout>
+	</default>
+</config>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <lbtags_adminhtml_tags_index>
+        <reference name="content">
+            <block type="lbtags/adminhtml_tags" name="lbtags" />
+        </reference>
+    </lbtags_adminhtml_tags_index>
+	  <lbtags_adminhtml_tags_assigned>
+            <remove name="root" /><!---->
+            <block type="lbtags/adminhtml_tags_edit_tab_related" name="tags_assigned_grid" output="toHtml" />
+            <block type="adminhtml/widget_grid_serializer" name="tag_grid_serializer" output="toHtml">
+                <reference name="tag_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>tags_assigned_grid</grid_block_name>
+                        <data_callback>getRelatedProducts</data_callback>
+                        <hidden_input_name>tags_assigned_products</hidden_input_name>
+                        <reload_param_name>assigned_products</reload_param_name>
+                    </action>
+                </reference>
+            </block>
+    </lbtags_adminhtml_tags_assigned>
+	
+	
+	<lbtags_adminhtml_tags_assignedgridonly>
+        <remove name="root" />
+        <block type="lbtags/adminhtml_tags_edit_tab_related" name="tags_assigned_grid" output="toHtml" />
+    </lbtags_adminhtml_tags_assignedgridonly>
+	 
+	<lbtags_adminhtml_tags_importdata>
+         <remove name="root" />
+    </lbtags_adminhtml_tags_importdata>
+	
+		<lbtags_adminhtml_tags_tagsmatchproduct>
+         <reference name="content">
+      		  <block type="lbtags/adminhtml_tags" template="lbtags/matchproduct.phtml" name="tags_matchproducts"   />
+		</reference>
+    </lbtags_adminhtml_tags_tagsmatchproduct>
+	
+	<lbtags_adminhtml_tags_import>
+         <reference name="content">
+      		  <block type="lbtags/adminhtml_tags" template="lbtags/import.phtml" name="tags_import"   />
+		</reference>
+    </lbtags_adminhtml_tags_import>
+	
+	<lbtags_adminhtml_tags_runtags>
+         <reference name="content">
+      		  <block type="lbtags/adminhtml_tags" template="lbtags/runtags.phtml" name="tags_import"   />
+		</reference>
+    </lbtags_adminhtml_tags_runtags>
+	
+	
+	
+	
+</layout>

@@ -1,0 +1,68 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="newsletter-box a-center">
+    <div class="head">
+        <h4 class="subscription-header"><?php echo $this->__('Sign up for our newsletter:') ?><a name="newsletter-box"></a></h4>
+    </div>
+<form action="<?php echo Mage::getUrl('newsletter/subscriber/new', array('_secure' => true)) ?>" method="post" id="newsletter-validate-detail">
+    <fieldset class="content">
+            <div class="input-box bottom-space"><input name="email" type="text" id="newsletter" class="required-entry validate-email input-text" /></div>
+            <button type="submit" class="form-button button-space"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+    </fieldset>
+</form>
+<script type="text/javascript">
+<!--    
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+
+    Event.observe($('newsletter-validate-detail'), 'submit', function(ev){
+
+        var suTimer = setInterval(function(){
+           if ($('newsletter').hasClassName('validation-failed')){
+               $j('div.header-nav-container').height($j('div.current').height());          
+           }
+           clearInterval(suTimer);
+        }, 300);       
+       
+    });
+    Event.observe($('newsletter'), 'focus', function(ev){
+        var suTimer = setInterval(function(){
+           if ($('newsletter').hasClassName('validation-failed')){
+               if ($('advice-required-entry-newsletter')){
+                   $j('div.header-nav-container').height($j('div.current').height());
+               }           
+           }
+           clearInterval(suTimer);
+       }, 300); 
+    });    
+//-->
+</script>
+</div>
+<div class="clear"></div>

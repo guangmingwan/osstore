@@ -1,0 +1,55 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<form id="co-shipping-method-form" action="">
+<div class="inner-box">
+    <div class="default-box" style="padding:10px;" id="checkout-shipping-method-load">
+        <?php echo $this->getChildHtml('available') ?>
+    </div>
+</div>
+<script type="text/javascript">
+    var shippingMethod = new ShippingMethod('co-shipping-method-form', "<?php echo $this->getUrl('checkout/onepage/saveShippingMethod') ?>");
+</script>
+<div id="onepage-checkout-shipping-method-additional-load">
+<?php echo $this->getChildHtml('additional') ?>
+</div>
+</form>
+    <div class="a-center bottom-space">
+        <div class="framebutton">
+            <span id="shipping-method-buttons-container">
+                <button type="button" class="form-button right" onclick="shippingMethod.save();"><span><?php echo $this->__('Continue') ?></span></button>
+                <br />
+                <span id="shipping-method-please-wait" style="display:none;" class="opc-please-wait">
+                    <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" class="v-middle" alt="" /> &nbsp; <?php echo $this->__('Loading next step...') ?> &nbsp;
+                </span>
+            </span>
+        </div>
+  </div>
+

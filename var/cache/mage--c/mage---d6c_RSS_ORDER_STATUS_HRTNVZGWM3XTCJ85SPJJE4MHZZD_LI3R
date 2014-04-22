@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Order # 20131102151410 Notification(s)]]></title>
+    <link>http://www.os-store.eu/sales/order/view/order_id/1583/</link>
+    <description><![CDATA[Order # 20131102151410 Notification(s)]]></description>
+    <pubDate>Mon, 21 Apr 2014 18:32:35 +0000</pubDate>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Order #20131102151410 created at 11/2/13]]></title>
+      <link>http://www.os-store.eu/sales/order/view/order_id/1583/</link>
+      <description><![CDATA[<p>Current Status: Processing<br/>Total: <span class="price">€154.37</span><br/></p>]]></description>
+      <pubDate>Mon, 21 Apr 2014 18:32:35 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

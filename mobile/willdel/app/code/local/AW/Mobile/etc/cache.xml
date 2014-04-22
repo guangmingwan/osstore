@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <placeholders>
+        <awmobile_cart>
+            <block>checkout/cart</block>
+            <template>checkout/cart.phtml</template>
+            <name>checkout.cart</name>
+            <placeholder>AWMOBILE_CART</placeholder>
+            <container>AW_Mobile_Model_Container_Cart</container>
+            <cache_lifetime>0</cache_lifetime>
+        </awmobile_cart>
+        <awmobile_top_links>
+            <block>awmobile/page_template_links</block>
+            <template>page/template/links.phtml</template>
+            <name>awmobile.top.links</name>
+            <placeholder>AWMOBILE_TOP_LINKS</placeholder>
+            <container>AW_Mobile_Model_Container_Links</container>
+            <cache_lifetime>0</cache_lifetime>
+        </awmobile_top_links>
+    </placeholders>
+</config>

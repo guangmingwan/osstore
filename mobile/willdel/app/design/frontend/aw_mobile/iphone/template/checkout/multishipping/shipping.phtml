@@ -1,0 +1,102 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Multishipping checkout shipping template
+ *
+ * @see Mage_Checkout_Block_Multishipping_Shipping
+ */
+?>
+<div class="in-page">
+    <div class="page-head">
+        <h3><?php echo $this->__('Select Shipping Method') ?></h3>
+    </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="shipping_method_form">
+    <div class="multi-address-checkout-box"> 
+    <?php foreach ($this->getAddresses() as $_index => $_address): ?>
+    <div class="count-head">
+        <h4><?php echo $this->__('Address %s of %s', ($_index+1), $this->getAddressCount()) ?></h4>
+    </div>        
+    <div class="multishipping-shipping-container">    
+        <div class="shipping-to"><?php echo $this->__('Shipping To') ?>&nbsp;(<a href="<?php echo $this->getAddressEditUrl($_address) ?>"><?php echo $this->__('Change') ?></a>)</div>
+        <div class="shipping-to-address"><address><?php echo $_address->format('html') ?></address></div>
+        <div class="shipping-header"><?php echo $this->__('Items') ?>&nbsp;(<a href="<?php echo $this->getItemsEditUrl($_address) ?>"><?php echo $this->__('Edit') ?></a>)</div>
+        <?php foreach ($this->getAddressItems($_address) as $_item): ?>
+        <div class="shipping-item"> 
+            <div class="item-name"><?php echo $this->getItemHtml($_item->getQuoteItem()) ?></div>
+            <div class="item-qty"><?php echo $_item->getQty() ?></div>
+            <div class="clear"></div>
+        </div>
+        <?php endforeach; ?>   
+        <div class="shipping-header"><?php echo $this->__('Shipping Method') ?></div>
+        <?php if (!($_shippingRateGroups = $this->getShippingRates($_address))): ?>
+            <strong><?php echo $this->__('Sorry, no quotes are available for this order at this time.') ?></strong>
+        <?php else: ?>
+        <dl class="shipment-methods">
+            <?php $_sole = count($_shippingRateGroups) == 1; foreach ($_shippingRateGroups as $code => $_rates): ?>
+                <dt><?php echo $this->getCarrierName($code) ?></dt>
+                <dd>
+                    <ul>
+                    <?php $_sole = $_sole && count($_rates) == 1; foreach ($_rates as $_rate): ?>
+                        <li>
+                        <?php if ($_rate->getErrorMessage()): ?>
+                                <strong><?php echo $_rate->getCarrierTitle() ?>: <?php echo $_rate->getErrorMessage() ?></strong>
+                        <?php else: ?>
+                                <?php if ($_sole) : ?>
+                                <span class="no-display"><input name="shipping_method[<?php echo $_address->getId() ?>]" type="radio" value="<?php echo $this->htmlEscape($_rate->getCode()) ?>" id="s_method_<?php echo $_address->getId() ?>_<?php echo $_rate->getCode() ?>" checked="checked"/></span>
+                                <?php else: ?>
+                                <input name="shipping_method[<?php echo $_address->getId() ?>]" type="radio" value="<?php echo $this->htmlEscape($_rate->getCode()) ?>" id="s_method_<?php echo $_address->getId() ?>_<?php echo $_rate->getCode() ?>"<?php if($_rate->getCode()===$this->getAddressShippingMethod($_address)) echo ' checked="checked"' ?> />
+                                <?php endif; ?>
+                                <label for="s_method_<?php echo $_address->getId() ?>_<?php echo $_rate->getCode() ?>"><?php echo $_rate->getMethodTitle() ?> - <strong><?php echo Mage::app()->getStore()->convertPrice( $_rate->getPrice(), true ) ?></strong></label>
+                        <?php endif ?>
+                        </li>
+                    <?php endforeach; ?>
+                    </ul>
+                </dd>
+            <?php endforeach; ?>
+        </dl>
+        <?php endif; ?>
+    </div>
+        <div class="clear"></div>
+        <?php echo $this->helper('giftmessage/message')->getInline('multishipping_adress_checkbox', $_address); ?>        
+        <?php //echo $this->helper('giftmessage/message')->getInline('multishipping_adress', $_address); ?>
+
+    <?php endforeach; ?>
+
+    <?php echo $this->getChildHtml('checkout_billing_items') ?>
+</div>
+    <div class="a-center button-space">
+        <button  class="form-button" type="submit"><span><span><?php echo $this->__('Continue to Billing Information') ?></span></span></button>
+    </div>
+    <br />
+    </form>    
+</div>

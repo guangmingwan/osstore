@@ -1,0 +1,11 @@
+ <?php if (Mage::isInstalled() && !Mage::getSingleton('customer/session')->isLoggedIn()) {?>
+<div class="home-callout">
+<div class="button-blue"> 
+<a href="<?php echo $this->getUrl("customer/account/create/"); ?>">Register</a>
+</div>
+<div class="button-blue"> 
+<a href="<?php echo $this->getUrl("customer/account/login/"); ?>">log in</a>
+</div>
+<div class="blank10px"></div>
+</div> 
+<?php }?>

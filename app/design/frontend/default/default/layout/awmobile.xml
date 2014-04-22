@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="footer_links">
+            <action method="addLink" translate="label title" module="awmobile" ifconfig="awmobile/behaviour/switcher"><label>Mobile Version</label><url>awmobile/switch/toMobile</url><title>Mobile Version</title><prepare>true</prepare></action>
+        </reference>
+    </default>
+</layout>

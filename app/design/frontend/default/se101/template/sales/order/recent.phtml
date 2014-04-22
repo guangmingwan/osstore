@@ -1,0 +1,107 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="box-account2 box-recent">
+<?php $_orders = $this->getOrders(); ?>
+    <div class="box-head">
+        <h2><?php echo $this->__('Recent Orders') ?></h2>
+        <?php if( sizeof($_orders->getItems()) > 0 ): ?><a href="<?php echo $this->getUrl('sales/order/history') ?>"><?php echo $this->__('View All') ?></a><?php endif; ?>
+    </div>
+<?php if( sizeof($_orders->getItems()) > 0 ): ?>
+    <table class="data-table" id="my-orders-table" border="0">
+    <col width="1" />
+    <col width="1" />
+    <col />
+    <col />
+    <col width="1" />
+    <col width="1" />
+	<col width="1" />
+        <thead>
+            <tr>
+                <th><?php echo $this->__('Order #') ?></th>
+                <th><?php echo $this->__('Date') ?></th>
+                <th><?php echo $this->__('Ship To') ?></th>
+				<th><?php echo $this->__('Product') ?></th>
+                <th><span class="nobr"><?php echo $this->__('Order Total') ?></span></th>
+                <th><?php echo $this->__('Status') ?></th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($_orders as $_order): ?>
+                <tr>
+                    <td><?php echo $_order->getRealOrderId() ?></td>
+                    <td><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
+                    <td><?php echo $_order->getShippingAddress() ? $this->htmlEscape($_order->getShippingAddress()->getName()) : '&nbsp;' ?></td>
+                    <td><table border="0">
+						<?php
+						$orderItems = $_order->getItemsCollection();
+						foreach ($orderItems as $item) :
+					?>
+					  <tr>
+						<?php
+						$product_id = $item->product_id;
+						//$product_sku = $item->sku;
+						$product_name = $item->getName();
+						$product = Mage::getModel('catalog/product')->load($product_id);
+						$item_imgurl = Mage::getBaseUrl('media').'catalog/product'.$product->getImage();
+
+						?>
+						<td  align="left" width="10%"><img height="40" width="40" alt="" src="<?php echo $item_imgurl ?>" > </td>	 	
+						<td ><a target="_blank" href="<?php echo $product->getUrlModel()->getUrl($product)?>"><?php echo $product_name ?></a></td>
+					  </tr>			
+						<?php			
+							endforeach;		
+						?>
+					</table></td>
+					
+					<td><?php echo $_order->formatPrice($_order->getGrandTotal()) ?></td>
+                    <td><em><?php echo $_order->getStatusLabel() ?></em>
+					<div>
+						<img src="<?php $status_arr = array(); $status_arr["complete"] = true;$status_arr["processing"] = true;$status_arr["payment_finished"] = true;
+						   echo $status_arr[$_order->getStatus()] ?  $this->getSkinUrl('icons/icon_paid.gif') : $this->getSkinUrl('icons/icon_paying.gif')
+						 ?>">
+						<img src="<?php  echo ($_order->hasShipments()>0) ?  $this->getSkinUrl('icons/icon_shipped.gif') :  $this->getSkinUrl('icons/icon_shipping.gif');?>">
+						</td>
+					</div>
+
+                    <td class="a-center">
+                        <span class="nobr" >
+                        <a  href="<?php echo $this->getViewUrl($_order) ?>"><span style="color:#2B8EB9"><?php echo $this->__('View Order') ?></span></a>
+                        <?php if ($this->helper('sales/reorder')->canReorder($_order)) : ?>
+                            <span class="separator">|</span> <a href="<?php echo $this->getReorderUrl($_order) ?>" class="link-reorder"><?php echo $this->__('Reorder') ?></a>
+                        <?php endif ?>
+                        </span>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('my-orders-table')</script>
+<?php else: ?>
+    <p><?php echo $this->__('You have placed no orders.'); ?></p>
+<?php endif; ?>
+</div>

@@ -1,0 +1,115 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#"  onclick="return false" class="active"><span>Catalog</span></a>
+<ul >
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/catalog_product/index/key/$catalog_product/index$/"   class=""><span>Manage Products</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/mageworx/customoptions_options/index/key/$customoptions_options/index$/"   class=""><span>Advanced Product Options</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/catalog_category/index/key/$catalog_category/index$/"   class=""><span>Manage Categories</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Attributes</span></a>
+<ul >
+<li  class="  level2"> <a href="http://www.os-store.com/index.php/admin/catalog_product_attribute/index/key/$catalog_product_attribute/index$/"   class=""><span>Manage Attributes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://www.os-store.com/index.php/admin/catalog_product_set/index/key/$catalog_product_set/index$/"   class=""><span>Manage Attribute Sets</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/urlrewrite/index/key/$urlrewrite/index$/"   class=""><span>URL Rewrite Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/catalog_search/index/key/$catalog_search/index$/"   class=""><span>Search Terms</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews and Ratings</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>Customer Reviews</span></a>
+<ul >
+<li  class="  level3"> <a href="http://www.os-store.com/index.php/admin/catalog_product_review/pending/key/$catalog_product_review/pending$/"   class=""><span>Pending Reviews</span></a>
+</li>
+<li  class="  last level3"> <a href="http://www.os-store.com/index.php/admin/catalog_product_review/index/key/$catalog_product_review/index$/"   class=""><span>All Reviews</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://www.os-store.com/index.php/admin/rating/index/key/$rating/index$/"   class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  level2"> <a href="http://www.os-store.com/index.php/admin/tag/index/key/$tag/index$/"   class=""><span>All Tags</span></a>
+</li>
+<li  class="  last level2"> <a href="http://www.os-store.com/index.php/admin/tag/pending/key/$tag/pending$/"   class=""><span>Pending Tags</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Google Content</span></a>
+<ul >
+<li  class="  level2"> <a href="http://www.os-store.com/index.php/admin/googleshopping_types/index/key/$googleshopping_types/index$/"   class=""><span>Manage Attributes</span></a>
+</li>
+<li  class="  last level2"> <a href="http://www.os-store.com/index.php/admin/googleshopping_items/index/key/$googleshopping_items/index$/"   class=""><span>Manage Items</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/admin/sitemap/index/key/$sitemap/index$/"   class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Mobile</span></a>
+<ul >
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/mobile/index/key/$mobile/index$/"   class=""><span>Manage Apps</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/mobile/history/key/$mobile/history$/"   class=""><span>Submission History</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/mobile/template/key/$mobile/template$/"   class=""><span>Message Templates</span></a>
+</li>
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/admin/mobile/queue/key/$mobile/queue$/"   class=""><span>Message Queue</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Newsletter</span></a>
+<ul >
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/newsletter_template/index/key/$newsletter_template/index$/"   class=""><span>Newsletter Templates</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/newsletter_queue/index/key/$newsletter_queue/index$/"   class=""><span>Newsletter Queue</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/newsletter_subscriber/index/key/$newsletter_subscriber/index$/"   class=""><span>Newsletter Subscribers</span></a>
+</li>
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/admin/newsletter_problem/index/key/$newsletter_problem/index$/"   class=""><span>Newsletter Problem Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/tagsadmin/adminhtml_tags/index/key/$adminhtml_tags/index$/"   class=""><span>Manage Tags</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Blog</span></a>
+<ul >
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/blog_admin/manage_blog/index/key/$manage_blog/index$/"   class=""><span>Posts</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/blog_admin/manage_comment/index/key/$manage_comment/index$/"   class=""><span>Comments</span></a>
+</li>
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/blog_admin/manage_cat/index/key/$manage_cat/index$/"   class=""><span>Categories</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>System</span></a>
+<ul >
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/cache/index/key/$cache/index$/"   class=""><span>Cache Management</span></a>
+</li>
+<li  class="  level1"> <a href="http://www.os-store.com/index.php/admin/process/list/key/$process/list$/"   class=""><span>Index Management</span></a>
+</li>
+<li  class="  last level1"> <a href="http://www.os-store.com/index.php/admin/system_config/index/key/$system_config/index$/"   class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/en_US/Mage_Adminhtml/catalog_product/index/">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

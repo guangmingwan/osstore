@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+        <events>
+            <am_product_grid_massaction>
+                <observers>
+                    <ampaction>
+                        <type>singleton</type>
+                        <class>Amasty_Paction_Model_Observer</class>
+                        <method>handleAmProductGridMassaction</method>
+                    </ampaction>
+                </observers>
+            </am_product_grid_massaction>
+        </events>
+        <translate>
+            <modules>
+                <Amasty_Paction>
+                    <files>
+                        <default>Amasty_Paction.csv</default>
+                    </files>
+                </Amasty_Paction>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ampaction translate="title" module="ampaction">
+                                            <title>Product Mass Actions</title>
+                                        </ampaction>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+</config>

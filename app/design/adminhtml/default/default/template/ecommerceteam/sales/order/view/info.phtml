@@ -1,0 +1,28 @@
+<div style="clear:both">
+<?php
+	
+	$blocks = $this->getSortedChildren();
+	$blocks_count = count($blocks);
+	
+	$i = 0;
+	
+	foreach ($blocks as $block_name): if($content = trim($this->getChildHtml($block_name))): ?>
+		
+		<?php if($i%2):?>
+		
+		<div class="box-right">
+		
+		<?php else:?>
+		
+		<div class="box-left">
+		
+		<?php endif;?>
+			
+		    <?php echo $content; ?>
+		    
+		</div>
+		
+		<?php $i++; if($i%2==0 || $i == $blocks_count):?><div class="clear"></div><?php endif;?>
+		
+	<?php endif; endforeach; ?>
+</div>

@@ -1,0 +1,20 @@
+<div class = "box base-mini mini-bar">
+<div class="head">
+            <h4>Categories</h4>
+        </div> 
+
+<div id="light_menu" class="menu">
+      
+
+<ul>
+
+        <?php foreach ($this->getStoreCategories() as $_category): ?>
+            <?php echo $this->drawleftmenuitem($_category) ?>
+        <?php endforeach ?>
+
+</ul>	
+
+
+
+</div>
+</div>

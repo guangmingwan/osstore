@@ -1,0 +1,87 @@
+# Crawlers Setup
+User-agent: *
+Crawl-delay: 10
+
+# Allowable Index
+Allow: /*?p=
+Allow: /catalog/seo_sitemap/category/
+Allow: /catalogsearch/result/
+Allow: /media/
+Allow: /tag/
+Allow: /index.php/
+Allow: /tag/list/
+Allow: /review/
+Allow: /catalogsearch/result/index/q/
+Allow: /sitemap/
+Allow: /tags/
+
+# Directories
+Disallow: /404/
+Disallow: /app/
+Disallow: /cgi-bin/
+Disallow: /downloader/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /magento/
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /skin/
+Disallow: /stats/
+Disallow: /var/
+Disallow: /pass/
+Disallow: /Embedded erp/
+Disallow: /livezilla/
+Disallow: /library/
+Disallow: /tests/
+Disallow: /piwik/
+
+
+# Paths (clean URLs)
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalogsearch/
+Disallow: /checkout/*
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /poll/
+Disallow: /sendfriend/
+Disallow: /wishlist/
+Disallow: /picture
+Disallow: /me
+Disallow: /catalog/product/upload/
+Disallow: /developertoolbar/*
+Disallow: /tags/*
+Disallow: /awmobile/switch/toDesktop
+Disallow: /vidtest/video/updatepager/
+Disallow: /advancedreviews/proscons/*
+Disallow: /advancedreviews/proscons/checkbyproscons/*
+Disallow: /vidtest/video/getfilteredImage/
+Disallow: /advancedreviews/proscons/getfilteredreviews/
+
+# Files
+Disallow: /cron.php
+Disallow: /cron.sh
+Disallow: /error_log
+Disallow: /control.php
+Disallow: /install.php
+Disallow: /LICENSE.html
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /STATUS.txt
+Disallow: /track.php
+Disallow: /picture.php
+Disallow: /phpinfo.php
+Disallow: /get.php
+Disallow: /Showimg.php
+
+# Paths (no clean URLs)
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.php$
+Disallow: /*?p=*&
+Disallow: /*?SID=

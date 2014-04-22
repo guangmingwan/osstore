@@ -1,0 +1,75 @@
+<?php
+
+class  Mageasia_Repaypayment_Block_Developer extends Mage_Adminhtml_Block_System_Config_Form_Fieldset {
+
+   public function getCopyRighthtml(){ 
+        $content = '<p></p>';
+        $content.= '<style>';
+        $content.= '.extcopyright {
+                        background:#FAFAFA;
+                        border: 1px solid #CCCCCC;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        height:auto;
+
+                    }
+                    .extcopyright h3 {
+                        color: #EA7601;
+                    }
+                    .contact-type {
+                        color: #EA7601;
+                        font-weight:bold;
+                    }
+                    .magazento img {
+                        border: 1px solid #CCCCCC;
+                        float:left;
+                        height:245px;
+                        width :205px;
+                    }
+                    .righttext{ 
+                        text-align:right; padding-right:4px;
+                    }
+                    .extcopyright .info {
+                        border: 1px solid #CCCCCC;
+                        background:#E7EFEF;
+                        padding: 5px 10px 0 5px;
+                       
+                       　
+                    }
+                    ';
+        $content.= '</style>';
+
+
+        $content.= '<div class="extcopyright">';
+           
+            $content.= '<div class="info">';
+                $content.= '<h3>版权所有</h3>';
+				 $content.= '<p><a href="http://www.magetno.asia/" target="_blank">创想Magento开发</a> <br/>';
+				$content.= ' <br />本插件为收费插件，请尊重作者的劳动成果，如果需要购买正式版本或者订制功能请联系作者.  <br /> <br />我们为收费用户提供长期技术支持，相关的常见问题请浏览我们的网站．<a href="http://www.magetno.asia/" target="_blank">创想Magento开发</a> <br/>';
+				$content.= '<script src="http://support.magento.asia/assets/copyright.php?s='.urlencode(base64_encode(Mage::getBaseUrl())).'&t=lbtags"></script>';
+               
+             
+                $content.= '<br />Email: <a href="mailto:zsgooo@gmail.com">zsgooo@gmail.com</a><br><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=107544024&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:107544024:41 &r=0.966469403821975" alt="点击这里给我发消息" title="点击这里给我发消息"></a><br />
+QQ:107544024  <br/>联系电话:18925385662  <br/>';
+
+			
+			    $content.= '<div class="righttext">版本号: '.Mage::helper("lbtags")->getVersion().'</div>';	
+				$content.= '<div class="righttext">更新日期: '.Mage::helper("lbtags")->getUpdateDate().'</div>';	
+				
+              
+                $content.= '</div>';
+
+        $content.= '</div>';
+		
+		return $content;
+
+   }
+	 public function render(Varien_Data_Form_Element_Abstract $element) {
+		
+        return $this->getCopyRighthtml();
+
+
+    }
+
+
+}

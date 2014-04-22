@@ -1,0 +1,449 @@
+name,sku,price,qty
+" WD Western Digital 3.5"" 20GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323094239,18.5,59
+"WD Western Digital 3.5""  10GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323094300,18.5,59
+"WD Western Digital 3.5""  15GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323094434,18.5,59
+"Maxtor 3.5"" 10GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032048,18.5,59
+"Maxtor 3.5"" 15GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032318,18.5,59
+"Maxtor 3.5"" 20GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032429,18.5,59
+"Seagate 3.5"" 10GB 5400RPM 2MBPATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402021736,18.5,30
+"Seagate 3.5"" 15GB 5400RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402022416,18.5,30
+"Seagate 3.5"" 20GB 5400RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402022624,18.5,30
+"IBM Hitachi 3.5"" 10GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091359,18.5,30
+"IBM Hitachi 3.5"" 15GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091360,18.5,30
+"IBM Hitachi 3.5"" 20GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091361,18.5,30
+"Samsung 3.5"" 10GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521030616,18.5,30
+"Samsung 3.5"" 15GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521030823,18.5,30
+"Samsung 3.5"" 20GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521031056,18.5,30
+" WD Western Digital 3.5"" 30GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323100409,22,59
+" WD Western Digital 3.5"" 40GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323100642,22,59
+"Maxtor 3.5"" 30GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032907,22,59
+"Maxtor 3.5"" 40GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033125,22,59
+"Seagate 3.5"" 30GB 5400RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402024202,22,30
+"Seagate 3.5"" 40GB 5400RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402024353,22,30
+"IBM Hitachi 3.5"" 30GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091362,22,30
+"IBM Hitachi 3.5"" 40GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091463,22,30
+"Samsung 3.5"" 30GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521032038,22,30
+"Samsung 3.5"" 40GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521032216,22,30
+"WD Western Digital 3.5"" 40GB 7200 RPM 2MB SATA Hard Disk Driver Desktop PC",osst-20120321041423,28,59
+"WD Western Digital 3.5"" 60GB 7200 RPM 2MB SATA Hard Disk Driver Desktop PC",osst-20120321042713,32,59
+"Maxtor 3.5"" 40GB 7200 RPM 2MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321073534,28,59
+"Maxtor 3.5"" 60GB 7200 RPM 2MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321080947,32,59
+"WD Western Digital 3.5"" 4GB 4.3GB 4.8GB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323093716,25,59
+"WD Western Digital 3.5"" 6GB 6.4GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323093909,25,59
+"WD Western Digital 3.5"" 8GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323094032,25,59
+" WD Western Digital 3.5"" 60GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323100932,25,59
+" WD Western Digital 3.5"" 80GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323101650,25,59
+"Maxtor 3.5"" 4GB 4.3GB 4.8GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031540,25,59
+"Maxtor 3.5"" 6GB 6.4GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031709,25,59
+"Maxtor 3.5"" 8GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031901,25,59
+"Maxtor 3.5"" 80GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033653,25,59
+"Seagate 3.5"" 40GB 7200 RPM 8MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331063109,28,30
+"Seagate 3.5"" 60GB 7200 RPM 8MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331065603,32,30
+"Seagate 3.5"" 40GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331084029,28,30
+"Seagate 3.5"" 60GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331084510,32,30
+"Seagate 3.5"" 4GB 4.3GB 4.8GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402021247,25,30
+"Seagate 3.5"" 6GB 6.4GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402021534,25,30
+"Seagate 3.5"" 8GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402021917,25,30
+"Seagate 3.5"" 60GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402025048,25,30
+"Seagate 3.5"" 80GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402025243,25,30
+"Hitachi 3.5"" 40GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423092755,28,29
+"IBM Hitachi 3.5"" 4GB 4.3GB 4.8GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091356,25,30
+"IBM Hitachi 3.5"" 6GB 6.4GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091357,25,30
+"IBM Hitachi 3.5"" 8GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091358,25,29
+"IBM Hitachi 3.5"" 60GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091364,25,30
+"IBM Hitachi 3.5"" 80GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091365,25,30
+"Hitachi 3.5"" 60GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091404,32,30
+"Samsung 3.5"" 80GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521021637,25,30
+"Samsung 3.5"" 60GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521032819,25,30
+"Samsung 3.5"" 80GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521033100,25,30
+"Samsung 3.5"" 40GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521061945,28,30
+"Samsung 3.5"" 60GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062047,32,30
+"WD Western Digital 3.5"" 80GB 7200 RPM 2MB SATA Hard Disk Driver Desktop PC",osst-20120321043209,32,59
+"Maxtor 3.5"" 80GB 7200 RPM 2MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321081147,32,59
+" WD Western Digital 3.5"" 20GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323095236,28,59
+" WD Western Digital 3.5"" 30GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323095737,28,59
+" WD Western Digital 3.5"" 100GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323101939,28,59
+" WD Western Digital 3.5"" 120GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326015035,28,59
+"Maxtor 3.5"" 20GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032603,28,59
+"Maxtor 3.5"" 30GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326032719,28,59
+"Maxtor 3.5"" 40GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033253,28,59
+"Maxtor 3.5"" 100GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034139,28,59
+"Maxtor 3.5"" 120GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034238,28,59
+"Seagate 3.5"" 80GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331084708,32,30
+"Seagate 3.5"" 20GB 7200RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402023351,28,30
+"Seagate 3.5"" 30GB 7200RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402024010,28,30
+"Seagate 3.5"" 40GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402024549,28,30
+"Seagate 3.5"" 100GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402025700,28,30
+"Seagate 3.5"" 120GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402030755,28,30
+"IBM Hitachi 3.5"" 20GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091461,28,30
+"IBM Hitachi 3.5"" 30GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091462,28,30
+"IBM Hitachi 3.5"" 40GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091363,28,30
+"IBM Hitachi 3.5"" 100GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091366,28,30
+"IBM Hitachi 3.5"" 120GB PATA 5400 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091367,28,30
+"Hitachi 3.5"" 80GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091405,32,30
+"Samsung 3.5"" 20GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521031255,28,30
+"Samsung 3.5"" 30GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521031841,28,30
+"Samsung 3.5"" 40GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521032425,28,30
+"Samsung 3.5"" 100GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521033646,28,30
+"Samsung 3.5"" 120GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521033842,28,30
+"WD Western Digital 3.5"" 60GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323101058,32,59
+"WD Western Digital 3.5"" 80GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323101256,32,59
+"Maxtor 3.5"" 60GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033419,32,59
+"Maxtor 3.5"" 60GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033529,25,59
+"Maxtor 3.5"" 80GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033812,32,59
+"Seagate 3.5"" 60GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402024843,32,30
+"Seagate 3.5"" 80GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402025451,32,30
+"IBM Hitachi 3.5"" 60GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091464,32,30
+"IBM Hitachi 3.5"" 80GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091465,32,30
+"Samsung 3.5"" 80GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521022327,32,30
+"Samsung 3.5"" 60GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521032605,32,30
+"Samsung 3.5"" 80GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521033230,32,30
+"WD Western Digital 3.5"" 540MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323092052,35,0
+"WD Western Digital 3.5"" 1GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323092529,35,59
+"WD Western Digital 3.5"" 2GB 2.1GB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323092706,35,59
+"WD Western Digital 3.5"" 3GB 3.2GB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323092841,35,59
+" WD Western Digital 3.5"" 100GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120323103255,35,59
+" WD Western Digital 3.5"" 120GB 7200 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326014855,35,59
+"Maxtor 3.5"" 540MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326030836,35,0
+"Maxtor 3.5"" 1GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031129,35,59
+"Maxtor 3.5"" 2GB 2.1GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031259,35,59
+"Maxtor 3.5"" 3GB 3.2GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326031421,35,59
+"Maxtor 3.5"" 100GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326033926,35,59
+"Maxtor 3.5"" 120GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034346,35,59
+"Seagate 3.5"" 540MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402015330,35,0
+"Seagate 3.5"" 1GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402020130,35,25
+"Seagate 3.5"" 2GB 2.1GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402020314,35,30
+"Seagate 3.5"" 3GB 3.2GB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402020621,35,30
+"Seagate 3.5"" 100GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402025908,35,30
+"Seagate 3.5"" 120GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402030255,35,30
+"IBM Hitachi 3.5"" 540MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423092155,35,0
+"IBM Hitachi 3.5"" 1GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091353,35,30
+"IBM Hitachi 3.5"" 2GB 2.1GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091354,35,30
+"IBM Hitachi 3.5"" 3GB 3.2GB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091355,35,30
+"IBM Hitachi 3.5"" 100GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091466,35,30
+"IBM Hitachi 3.5"" 120GB PATA 7200 rpm 2MB IDE HDD Hard Disk Driver Desktop PC",osst-20120423091467,35,30
+"Samsung 3.5"" 100GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521033412,35,30
+"Samsung 3.5"" 120GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521034045,35,30
+"WD Western Digital 3.5"" 100GB 7200 RPM 2MB SATA Hard Disk Driver Desktop PC",osst-20120321043419,38,59
+"WD Western Digital 3.5"" 120GB 7200 RPM 2MB SATA Hard Disk Driver Desktop PC",osst-20120321043633,38,59
+"Maxtor 3.5"" 100GB 7200 RPM 2MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321082313,38,59
+"Maxtor 3.5"" 120GB 7200 RPM 2MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321082658,38,59
+" WD Western Digital 3.5"" 160GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326015207,38,59
+"Maxtor 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034628,38,59
+"Seagate 3.5"" 100GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331084845,38,30
+"Seagate 3.5"" 120GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331085109,38,30
+"Seagate 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402030955,38,30
+"Hitachi 3.5"" 160GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091368,38,30
+"Hitachi 3.5"" 100GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091406,38,30
+"Hitachi 3.5"" 120GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091407,38,30
+"Samsung 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521034440,38,30
+"Samsung 3.5"" 100GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062141,38,30
+"Samsung 3.5"" 120GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062258,38,30
+"WD Western Digital 3.5"" 160GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321043840,42,59
+"Maxtor 3.5"" 160GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321083642,42,59
+"New WD Western Digital 3.5"" 120GB 5400 2MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323073048,42,59
+" WD Western Digital 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326015759,42,59
+" WD Western Digital 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020017,42,59
+"New Maxtor 3.5"" 120GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326024926,42,59
+"Maxtor 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034737,42,59
+"Maxtor 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326035130,42,59
+"Seagate 3.5"" 160GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331085336,42,30
+"New Seagate 3.5"" 120GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331101440,42,30
+"Seagate 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402031634,42,30
+"Seagate 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402031852,42,30
+"New IBM Hitachi 3.5"" 120GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423084044,42,30
+"Hitachi 3.5"" 200GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091370,42,30
+"Hitachi 3.5"" 250GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091372,42,30
+"Hitachi 3.5"" 160GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091408,42,30
+"New Samsung 3.5"" 120GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521024506,42,30
+"Samsung 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521034852,42,30
+"Samsung 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521035530,42,30
+"Samsung 3.5"" 160GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062459,42,30
+"WD Western Digital 3.5"" 200GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321054730,45,59
+"WD Western Digital 3.5"" 250GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321055509,45,59
+"Maxtor 3.5"" 200GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321083954,45,59
+"Maxtor 3.5"" 250GB 5400 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321090142,45,59
+" WD Western Digital 3.5"" 160GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326015501,45,59
+"Maxtor 3.5"" 160GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034459,45,59
+"Seagate 3.5"" 200GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331085555,45,30
+"Seagate 3.5"" 250GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331085920,45,30
+"Seagate 3.5"" 160GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402031201,45,30
+"Hitachi 3.5"" 160GB 7200 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091817,45,30
+"Hitachi 3.5"" 200GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091409,45,30
+"Hitachi 3.5"" 250GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091410,45,30
+"Samsung 3.5"" 160GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521034253,45,30
+"Samsung 3.5"" 200GB 7200 RPM 2MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062641,45,30
+"Samsung 3.5"" 250GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521062859,45,30
+"WD Western Digital 3.5"" 250GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321055214,48,59
+"WD Western Digital 3.5"" 320GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321060012,48,59
+"Maxtor 3.5"" 250GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321090420,48,59
+"Maxtor 3.5"" 320GB 5400 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321091041,48,59
+"New WD Western Digital 3.5"" 120GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323073303,48,59
+" WD Western Digital 3.5"" 200GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326015643,48,59
+" WD Western Digital 3.5"" 250GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020130,48,59
+"New Maxtor 3.5"" 120GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326024809,48,59
+"Maxtor 3.5"" 200GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326034851,48,59
+"Maxtor 3.5"" 250GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326035016,48,59
+"Seagate 3.5"" 250GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331085755,48,30
+"Seagate 3.5"" 320GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331090150,48,30
+"New Seagate 3.5"" 120GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331101634,48,30
+"Seagate 3.5"" 200GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402031423,48,30
+"Seagate 3.5"" 250GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402032126,48,30
+"New Hitachi 3.5"" 40GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423092455,48,0
+"New IBM Hitachi 3.5"" 100GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423084042,48,0
+"New IBM Hitachi 3.5"" 120GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423084043,48,30
+"Hitachi 3.5"" 200GB 7200 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091369,48,30
+"Hitachi 3.5"" 250GB 7200 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091371,48,30
+"New Hitachi 3.5"" 60GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091377,48,0
+"New Hitachi 3.5"" 80GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091378,48,0
+"Hitachi 3.5"" 250GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091411,48,30
+"Hitachi 3.5"" 320GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091412,48,30
+"New Samsung 3.5"" 120GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521024643,48,30
+"Samsung 3.5"" 200GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521035130,48,30
+"Samsung 3.5"" 250GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521035348,48,30
+"Samsung 3.5""  250GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521063115,48,30
+"Samsung 3.5""  320GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521063411,48,30
+"WD Western Digital 3.5"" 320GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321055708,52,59
+"New Maxtor 3.5"" 120GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321082935,52,59
+"Maxtor 3.5"" 320GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321090705,52,59
+"New WD Western Digital 3.5"" 120GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120322014737,52,59
+"New WD Western Digital 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323075200,52,59
+"New Maxtor 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326025041,52,59
+"New Seagate 3.5"" 120GB 7200 RPM 8MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331071230,52,30
+"Seagate 3.5"" 320GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331090340,52,30
+"New Seagate 3.5"" 160GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331102024,52,30
+"New Hitachi 3.5"" 160GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091345,52,30
+"New Hitachi 3.5"" 120GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091380,52,30
+"Hitachi 3.5"" 320GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091413,52,30
+"New Samsung 3.5"" 160GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521025041,52,30
+"New Samsung 3.5"" 120GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop ",osst-20120521041345,52,30
+"Samsung 3.5""  320GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521063256,52,30
+"New Maxtor 3.5"" 160GB 7200 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321083308,55,59
+"New WD Western Digital 3.5"" 160GB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322014948,55,59
+"New WD Western Digital 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323075501,55,59
+"New WD Western Digital 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323090737,55,59
+"New Maxtor 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326025749,55,59
+"New Maxtor 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326030139,55,59
+"New Seagate 3.5"" 160GB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331071441,55,30
+"New Seagate 3.5"" 200GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331102458,55,30
+"New Seagate 3.5"" 250GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331103201,55,30
+"New Hitachi 3.5"" 250GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091349,55,30
+"New Hitachi 3.5"" 160GB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091381,55,30
+"New Hitachi 3.5"" 200GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120428043755,55,30
+"New Samsung 3.5"" 200GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521025217,55,30
+"New Samsung 3.5"" 250GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521030009,55,30
+"New Samsung 3.5"" 160GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop ",osst-20120521041538,55,30
+"New Maxtor 3.5"" 200GB 7200 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321084302,58,59
+"New Maxtor 3.5"" 250GB 5400 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321084949,58,59
+"New WD Western Digital 3.5"" 200GB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322015214,58,59
+"New WD Western Digital 3.5"" 250GB 5400 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322015901,58,59
+"New WD Western Digital 3.5"" 160GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323074914,58,59
+"New WD Western Digital 3.5"" 200GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323085107,58,59
+"New Maxtor 3.5"" 160GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326025157,58,59
+"New Maxtor 3.5"" 200GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326025631,58,59
+"New Seagate 3.5"" 200GB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331071821,58,30
+"New Seagate 3.5"" 250GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331072353,58,30
+"New Seagate 3.5"" 160GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331101842,58,30
+"New Seagate 3.5"" 200GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331102747,58,30
+"New Hitachi 3.5"" 160GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091308,58,30
+"New Hitachi 3.5"" 200GB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091382,58,30
+"New Hitachi 3.5"" 250GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091383,58,30
+"New Hitachi 3.5"" 200GB 7200 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120502014558,58,30
+"New Samsung 3.5"" 160GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521024845,58,30
+"New Samsung 3.5"" 200GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521025427,58,30
+"New Samsung 3.5""  200GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop ",osst-20120521041716,58,30
+"New Samsung 3.5""  250GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521042850,58,30
+"WD Western Digital 3.5"" 400GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321060144,62,59
+"WD Western Digital 3.5"" 500GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321061104,62,59
+"New Maxtor 3.5"" 250GB 7200 RPM 16MB or 32MB SATA Serial-ATA Hard Disk Driver Desktop",osst-20120321085549,62,59
+"New Maxtor 3.5"" 320GB 5400 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321091327,62,59
+"Maxtor 3.5"" 400GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321093135,62,59
+"Maxtor 3.5"" 500GB 5400 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321094212,62,59
+"New WD Western Digital 3.5"" 250GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322021012,62,59
+"New WD Western Digital 3.5"" 320GB 5400 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322021648,62,59
+"New WD Western Digital 3.5"" 250GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323090459,62,59
+"New Maxtor 3.5"" 250GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326030244,62,59
+"New Seagate 3.5"" 250GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331072122,62,30
+"New Seagate 3.5"" 320GB 5400 RPM 16MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331072832,62,30
+"Seagate 3.5"" 400GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331090820,62,30
+"Seagate 3.5"" 500GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331091018,62,30
+"New Seagate 3.5"" 250GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331102954,62,30
+"New Hitachi 3.5"" 250GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091384,62,30
+"New Hitachi 3.5"" 320GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091385,62,30
+"Hitachi 3.5"" 400GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091414,62,30
+"Hitachi 3.5"" 500GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091416,62,30
+"New Hitachi 3.5"" 250GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120427091411,62,30
+"New Samsung 3.5"" 250GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120521025802,62,30
+"New Samsung 3.5"" 250GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521041924,62,30
+"New Samsung 3.5""  320GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521043111,62,30
+"Samsung 3.5""  400GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521064042,62,30
+"WD Western Digital 3.5"" 400GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321060403,65,59
+"WD Western Digital 3.5"" 500GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321060648,65,59
+"New Maxtor 3.5"" 320GB 7200 RPM 16MB or 32MB SATA Serial-ATA Hard Disk Driver Desktop",osst-20120321091601,65,59
+"New Maxtor 3.5"" 400GB 7200 RPM 16MB or 32MB SATA Serial-ATA Hard Disk Driver Desktop",osst-20120321092521,78,59
+"Maxtor 3.5"" 500GB 7200 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321093830,65,59
+"New WD Western Digital 3.5"" 320GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322021947,65,59
+"WD Western Digital 3.5"" 320GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020446,65,59
+"Maxtor 3.5"" 320GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326035241,65,59
+"New Seagate 3.5"" 320GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331073354,65,30
+"Seagate 3.5"" 400GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331090621,65,30
+"Seagate 3.5"" 500GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331091235,65,30
+"Seagate 3.5"" 320GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402032550,65,30
+"Hitachi 3.5"" 320GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091374,65,30
+"New Hitachi 3.5"" 320GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091386,65,30
+"Hitachi 3.5"" 400GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091415,65,30
+"Hitachi 3.5"" 500GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091417,65,30
+"New Samsung 3.5""  320GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521053441,65,30
+"Samsung 3.5""  400GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521064730,65,30
+"Samsung 3.5""  500GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521064911,65,30
+"WD Western Digital 3.5"" 640GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321061439,68,59
+"WD Western Digital 3.5"" 750GB 5400 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321062339,68,59
+"Seagate 3.5"" 640GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331091614,68,30
+"Seagate 3.5"" 750GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331091821,68,30
+"Hitachi 3.5"" 640GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091418,68,30
+"Hitachi 3.5"" 750GB 5400 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091420,68,30
+"Samsung 3.5""  640GB 5400 5900 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065217,68,30
+"Samsung 3.5"" 750GB 5400 5900 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065353,68,30
+"WD Western Digital 3.5"" 640GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321061620,72,59
+"WD Western Digital 3.5"" 750GB 7200 RPM 8MB SATA Hard Disk Driver Desktop PC",osst-20120321062051,72,59
+" WD Western Digital 3.5"" 320GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020315,72,59
+"Maxtor 3.5"" 320GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120326035352,72,59
+"Seagate 3.5"" 640GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331091430,72,30
+"Seagate 3.5"" 750GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331092037,72,30
+"Seagate 3.5"" 320GB 7200 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402032352,72,30
+"Hitachi 3.5"" 320GB 7200 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091373,72,30
+"Hitachi 3.5"" 640GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091419,72,30
+"Hitachi 3.5"" 750GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091421,72,30
+"Samsung 3.5""  640GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065027,72,30
+"Samsung 3.5"" 750GB 7200 RPM 8MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065512,72,30
+"New Maxtor 3.5"" 400GB 5400 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321091937,75,59
+"New Maxtor 3.5"" 500GB 5900 RPM 16MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321094847,75,59
+"New WD Western Digital 3.5"" 400GB 5400 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322022450,75,59
+"New WD Western Digital 3.5"" 500GB 5900 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322022652,75,59
+"New Seagate 3.5"" 400GB 5400 RPM 16MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331074034,75,30
+"New Seagate 3.5"" 500GB 5900 RPM 16MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331074400,75,30
+"New Hitachi 3.5"" 400GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091387,75,30
+"New Hitachi 3.5"" 500GB 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091389,75,30
+"New Samsung 3.5""  400GB 5400 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521053814,75,30
+"New Samsung 3.5""  500GB 5400 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521054020,75,30
+"WD Western Digital 3.5"" 1TB 5400 RPM 32MB SATA Hard Disk Driver Desktop PC",osst-20120321063635,78,59
+"Maxtor 3.5"" 400GB 5400 RPM 8MB SATA Serial-ATA Hard Disk Driver Desktop PC",osst-20120321092217,62,59
+"New Maxtor 3.5"" 500GB 7200 RPM 16MB or 32MB SATA Serial-ATA Hard Disk Driver Desktop",osst-20120321094616,78,59
+"New WD Western Digital 3.5"" 400GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322022225,78,59
+"New WD Western Digital 3.5"" 500GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322022943,78,59
+"New WD Western Digital 3.5"" 320GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323090931,78,59
+"New Maxtor 3.5"" 320GB 5400 RPM 2MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326030535,78,59
+"New Seagate 3.5"" 400GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331073809,78,30
+"New Seagate 3.5"" 500GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331074619,78,30
+"Seagate 3.5"" 1TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331092658,78,30
+"New Seagate 3.5"" 320GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331103527,78,30
+"New Hitachi 3.5"" 320GB 5400 rpm 2MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091351,78,30
+"New Hitachi 3.5"" 400GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091388,78,30
+"Hitachi 3.5"" 1TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091422,78,30
+"New Samsung 3.5""  400GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521053624,78,30
+"New Samsung 3.5""  500GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521054524,78,30
+"Samsung 3.5"" 1TB 5400 5900 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065932,78,30
+"New WD Western Digital 3.5"" 640GB 5900 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322023840,82,59
+"New WD Western Digital 3.5"" 750GB 5900 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322024113,82,59
+"New Seagate 3.5"" 640GB 5900 RPM 16MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331075106,82,30
+"New Seagate 3.5"" 750GB 5900 RPM 16MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331075314,82,30
+"New Hitachi 3.5"" 640GB 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091391,82,30
+"New Hitachi 3.5"" 750GB 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091393,82,30
+"New Samsung 3.5""  640GB 5400 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521055155,82,30
+"New Samsung 3.5""  750GB 5400 5900 RPM 16MB SATA HDD Hard Disk Driver Desktop",osst-20120521055404,82,30
+"WD Western Digital 3.5"" 1TB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120321063848,85,59
+"WD Western Digital 3.5"" 1.5TB 5400 RPM 32MB SATA Hard Disk Driver Desktop PC",osst-20120321064242,85,59
+"New WD Western Digital 3.5"" 640GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322023134,85,59
+"New WD Western Digital 3.5"" 750GB 7200 RPM 16MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322024308,85,59
+"New WD Western Digital 3.5""  320GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323091233,85,59
+" WD Western Digital 3.5"" 500GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020803,85,59
+"New Maxtor 3.5"" 320GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop 40pin",osst-20120326030413,85,59
+"New Seagate 3.5"" 640GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331074854,85,30
+"New Seagate 3.5"" 750GB 7200 RPM 16MB or 32MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331075540,85,30
+"Seagate 3.5"" 1TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331092341,85,30
+"Seagate 3.5"" 1.5TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331092904,85,30
+"New Seagate 3.5"" 320GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331103724,85,30
+"Seagate 3.5"" 500GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402033524,85,30
+"Seagate 3.5"" 500GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120423083702,85,30
+"New Hitachi 3.5"" 320GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091350,85,30
+"Hitachi 3.5"" 500GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091376,85,30
+"New Hitachi 3.5"" 640GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091392,85,30
+"New Hitachi 3.5"" 750GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091394,85,30
+"Hitachi 3.5"" 1TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091423,85,30
+"Hitachi 3.5"" 1.5TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091424,85,30
+"New Samsung 3.5""  640GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521055047,85,30
+"New Samsung 3.5""  750GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521055524,85,30
+"Samsung 3.5"" 1TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521065721,85,30
+"Samsung 3.5"" 1.5TB 5400 5900 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521071445,85,30
+"New WD Western Digital 3.5"" 1TB 5900 RPM 64MB SATA Hard Disk Driver Desktop PC",osst-20120322025225,88,59
+" WD Western Digital 3.5"" 400GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120326020618,88,59
+"New Seagate 3.5"" 1TB 5900 RPM 64MB  SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331080230,88,30
+"Seagate 3.5"" 400GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20120402033159,88,30
+"Hitachi 3.5"" 400GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091375,88,30
+"New Hitachi 3.5"" 1TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091395,88,30
+"New Samsung 3.5""  1TB 5400 5900 RPM 64MB  SATA HDD Hard Disk Driver Desktop",osst-20120521055814,88,30
+"WD Western Digital 3.5"" 2TB 5400 RPM 32MB SATA Hard Disk Driver Desktop PC",osst-20120321064429,95,59
+"WD Western Digital 3.5"" 1.5TB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120321065834,95,59
+"New WD Western Digital 3.5"" 1TB 7200 RPM 64MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322025010,95,59
+"New WD Western Digital 3.5"" 1.5TB 5900 RPM 64MB SATA Hard Disk Driver Desktop",osst-20120322031357,95,59
+"New WD Western Digital 3.5"" 500GB 7200 RPM 16MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323091923,95,59
+"New Seagate 3.5"" 1TB 7200 RPM 32MB or 64MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331075845,95,30
+"New Seagate 3.5"" 1.5TB 5900 RPM 64MB  SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331080508,95,30
+"Seagate 3.5"" 1.5TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331093057,95,30
+"Seagate 3.5"" 2TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331094019,95,30
+"New Seagate 3.5"" 500GB 7200 rpm 16MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120402014823,95,30
+"New Hitachi 3.5"" 500GB 7200 RPM 16MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091390,78,30
+"New Hitachi 3.5"" 1TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091396,95,30
+"New Hitachi 3.5"" 1.5TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091397,95,30
+"Hitachi 3.5"" 1.5TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091425,95,30
+"Hitachi 3.5"" 2TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091426,95,30
+"New Samsung 3.5"" 1TB 7200 RPM 64MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521055646,95,30
+"New Samsung 3.5"" 1.5TB 5400 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop",osst-20120521060126,95,30
+"Samsung 3.5"" 1.5TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521072413,95,30
+"Samsung 3.5"" 2TB 5400 5900 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521072712,95,30
+"New Hitachi 3.5"" 500GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120525085400,95,30
+"Seagate 3.5"" 750GB 7200 RPM 8MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20121010032254,95,29
+"WD Western Digital 3.5"" 2TB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120321064755,112,59
+"New WD Western Digital 3.5"" 1.5TB 7200 RPM 64MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322025411,112,59
+"New WD Western Digital 3.5"" 2TB 5900 RPM 64MB SATA Hard Disk Driver Desktop PC",osst-20120322030120,112,59
+"New WD Western Digital 3.5""  400GB 7200 RPM 16MB PATA IDE HDD Hard Disk Driver Desktop",osst-20120323091714,112,59
+"New Seagate 3.5"" 1.5TB 7200 RPM 32MB or 64MB  SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331080803,112,30
+"New Seagate 3.5"" 2TB 5900 RPM 64MB  SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331082138,112,30
+"Seagate 3.5"" 2TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331093812,112,30
+"New Seagate 3.5"" 400GB 7200 rpm 16MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120331103859,112,30
+"New Hitachi 3.5"" 400GB 7200 rpm 8MB PATA IDE HDD Hard Disk Driver Desktop PC",osst-20120423091352,112,30
+"New Hitachi 3.5"" 1.5TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091398,112,30
+"New Hitachi 3.5"" 2TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091399,112,30
+"Hitachi 3.5"" 2TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091427,112,30
+"New Samsung 3.5""  1.5TB 7200 RPM 64MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521060016,112,30
+"New Samsung 3.5""  2TB 5400 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop",osst-20120521060249,112,30
+"Samsung 3.5"" 2TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22 pin",osst-20120521072535,112,0
+"New Seagate 3.5"" 750GB 7200 RPM 16MB PATA IDE HDD Hard Disk Driver Desktop PC 40pin",osst-20121010033033,115,29
+"New WD Western Digital 3.5"" 2TB 7200 RPM 64MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322025938,125,59
+"New Seagate 3.5"" 2TB 7200 RPM 32MB or 64MB  SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331081011,125,30
+"New Hitachi 3.5"" 2TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091400,125,30
+"New Samsung 3.5""  2TB 7200 RPM 64MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120521060401,125,30
+"WD Western Digital 3.5"" 2.5TB 5400 RPM 32MB SATA Hard Disk Driver Desktop PC",osst-20120321065109,135,59
+"WD Western Digital 3.5"" 3TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120322080425,135,59
+"Seagate 3.5"" 2.5TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331094311,135,30
+"Seagate 3.5"" 3TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331094906,135,30
+"Hitachi 3.5"" 2.5TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091428,135,30
+"Hitachi 3.5"" 3TB 5400 RPM 32MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091430,135,30
+"WD Western Digital 3.5"" 2.5TB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120321064927,145,59
+"WD Western Digital 3.5"" 3TB 7200 RPM 16MB SATA Hard Disk Driver Desktop PC",osst-20120322080209,145,59
+"Seagate 3.5"" 2.5TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331094522,145,30
+"Seagate 3.5"" 3TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331094731,145,30
+"Hitachi 3.5"" 2.5TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091429,145,30
+"Hitachi 3.5"" 3TB 7200 RPM 16MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120423091431,145,30
+"New WD Western Digital 3.5"" 2.5TB 5900 RPM 64MB SATA Hard Disk Driver Desktop PC",osst-20120322030317,150,59
+"New WD Western Digital 3.5"" 3TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop",osst-20120322080657,150,59
+"New Seagate 3.5"" 2.5TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331082439,150,30
+"New Seagate 3.5"" 3TB 5900 RPM 64MB SATA  HDD Hard Disk Driver Desktop PC 22pin",osst-20120331083140,150,30
+"New Hitachi 3.5"" 2.5TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091401,150,30
+"New Hitachi 3.5"" 3TB 5900 RPM 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091403,150,30
+"New WD Western Digital 3.5"" 2.5TB 7200 RPM 64MB or 32MB SATA Hard Disk Driver Desktop",osst-20120322030559,160,59
+"New WD Western Digital 3.5"" 3TB 7200 RPM 64MB or 32MB SATA HDD Hard Disk Driver Desktop",osst-20120322081002,160,59
+"New Seagate 3.5"" 2.5TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331082739,160,30
+"New Seagate 3.5"" 3TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC 22pin",osst-20120331082953,160,30
+"New Hitachi 3.5"" 2.5TB 7200 RPM 32MB or 64MB SATA HDD Hard Disk Driver Desktop PC",osst-20120423091402,160,30
+"New Hitachi 3.5"" 3TB 7200 rpm 64MB or 32MB SATA HDD Hard Disk Driver Desktop PC",osst-20120502015330,160,30

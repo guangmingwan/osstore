@@ -1,0 +1,108 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php  $_order = $this->getOrder() ?>
+<table cellspacing="0" class="shopping-cart checkout-review" id="my-orders-table">
+    <col width="20%" />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+<!--    <thead>
+        <tr>
+            <th><?php echo $this->__('Product Name') ?></th>
+            <th class="a-right"><?php echo $this->__('Price') ?></th>
+            <th class="a-center"><?php echo $this->__('Qty') ?></th>
+            <th class="a-right"><?php echo $this->__('Subtotal') ?></th>
+        </tr>
+    </thead> -->
+    <tfoot>
+    <?php if(Mage::helper('awmobile')->checkVersion('1.4.0')): ?>
+        <?php echo $this->getChildHtml('order_totals'); ?>
+    <?php else: ?>
+        <tr>
+            <td colspan="3" class="a-right"><?php echo $this->__('Order Subtotal') ?></td>
+            <td class="last a-right"><?php echo $_order->formatPrice($_order->getSubtotal()) ?></td>
+        </tr>
+        <?php if ($_order->getDiscountAmount() > 0): ?>
+            <tr>
+                <td colspan="3" class="a-right"><?php echo $this->__('Discount '.($_order->getCouponCode()?'('.$_order->getCouponCode().')':'')) ?></td>
+                <td class="last a-right"><?php echo $_order->formatPrice(0.00 - $_order->getDiscountAmount()) ?></td>
+            </tr>
+        <?php endif; ?>
+        <?php //if ($_order->getTaxAmount() > 0): ?>
+        <?php if (($_order->getTaxAmount() > 0)||(Mage::helper('tax')->displayZeroTax())): ?>
+            <?php echo $this->getChildHtml('tax'); ?>
+        <?php endif; ?>
+        <?php if ($_order->getShippingAmount() || $_order->getShippingDescription()): ?>
+            <tr>
+                <td colspan="3" class="a-right"><?php echo $this->__('Shipping & Handling') ?></td>
+                <td class="last a-right"><?php echo $_order->formatPrice($_order->getShippingAmount()) ?></td>
+            </tr>
+        <?php endif; ?>
+        <tr>
+            <td colspan="3" class="a-right"><strong><?php echo $this->__('Grand Total') ?></strong></td>
+            <td class="last a-right"><strong><?php echo $_order->formatPrice($_order->getGrandTotal()) ?></strong></td>
+        </tr>
+        <?php if ($_order->isCurrencyDifferent()): ?>
+        <tr>
+            <td colspan="3" class="a-right"><strong><?php echo $this->__('Grand Total to be charged') ?></strong></td>
+            <td class="last a-right"><strong><?php echo $_order->formatBasePrice($_order->getBaseGrandTotal()) ?></strong></td>
+        </tr>
+        <?php endif; ?>
+
+    <?php endif; ?>        
+    </tfoot>
+        <?php $_items = $_order->getItemsCollection(); ?>
+        <?php $_index = 0; ?>
+            <?php $_count = $_items->count(); ?>
+        <?php foreach ($_items as $_item): ?>
+        <?php if ($_item->getParentItem()) continue; ?>
+        <tbody>
+            <?php echo $this->getItemHtml($_item) ?>
+            <?php if($this->helper('giftmessage/message')->getIsMessagesAvailable('order_item', $_item) && $_item->getGiftMessageId()): ?>
+            <tr class="border<?php echo ($_index++ > $_count ?' last':'') ?>" id="order-item-gift-message-<?php echo $_item->getId() ?>" style="display:none;">
+                <?php $_giftMessage=$this->helper('giftmessage/message')->getGiftMessageForEntity($_item); ?>
+                <td class="giftmessage-row last" colspan="7">
+                    <ul class="giftmessage-content">
+                        <li><label><?php echo $this->__('From') ?></label> <?php echo $this->htmlEscape($_giftMessage->getRecipient()) ?></li>
+                        <li><label><?php echo $this->__('To') ?></label> <?php echo $this->htmlEscape($_giftMessage->getSender()) ?></li>
+                      <li><?php echo $this->helper('giftmessage/message')->getEscapedGiftMessage($_item) ?></li>
+                    </ul>
+                  <div class="giftmessage-close"><a href="#" onclick="return giftMessageToogle('<?php echo $_item->getId() ?>');"><img src="<?php echo $this->getSkinUrl('images/gift-message-close.gif') ?>" alt="" /></a></div>
+                </td>
+            </tr>
+            <?php endif ?>
+        </tbody>
+        <?php endforeach; ?>
+</table>
+<table style="margin-bottom: 10px;"><tr><td>
+<a class="button grey left"  title="Go back" href="<?php echo Mage::getUrl('customer/account');?>"><span class="nowrap"><?php echo $this->__('Back');?></span></a>
+</td></tr></table>
+<script type="text/javascript">decorateTable('my-orders-table', {'tbody' : ['odd', 'even'], 'tbody tr' : ['first', 'last']})</script>

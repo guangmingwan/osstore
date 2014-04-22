@@ -1,0 +1,39 @@
+<div class=" jcarousel-skin-tango">
+<div class="jcarousel-container jcarousel-container-horizontal" >
+<div class="jcarousel-clip jcarousel-clip-horizontal">
+<ul id="featured" class="jcarousel-list jcarousel-list-horizontal">
+				<?php
+				$bestseller =Mage::getModel('catalog/category')->load(427);	
+				$best_collection = $bestseller->getProductCollection();	
+				$arr1=array();
+				foreach ($best_collection as $best_product)
+				{
+					$best_product_id =  $best_product->getId();
+					$arr1[]=$best_product_id;
+				}
+				?>
+				<?php 
+				if(sizeof($arr1) >=10) 
+				{ 
+					$arr2 = array_rand($arr1,10); 
+					foreach($arr2 as $id){
+					$product_model = Mage::getModel('catalog/product');
+					$product_amy = $product_model->load($arr1[$id]);								
+				?>
+									<?php if($product_amy->isSaleable()):?>
+		<li class="jcarousel-item jcarousel-item-horizontal">
+	
+		<a  href="<?php echo $product_amy->getData('url_key').'.html'; ?>" title="<?php echo $product_amy->getName(); ?>" >
+		<img src="<?php echo $this->helper('catalog/image')->init($product_amy, 'small_image')->resize(105) ?>" width="105" height="105" alt="<?php echo $product_amy->getName(); ?>" /></a>
+
+		</li>	
+	
+									<?php endif; ?>
+									<?php  } }?>
+		
+</ul>
+</div>
+<div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block;">&nbsp;</div>
+<div class="jcarousel-next jcarousel-next-horizontal" style="display: block;">&nbsp;</div>
+</div>
+</div>

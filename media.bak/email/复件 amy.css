@@ -1,0 +1,102 @@
+body {
+    background: url("http://www.os-store.com/media/email/topbg.gif") repeat-x scroll center top transparent;
+    border-top-style: none;
+    color: #000000;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    margin: 0;
+    padding: 0;
+	width:100%
+}
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mordel{width:740px;margin:0 auto;    
+		color: #000000;
+    	font: 13px/1.231 arial,helvetica,clean,sans-serif;background:#FFFFFF;
+		position:relative;}
+
+
+/****************home add amy********************/
+.home-email{float:right;width:740px;}
+.top_seller-email{float: right;margin-bottom: 5px;padding-bottom:10px;width: 740px;}
+.product_name{background:url("http://www.os-store.com/media/email/blockbg.gif") repeat-x scroll 0 0 transparent;height:22px;width:740px;}
+.title-email{float: left;line-height: 22px;padding-left: 10px;font-weight:bold;}
+.more-email {font-weight:bold;float:right;padding-right:10px;line-height: 22px;}
+.more-email a{color:#333333;text-decoration:none;}
+.more-email a:hover{color:#1E7EC8;text-decoration:underline;} 
+.recommend-email{font-size:14px;}
+.recommend-email a{color:#333333;text-decoration:none;}
+.recommend-email a:hover{color:#1E7EC8;text-decoration:underline;} 
+
+
+
+
+
+
+/**************home-text add amy*****************/
+#text-email{ font-family:Arial, Helvetica, sans-serif;font-size:13px;color:#000000;padding:10px 0;width: 740px;float:left;margin-top:10px;background:#ffffff;}
+#text-email .texttitle{	padding:0 5px;margin-bottom:10px;color:#666666;background:url(http://www.os-store.com/media/email/texttitle1.gif) top left repeat-x;
+   line-height:20px;
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-size:14px;
+   font-weight:bold;
+   }
+   
+#text-email #textcontent{margin:0 auto; padding:0;float:left;width:100%; }
+.textcontentleft{ float:left;   padding-left:10px;   width:48%;   }
+.textcontentright{   float:left;   padding-left:15px;   width:48%;   }
+#text-email .text_blue{ padding-left:22px; padding-bottom:10px;  background:url(http://www.os-store.com/media/email/icon1.gif) top left no-repeat;
+   color:#666666;
+   text-shadow:2px #FF0000;
+   line-height:20px;
+   font-size:12px;
+   font-weight:bold;
+   } 
+#text-email p{padding-left:5px;   padding-bottom:10px;   font-size:12px;   color:#665440; line-height:20px;  }
+
+
+/*******footer**********/
+
+.footerarea-email {
+background:url("http://www.os-store.com/media/email/footerarea.gif") repeat-x scroll 0 0 #FFFFFF;
+height:200px;
+margin:0 auto;
+width:740px;
+}
+.bottombg-email{background:url(http://www.os-store.com/media/email/bottombg.gif) repeat;clear:both;}
+.bottombg-email .inbg {
+    background: url(http://www.os-store.com/media/email/i_38.gif) no-repeat scroll 0 0 transparent;
+    height: 126px;
+    padding-top: 15px;
+    width: 740px;
+}
+
+.inbg_inner
+{
+	margin:0 auto;
+	padding-left:20px;
+}
+	
+	.inbg_text	{float:left;width:180px;margin:10px 0 0 0px;_width:110px;_padding-left:20px;} 
+	
+   .inbg_text ul li{float:left; text-align:left;width:180px;padding-top:1px;_width:130px;}
+   .inbg_text ul li a{font-weight:normal;text-decoration:underline;width:180px;_width:130px;}
+   .inbg_text ul li.m {float:left; width:180px; text-align:left;font-weight:bold;color:#004672;font-size:14px;_width:130px;}
+   
+   .downbg{margin:0 auto; width:967px; height:9px;clear:both}
+   
+   .copyright{text-align:center; margin:0px auto 0 auto; color:#868687; display:block;}
+   .link{text-align:center; margin-top:2px;}
+   .link img{margin-right:42px;}
+
+.email2 {
+    color: #004672;
+    font-size: 12px;
+}
+a{color: #004672;}
+	
+
+	

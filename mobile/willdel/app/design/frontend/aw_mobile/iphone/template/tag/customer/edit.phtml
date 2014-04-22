@@ -1,0 +1,53 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="page-head">
+    <h3><?php echo $this->__('Edit Tag') ?></h3>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<form id="addTagForm" action="<?php echo $this->getFormAction(); ?>"  method="post">
+<fieldset class="group-select">
+    <h4 class="legend"><?php echo $this->__('Tag Information') ?></h4>
+    <ul>
+        <li>
+            <div class="input-box">
+            <input type="text" class="input-text required-entry" style="width:300px;" name="productTagName" value="<?php echo $this->htmlEscape($this->getTag()->getName()) ?>" />
+            </div>
+        </li>
+    </ul>
+</fieldset>
+<div class="button-set">
+    <a href="<?php echo $this->getUrl('*/*/view/', array('tagId' => $this->getTag()->getTagId())) ?>" class="left">&laquo; <?php echo $this->__('Back to view Tag') ?></a>
+    <button type="button" class="form-button" onclick="tagForm.submit();"><span><?php echo $this->__('Save Tag') ?></span></button>
+</div>
+</form>
+<script type="text/javascript">
+    var tagForm = new VarienForm('addTagForm');
+</script>

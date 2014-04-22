@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!--
+
+/*
+ * Magento EsayCheckout Extension
+ *
+ * @copyright:	EcommerceTeam (http://www.ecommerce-team.com)
+ * @version:	1.2
+ *
+ */
+
+ -->
+<config>
+	<sections>
+		<checkout>
+			<groups>
+				<options translate="label">
+					<fields>
+						<checkoutmode translate="label">
+							<label>Checkout View</label>
+							<frontend_type>select</frontend_type>
+							<source_model>ecommerceteam_echeckout/system_conf_source_mode</source_model>
+							<sort_order>90</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</checkoutmode>
+						<different_shipping_enabled translate="label">
+							<label>Different Shipping Address</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</different_shipping_enabled>
+						<address_book_enabled translate="label">
+							<label>Address Book Dropdown</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>101</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</address_book_enabled>
+						<coupon_enabled translate="label">
+							<label>Discount Code Box</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>102</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</coupon_enabled>
+						<subscibe_enabled translate="label">
+							<label>Subscribe to Newsletter</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>104</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</subscibe_enabled>
+						<title translate="label">
+							<label>Page Title</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>110</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</title>
+						<cms_block translate="label">
+							<label>CMS Block</label>
+							<frontend_type>select</frontend_type>
+							<source_model>ecommerceteam_echeckout/system_conf_source_cmsblock</source_model>
+							<sort_order>120</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms_block>
+						
+						<geoip_country translate="label">
+							<label>GeoIP for Country</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>130</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</geoip_country>
+						
+						<geoip_state translate="label">
+							<label>GeoIP for State</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>140</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</geoip_state>
+						
+						<geoip_post translate="label">
+							<label>GeoIP for Zip/Postcode</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>150</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</geoip_post>
+						
+						<geoip_city translate="label">
+							<label>GeoIP for City</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>160</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</geoip_city>
+						
+						<geoip_file translate="label">
+							<label>GeoIP Data File</label>
+							<frontend_type>file</frontend_type>
+							<backend_model>ecommerceteam_echeckout/system_conf_backend_file_geoip</backend_model>
+							<upload_dir config="system/filesystem/media" scope_info="1">ecommerceteam/geoip</upload_dir>
+							<sort_order>170</sort_order>
+							<show_in_default>1</show_in_default>
+							<comment><![CDATA[To keep your GeoIp database up to date please download fresh data <a target="_blank" href="http://www.maxmind.com/app/geolitecity">here</a>.]]></comment>
+						</geoip_file>
+						
+						
+						
+					</fields>
+				</options>
+			</groups>
+		</checkout>
+	</sections>
+</config>

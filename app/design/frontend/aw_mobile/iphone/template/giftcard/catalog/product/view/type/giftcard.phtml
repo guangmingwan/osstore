@@ -1,0 +1,60 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php /* @var $this Enterprise_GiftCard_Block_Catalog_Product_View_Type_Giftcard */?>
+<?php $_product = $this->getProduct() ?>
+<?php $_id = $_product->getId(); ?>
+<?php $_available = Mage::helper('awmobile')->checkVersion('1.9.0.0') ? $_product->isAvailable() : ($_product->isSaleable() && $this->isConfigured($_product)) ?>
+
+<?php if ($_available): ?>
+    <p class="availability in-stock"><?php echo $this->helper('catalog')->__('Availability:') ?> <span><?php echo $this->helper('catalog')->__('In stock') ?></span></p>
+<?php else: ?>
+    <p class="availability out-of-stock"><?php echo $this->helper('catalog')->__('Availability:') ?> <span><?php echo $this->helper('catalog')->__('Out of stock') ?></span></p>
+<?php endif; ?>
+
+<?php echo $this->getChildHtml('product_type_data_extra') ?>
+<?php if ($_product->isSaleable() && $this->isConfigured($_product)): ?>
+    <?php if (!$this->isOpenAmountAvailable($_product) && (count($this->getAmounts($_product)) == 1)): ?>
+        <?php $_amount = $this->getAmounts($_product); $_amount = array_shift($_amount); ?>
+        <div class="price-box">
+            <span class="regular-price">
+                <span class="price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
+                    <?php echo Mage::helper('core')->currency($_amount, true, false); ?>
+                </span>
+            </span>
+        </div>
+    <script type="text/javascript">
+        $j(document).ready(function(e){
+            $j('span.price').html($j('span.regular-price').html());
+        });
+    </script>
+
+    <?php endif; ?>
+<?php endif; ?>

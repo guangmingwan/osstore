@@ -1,0 +1,87 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php echo $this->getChildHtml('head') ?>
+</head>
+    <body home="index.php" class="mage-iphone<?php if (Mage::registry(AW_Mobile_Block_Catalog_Navigation::IS_NAVIGATION_PAGE)) echo " navpage"; ?>">
+    <?php echo $this->getChildHtml('after_body_start') ?>
+    <?php echo $this->getChildHtml('global_notices') ?>    
+    <div class="header">
+        <?php echo $this->getChildHtml('header') ?>
+    </div>
+    <div class="content-container active">
+        <div class="shop-access">
+            <?php echo $this->getChildHtml('awTopLinks') ?>
+            <div class="clear"></div>
+        </div>
+        <div class="middle-container">
+            <div class="middle col-1-layout">
+                <div><?php echo $this->getChildHtml('breadcrumbs') ?></div>
+                <div><?php echo $this->getChildHtml('messages') ?></div>
+                    <div class="clear"></div>
+                
+                <div class="clear"></div>
+                <div id="main" class="col-main<?php if ($this->getChild('content') && $this->getChild('content')->getIsCms() && !Mage::registry(AW_Mobile_Block_Catalog_Navigation::IS_NAVIGATION_PAGE)){ echo " is_cms"; } ?>">
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php if(Mage::app()->getRequest()->getControllerName() != 'multishipping') : ?>        
+    <div class="cart-container hidden">
+        <div class="shop-access">
+            <?php echo $this->getChildHtml('cartLinks') ?>
+        </div><div class="clear"></div>
+        <div class="middle-container">
+            <div class="middle col-1-layout">
+                <div id="main-cart" class="col-main cart">
+                    <?php echo $this->getChildHtml('cartContent') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>        
+    <div class="footer-container" id="footer-container">
+        <div class="footer">
+            <?php echo $this->getChildHtml('footer') ?>
+        </div>
+    </div>
+    <?php echo $this->getChildHtml('before_body_end') ?>
+    <?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

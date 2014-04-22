@@ -1,0 +1,64 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+
+<h2><?php echo $this->__('Wishlist') ?></h2>
+<?php if($wishlist->getSize()): ?>
+<form action="<?php echo $this->getUrl('customer/wishlist/updatePost') ?>" method="post">
+    <table cellspacing="0" width="100%" class="data-table">
+        <tr>
+            <th class="align-left"><?php echo $this->__('Product') ?></th>
+            <th style="width:60px;" class="align-center"><?php echo $this->__('Status') ?></th>
+            <th style="width:60px;" class="align-center"><?php echo $this->__('To Cart') ?></th>
+            <th style="width:60px;" class="align-center"><?php echo $this->__('Remove') ?></th>
+        </tr>
+        <?php foreach($wishlist as $item): ?>
+        <tr>
+            <td>
+                <input type="hidden" value="1" name="wishlist[<?php echo $item->getItemId() ?>]" />
+                <a href="<?php echo $this->getUrl('catalog/product/view/id/'.$item->getProduct()->getId()) ?>"><?php echo $this->htmlEscape($item->getProduct()->getName()) ?></a>
+            </td>
+            <td class="align-center"><?php echo $item->getStatus() ?></td>
+            <td class="align-center"><input type="checkbox" value="1" name="to_cart[<?php echo $item->getItemId() ?>]" /></td>
+            <td class="align-center"><input type="checkbox" value="1" name="remove[<?php echo $item->getItemId() ?>]" /></td>
+        </tr>
+        <?php endforeach ?>
+    </table>
+    <div class="buttons-container">
+        <a href="<?php echo Mage::getBaseUrl() ?>" class="float-left">&laquo; <?php echo $this->__('Continue Shopping') ?></a>
+        <input type="submit" value="<?php echo $this->__('Update') ?>" class="input-button" name="do" />
+    </div>
+</form>
+<?php else: ?>
+    <p><?php echo $this->__('You have placed no products yet.') ?></p>
+<div class="button-set">
+    <a href="<?php echo $this->getUrl('customer/account') ?>" class="left">&laquo; Back - link to the previously viewed page</a>
+</div>
+<?php endif ?>

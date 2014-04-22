@@ -1,0 +1,77 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * @see Mage_Core_Block_Template
+ */
+?>
+<div class="page-head">
+    <h2><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></h2>
+</div>
+<div class="account-block">
+    <div id="messages"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+    <?php echo $this->getChildHtml('form_before')?>
+    <?php if ($maxPerSend = (int)Mage::helper('enterprise_invitation')->getMaxInvitationsPerSend()): ?>
+    <form id="invitationForm" action="" method="post">
+        <div class="fieldset">
+        <h4 class="legend"><?php echo Mage::helper('enterprise_invitation')->__('Invite your friends by entering their email addresses below'); ?></h4>
+            <ul class="form-list">
+                <?php $_perRow = ceil($maxPerSend/3); for($_index = 1; $_index <= $maxPerSend; $_index ++): ?>
+                <li>
+                    <label for="email_<?php echo $_index ?>"<?php if ($_index == 1) echo ' class="required"' ?>><?php if ($_index == 1) echo '<em>*</em>' ?><?php echo $_index; ?>:</label>
+                    <div class="input-box">
+                        <input tabindex="<?php echo $_index ?>" name="email[]" id="email_<?php echo $_index ?>" title="<?php echo Mage::helper('enterprise_invitation')->__('Email') ?>" value="" class="<?php if ($_index == 1): ?>required-entry <?php endif;?>input-text validate-email" type="text" />
+                    </div>
+                </li>
+                <?php endfor; ?>
+            <?php if (Mage::helper('enterprise_invitation')->isInvitationMessageAllowed()): ?>
+                <li>
+                    <label for="message"><?php echo Mage::helper('enterprise_invitation')->__('Message');?>: </label>
+                    <div class="">
+                        <textarea tabindex="<?php echo $_index+1 ?>" name="message" id="message" title="<?php echo Mage::helper('enterprise_invitation')->__('Message') ?>"  class="input-text" rows="5" cols="5"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <?php endif;?>
+        </div>
+       <p class="required"><?php echo Mage::helper('enterprise_invitation')->__('* Required Fields') ?></p>
+        <div class="button-space a-center form-buttons">           
+            <button class="form-button form-button-alt giftcard" type="submit"><span><span><?php echo Mage::helper('enterprise_invitation')->__('Send Invitations') ?></span></span></button>
+        </div>
+
+    </form>
+    <script type="text/javascript">
+        var contactForm = new VarienForm('invitationForm', true);
+    </script>
+    <?php else:?>
+    <p><?php echo Mage::helper('enterprise_invitation')->__('You cannot send more invitations'); ?></p>
+    <?php endif; ?>
+</div>

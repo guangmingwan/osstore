@@ -1,0 +1,137 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ */
+?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<?php $_product=$this->getProduct() ?>
+<form action="" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+<div class="product-info-box">
+    <div class="product-essential">
+        <div class="product-shop">
+            <div class="col2-alt-set">
+                <div class="col-1">                                        
+                    <?php echo $this->getChildHtml('media');?>                    
+                    <?php /*if($_product->isSaleable()): ?>
+                        <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                            <div style="padding:7px 0 5px 8px;"><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>"><?php echo $this->__('Add to Wishlist') ?></a></div>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                    <?php if ($this->canEmailToFriend()): ?>
+                        <div style="padding:0 0 5px 6px;"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></div>
+                    <?php endif;*/ ?>
+                </div>
+                <div class="col-2">
+                    <div class="product-name"><?php echo $this->helper('awmobile')->escapeHtml($_product->getName()) ?></div>
+                    <?php echo $this->getChildHtml('product_type_data') ?>
+                    
+                    <?php echo $this->getChildHtml('paypal_wrapper'); ?>
+                    <fieldset class="no-display">
+                        <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" class="prodcut"/>
+                        <input type="hidden" name="related_product" id="related-products-field" value="" class="prodcut"/>
+                    </fieldset>
+
+                    <script type="text/javascript">
+                        var productAddToCartForm = new VarienForm('product_addtocart_form');
+                        productAddToCartForm.submit = function(){
+                                if (this.validator.validate()) {
+                                     mobileCart.postProductForm('product_addtocart_form', '<?php echo $this->getAddToCartUrl($_product) ?>');
+                                }
+                        }.bind(productAddToCartForm);
+                        $j(document).ready(function(e){
+                            $j('#product_addtocart_form').submit(function(event){
+                                $j(':focus').blur();
+                                productAddToCartForm.submit();
+                                return false;
+                            });
+                        });
+                    </script>
+                    <div class="clear"></div>
+
+                </div>
+               
+                <div class="clear"></div>
+            </div>
+        </div>
+            <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+            <?php endif;?>
+        </div>
+    <div>
+        <?php echo $this->getChildHtml('extrahint') ?>
+                        
+    </div>
+    <?php echo $this->getChildHtml('extra.product.info') ?>
+        <?php echo $this->getChildHtml('prices'); ?>
+        <?php if (!$this->hasOptions()):?>
+            <?php if($_product->isSaleable()): ?>
+                <?php echo $this->getChildHtml('addtocart') ?>
+            <?php endif; ?>
+        <?php endif; ?>
+        <?php echo $this->getChildHtml('other');?>
+
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+            <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+        <?php endif;?>
+
+        
+
+        <div class="product-collateral">
+        <?php echo $this->getTierPriceHtml() ?>
+
+        <?php if(!method_exists($this, 'getChildGroup')): ?>
+            <h4 class="product-details-collation-header"><?php echo $this->helper('awmobile')->escapeHtml($this->getChild('description')->getTitle());?></h4>
+            <?php echo $this->getChildHtml('description') ?>
+        <?php else: ?>
+             
+
+            <?php
+                $this->getLayout()->getBlock('product.description')->addToParentGroup('detailed_info')->setTitle($this->__('Details'));
+            ?>
+
+            <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+                <h4 class="product-details-collation-header"><?php echo $this->helper('awmobile')->escapeHtml($this->getChildData($alias, 'title'));?></h4>
+                <div><?php echo $html;?></div>
+            <?php endforeach;?>
+        <?php endif; ?>
+
+        <?php echo $this->getChildHtml('product_attributes_data') ?>
+
+
+        <?php //echo $this->getChildHtml('upsell_products') ?>
+        <?php echo $this->getChildHtml('product_additional_data') ?>
+    </div>
+</div>
+</form>

@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageAsia_LBTags>
+            <version>0.1.2</version>
+        </MageAsia_LBTags>
+    </modules>
+    
+    <admin>
+        <routers>
+			<lbtags>
+				<use>admin</use>
+				<args>
+					<module>MageAsia_LBTags</module>
+					<frontName>tagsadmin</frontName>
+				</args>
+			</lbtags>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<lbtags module="lbtags">
+				<title>Tags</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<lbtags module="lbtags">
+						<title>Manage Tags</title>
+						<sort_order>0</sort_order>
+						<action>tagsadmin/adminhtml_tags</action>
+					</lbtags>
+					<tagsetting module="lbtags">
+						<title>Tags Setting</title>
+						<sort_order>1</sort_order>
+						<action>adminhtml/system_config/edit/section/magasialbtags</action>
+					</tagsetting>
+				 
+				</children>
+			</lbtags>
+		</menu>
+		 
+		
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<lbtags>
+						 <title>Tags</title>
+                            <sort_order>90</sort_order>
+                            <children>
+								<lbtags>
+									<title>Manage Tags</title>
+									<sort_order>10</sort_order>
+								</lbtags>
+								 
+							</children>
+						</lbtags>
+						<system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <magasialbtags translate="title" module="lbtags">
+                                            <title>Tags</title>
+                                            <sort_order>164</sort_order>
+                                        </magasialbtags>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+						
+					</children>
+				</admin>
+				 
+			</resources>
+		</acl>
+		
+		
+		<layout>
+			<updates>
+				<lbtags>
+					<file>lbtags.xml</file>
+				</lbtags>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <lbtags>
+                <class>MageAsia_LBTags_Model</class>
+                <resourceModel>lbtags_mysql4</resourceModel>
+            </lbtags>
+            <lbtags_mysql4>
+                <class>MageAsia_LBTags_Model_Mysql4</class>
+           
+				<entities>
+				  <tags>
+					<table>alphaindex_tags</table>
+				  </tags>
+				  <tags_properties>
+					<table>alphaindex_tags_properties</table>
+				  </tags_properties>
+				  <tags_relation>
+					<table>alphaindex_tags_relation</table>
+				  </tags_relation>
+				</entities>
+            </lbtags_mysql4>
+        </models>
+        <resources>
+            <lbtags_setup>
+                <setup>
+                    <module>MageAsia_LBTags</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </lbtags_setup>
+            <lbtags_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </lbtags_write>
+            <lbtags_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </lbtags_read>
+        </resources>
+        <blocks>
+            <lbtags>
+                <class>MageAsia_LBTags_Block</class>
+            </lbtags>
+        </blocks>
+        <helpers>
+            <lbtags>
+                <class>MageAsia_LBTags_Helper</class>
+            </lbtags>
+        </helpers>
+		<events>
+		  <controller_front_init_routers>
+			<observers>
+			  <lbtags>
+				<type>singleton</type>
+				<class>MageAsia_LBTags_Controller_Router</class>
+				<method>initControllerRouters</method>
+			  </lbtags>
+			</observers>
+		  </controller_front_init_routers>
+		</events>
+		<!--<rewrite>
+		
+		  <MageAsia_LBTags_Index>
+			<from>
+			  <![CDATA[#^/tag/#]]>
+			</from>
+			<to>/tags/</to>
+		  </MageAsia_LBTags_Index> 
+		  
+		</rewrite>
+			-->
+    </global>
+	<frontend>
+        <routers>
+            <lbtags>
+                <use>standard</use>
+                <args>
+                    <module>MageAsia_LBTags</module>
+                    <frontName>tags</frontName>
+                </args>
+            </lbtags>
+        </routers>
+        <layout>
+            <updates>
+                <lbtags>
+                    <file>lbtags.xml</file>
+                </lbtags>
+            </updates>
+        </layout>
+    </frontend>
+	<default>
+		<magasialbtags>
+			<tagsetting>
+					<enable>0</enable>
+					<mageasia_tags_routename>lbtags</mageasia_tags_routename>
+					<mageasia_tags_polulartags_home_size><![CDATA[40]]></mageasia_tags_polulartags_home_size>
+					<mageasia_tags_list_size><![CDATA[40]]></mageasia_tags_list_size>
+					<mageasia_tags_polulartags_block_size><![CDATA[12]]></mageasia_tags_polulartags_block_size>
+					<mageasia_tags_detail_size><![CDATA[12]]></mageasia_tags_detail_size>
+			</tagsetting>
+			<tagsseosetting>
+				<mageasia_lbtags_home_title><![CDATA[Popular Tags]]></mageasia_lbtags_home_title>
+				<mageasia_lbtags_home_metakeyword><![CDATA[All Tags, Hot Tags, Latest Tags]]></mageasia_lbtags_home_metakeyword>
+			 
+				<mageasia_lbtags_home_metadescription><![CDATA[This index page helps you to find any products on our site.]]></mageasia_lbtags_home_metadescription> 
+				
+							<mageasia_lbtags_tagslist_title><![CDATA[Tag List : %tag%]]></mageasia_lbtags_tagslist_title>
+				<mageasia_lbtags_tagslist_metakeyword><![CDATA[Tag list with %tag%, Hot Tags for Letter %tag%, Latest tags for %tag%]]></mageasia_lbtags_tagslist_metakeyword>
+			 
+				<mageasia_lbtags_tagslist_metadescription><![CDATA[Tag List : %tag% - Shop for quality product by tag list %tag%  from our site.]]></mageasia_lbtags_tagslist_metadescription> 
+				
+				
+				
+					<mageasia_lbtags_tagsdetail_title><![CDATA[%title%]]></mageasia_lbtags_tagsdetail_title>
+				<mageasia_lbtags_tagsdetail_metakeyword><![CDATA[%metakeywords%]]></mageasia_lbtags_tagsdetail_metakeyword>
+			 
+				<mageasia_lbtags_tagsdetail_metadescription><![CDATA[%metadescription%]]></mageasia_lbtags_tagsdetail_metadescription> 
+				<mageasia_lbtags_tagsdetail_comment><![CDATA[ Comment for %title%]]></mageasia_lbtags_tagsdetail_comment> 
+				
+				
+				
+			</tagsseosetting>	
+		</magasialbtags>
+	</default>
+	
+</config>

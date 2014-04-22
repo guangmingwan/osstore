@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+-->
+<layout version="0.1.0">
+
+<!--
+Gift message add/edit form
+-->
+    <giftmessage_index_edit>
+        <reference name="root">
+            <action method="setTemplate"><template>page/one-column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="giftmessage/message_form" name="giftmessage.form" template="giftmessage/form.phtml"/>
+        </reference>
+    </giftmessage_index_edit>
+
+<!--
+Gift message save result
+-->
+    <giftmessage_index_save>
+        <reference name="root">
+            <action method="setTemplate"><template>page/one-column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="giftmessage/message_form" name="giftmessage.form" template="giftmessage/form.phtml" >
+                <action method="setSaveMode"><mode>save</mode></action>
+            </block>
+        </reference>
+    </giftmessage_index_save>
+
+<!--
+Gift message remove result
+-->
+    <giftmessage_index_remove>
+        <reference name="root">
+            <action method="setTemplate"><template>page/one-column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="giftmessage/message_form" name="giftmessage.form" template="giftmessage/form.phtml" >
+                <action method="setSaveMode"><mode>remove</mode></action>
+            </block>
+        </reference>
+    </giftmessage_index_remove>
+
+</layout>

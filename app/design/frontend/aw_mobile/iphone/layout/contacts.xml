@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="aw_footer_links">
+            <action method="addLink" translate="label title" module="contacts" ifconfig="contacts/contacts/enabled"><label>Contact</label><url>contacts</url><title>Contact</title><prepare>true</prepare></action>
+        </reference>
+    </default>
+
+    <contacts_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <action method="setHeaderTitle" translate="title" module="contacts"><title>Contact Us</title></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="contactForm" template="contacts/form.phtml"/>
+        </reference>
+    </contacts_index_index>
+</layout>

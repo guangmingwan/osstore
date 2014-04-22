@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for disabling RSS Observer methods
+ *
+ * @package     Alpha_DisableRSSObserver
+ * @copyright   AlphaQuad (M Stephens) 2012
+ */
+-->
+<config>
+    <modules>
+        <Alpha_DisableRSSObserver>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Alpha_DisableRSSObserver>
+    </modules>
+</config>

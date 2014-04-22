@@ -1,0 +1,67 @@
+"Hide ""Out of stock"" Options","Hide ""Out of stock"" Options"
+"Select Predefined Options and Save the product to apply options or <a href=""%s"" target=""_blank"">click here to define</a>","Select Predefined Options and Save the product to apply options or <a href=""%s"" target=""_blank"">click here to define</a>"
+Action,Action
+Add Options,Add Options
+Add Options Template,Add Options Template
+New Template,New Template
+Advanced Product Options,Advanced Product Options
+All Store Views,All Store Views
+Attrib. Set Name,Attrib. Set Name
+Bundle with dynamic pricing cannot include custom defined options. Options will not be saved,Bundle with dynamic pricing cannot include custom defined options. Options will not be saved
+Change Image,Change Image
+Children,Children
+Choose Store View,Choose Store View
+Custom Options,Custom Options
+Customer Groups,Customer Groups
+Default Option Qty Field Label,Default Option Qty Field Label
+Delete,Delete
+Description,Description
+Display Qty for Options on the Front-end,Display Qty for Options on the Front-end
+Edit Template \'%s\',Edit Template \'%s\'
+Enable Custom Options for Customer Groups,Enable Custom Options for Customer Groups
+Enable Custom Options Inventory,Enable Custom Options Inventory
+Enable Dependent Custom Options,Enable Dependent Custom Options
+Enable Qnty Field for Custom Options on the Front-end,Enable Qnty Field for Custom Options on the Front-end
+Id,Id
+If you delete this item(s) all the options inside will be deleted as well?,If you delete this item(s) all the options inside will be deleted as well?
+Images Above Options,Images Above Options
+Is Dependent,Is Dependent
+Is Disabled,Is Disabled
+Hide Dependent Custom Options,Hide Dependent Custom Options
+Manage Options Templates,Manage Options Templates
+Manage Templates,Manage Templates
+Name,Name
+None,None
+New Options Template,New Options Template
+Options do not exist,Options do not exist
+Options Information,Options Information
+Options were successfully deleted,Options were successfully deleted
+Options were successfully saved,Options were successfully saved
+Options,Options
+Please select Option(s),Please select Option(s)
+Predefined Option:,Predefined Option:
+Predefined Options,Predefined Options
+Price,Price
+Product Options,Product Options
+Products,Products
+Qnty Input,Qnty Input
+Qty,Qty
+Save And Continue Edit,Save And Continue Edit
+Save,Save
+Select All,Select All
+Select Children,Select Children
+Select Visible,Select Visible
+SKU,SKU
+Show Qty per Option in Cart,Show Qty per Option in Cart
+"Some options are not available for your customer group. Please, edit product ""%s""","Some options are not available for your customer group. Please, edit product ""%s"""
+Some options are not available for your customer group,Some options are not available for your customer group
+Status,Status
+There are no Options,There are no Options
+Title,Title
+Total of %d record(s) were successfully deleted,Total of %d record(s) were successfully deleted
+Total of %d record(s) were successfully updated,Total of %d record(s) were successfully updated
+Type,Type
+Unable to find Options to save,Unable to find Options to save
+Unselect All,Unselect All
+Unselect Visible,Unselect Visible
+Visibility,Visibility

@@ -1,0 +1,233 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_modern
+ * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct();
+?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="product-view">
+    <div class="product-essential">
+    <form action="<?php echo $this->getAddToCartUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+        <div class="no-display">
+            <input type="hidden" name="product" value="<?php echo $_product->getalert_urlsId() ?>" />
+            <input type="hidden" name="related_product" id="related-products-field" value="" />
+        </div>
+
+        <div class="product-shop">
+            <div class="product-name">
+                <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+            </div>
+			
+			<div style="float:left;width:370px;margin-right:10px;">
+			
+			<div style="float:left;background-color:#eeeeee;padding:10px;">
+			
+			
+			<div class="itemsku"><strong>Item Number:</strong> <span><?php  echo $_helper->productAttribute($_product,$_product->getsku(),'sku') ?></span></div>
+			<?php //echo $this->getChildHtml('alert_urls') ?>
+            <?php echo $this->getChildHtml('addto') ?>
+			
+			<div style="float:left;width:100%;font-size:13px;font-weight:bold;margin:10px 0 0 0;line-height:27px;height:27px;">
+			Payment Option :
+			<img src="<?php echo $this->getSkinUrl('images/payment_icon2.gif') ?>" />
+
+			</div>
+			
+			
+            <?php /*if ($this->canEmailToFriend()): ?>
+                <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
+            <?php endif; */ ?>
+
+            <?php //echo $this->getReviewsSummaryHtml($_product, false, true)?>
+            <?php //echo $this->getChildHtml('alert_urls') ?>
+            <?php //echo $this->getChildHtml('product_type_data') ?>
+            <?php //echo $this->getTierPriceHtml() ?>
+			<div style="float:left;width:100%;font-size:13px;font-weight:bold;margin:10px 0 0 0;">
+			<span style="float:left">Share to :</span>
+			<span style="float:left;margin-left:5px;width:80%;"><?php echo $this->getchildhtml('addthis') ?></span>
+			</div>
+			
+			<?php /*
+			<div style="float:left;width:100%;font-size:13px;font-weight:bold;margin:10px 0 0 0;line-height:30px;height:30px;">
+			Live Chat :
+			<a style="padding-right:10px;" href="callto://osstore050"> <img src="http://www.os-store.com/images/live1/skype.gif" alt="" width="30" height="30" /></a>
+			<a style="padding-right:10px;" href="ymsgr:sendIM?karena2118@yahoo.com.hk"> <img src="http://www.os-store.com/images/live1/yahoo.gif" alt="" width="30" height="30" /></a>
+			<a style="padding-right:10px;" href="http://wpa.qq.com/msgrd?V=1&amp;Uin=1424229052&amp;Site=os-store&amp;Menu=yes"> <img src="http://www.os-store.com/images/live1/qq.gif" alt="" width="30" height="30" /></a>
+			<img src="http://www.os-store.com/images/live1/online.aw.gif" alt="" width="30" height="30" />
+			<a style="padding-right:10px;" href="msnim:chat?contact=sales05@os-trade.com"> <img src="http://www.os-store.com/images/live1/msn.gif" alt="" width="30" height="30" /></a>
+			</div>
+			*/ ?>
+			
+            <?php /*if (!$this->hasOptions()):?>
+                <div class="add-to-box">
+                    <?php if($_product->isSaleable()): ?>
+                        <?php echo $this->getChildHtml('addtocart') ?>
+                        <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+                            <span class="or"><?php echo $this->__('OR') ?></span>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                    <?php echo $this->getChildHtml('addto') ?>
+                </div>
+				*/ ?>
+				<div style="float:left:width:100%;">
+				<div class="add-to-box">
+				 <?php echo $this->getChildHtml('addtocart') ?>
+				 </div>
+				<div style="padding-top:15px;margin-left:30px;float:left;font-weight:14px;">
+				<a href="<?php echo $this->getbaseurl() ?>contacts">
+				<img border="0" src="<?php echo $this->getskinurl() ?>images/detail/livechat.jpg">
+				</a></div>
+				</div>
+            <?php //else:?>
+                <?php //echo $this->getChildHtml('addto') ?>
+            <?php //endif; ?>
+			</div>
+			
+            <?php if ($_product->getShortDescription()):?>
+                <div class="short-description">
+                    <h2><?php echo $this->__('Quick Overview') ?></h2>
+                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                </div>
+            <?php endif;?>
+			
+			
+			</div>
+			<div style="float:right;">
+			<?php echo $this->getChildHtml('newsletter') ?>
+			<?php echo $this->getChildHtml('follow2') ?>
+			</div>
+
+
+			<?php /*
+
+            <?php echo $this->getChildHtml('other');?>
+
+            <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+                <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+            <?php endif;?>
+			*/ ?>
+        </div>
+
+        <div class="product-img-box">
+            <?php echo $this->getChildHtml('media') ?>
+        </div>
+		<?php /*
+        <div class="clearer"></div>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+        <?php endif;?>
+		*/ ?>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+            var productAddToCartForm = new VarienForm('product_addtocart_form');
+            productAddToCartForm.submit = function(){
+                    if (this.validator.validate()) {
+                            this.form.submit();
+                    }
+            }.bind(productAddToCartForm);
+    //]]>
+    </script>
+    </div>
+
+<?php /*
+    <div class="product-collateral">
+        <?php echo $this->getChildHtml('info_tabs') ?>
+        <?php echo $this->getChildHtml('product_additional_data') ?>
+    </div>
+	
+*/ ?>	
+	
+	<div class="product-collateral">
+				<div id="contact-sales"></div>
+
+		<ul class="tabs" id="">
+			<li class="hovertab first" id="tb_1" onclick="xgz:HoverLi(1);">Product Description</li>
+			<li class="normaltab" id="tb_2" onclick="xgz:HoverLi(2);">Additional Information</li>
+			<li class="normaltab" id="tb_3" onclick="xgz:HoverLi(3);">Tags</li>
+			<li class="normaltab last" id="tb_4" onclick="xgz:HoverLi(4);">Contact Sales</li>
+		</ul>
+
+
+
+		<div class="padder tab-content">
+
+
+					<div id="tbc_01" class="dis">
+					<?php echo $this->getChildHtml('description') ?>
+					</div>
+
+			
+			<div id="tbc_02"  class="undis">
+				<?php echo $this->getChildHtml('additional') ?>
+			</div>
+
+			<div id="tbc_03"  class="undis">
+				<?php echo $this->getChildHtml('product_additional_data') ?>
+			</div>
+			<div id="tbc_04"  class="undis">
+				<?php echo $this->getChildHtml('productquestions') ?>
+			</div>	
+		</div>
+
+
+		<script type="text/javascript" language="javascript">
+		<!--
+		function g(o){return document.getElementById(o);}
+		function HoverLi(n)
+		{
+			for(var i=1;i<=4;i++){g('tb_'+i).className='normaltab';g('tbc_0'+i).className='undis';}
+			g('tbc_0'+n).className='dis';g('tb_'+n).className='hovertab first';
+		}
+		//-->
+		</script>
+
+
+	</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+

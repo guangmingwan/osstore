@@ -1,0 +1,54 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php if(isset($poll)) : ?>
+<div class="box base-mini mini-poll">
+    <div class="head">
+        <h4><span><?php echo $this->__('Community Poll') ?></span></h4>
+    </div>
+    <div class="content">
+    <h5><?php echo $this->htmlEscape($poll->getPollTitle()); ?></h5>
+    <?php if( $poll_answers ): ?>
+        <table cellspacing="0">
+            <tbody>
+                    <?php foreach( $poll_answers as $answer ): ?>
+                            <tr>
+                                    <td class="label"><?php echo $this->htmlEscape($answer->getAnswerTitle()) ?></td>
+                                    <td class="item"><?php echo $answer->getVotesCount() ?> (<?php echo $answer->getPercent() ?>%)</td>
+                </tr>
+                    <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+    </div>
+</div>
+<?php endif; ?>
+<!-- [ends] .mini-poll-results // -->
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Dnd_Patchindexurl</name>
+    <version>1.0.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Patch Index Url</summary>
+    <description>Optimize re-index processing time for Url Rewrite</description>
+    <notes>v1.0.0.0 Stable</notes>
+    <authors><author><name>Agence Dn'D</name><user>cdidier</user><email>agencednd@gmail.com</email></author></authors>
+    <date>2012-10-28</date>
+    <time>14:44:42</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Dnd_Patchindexurl.xml" hash="999fc5ddb359a5a12a42cd71ed7200db"/></dir></target><target name="magecommunity"><dir name="Dnd"><dir name="Patchindexurl"><dir name="Model"><dir name="Indexer"><file name="Url.php" hash="aa88e55a9ae2b1d5d554be213ede818a"/></dir><dir name="Resource"><dir name="Eav"><dir name="Mysql4"><file name="Url.php" hash="9ed97ba1fa6a49320f62d6088665a19e"/></dir></dir></dir><file name="Url.php" hash="106e74d70fd45b6bc3d87ae2ff5745f9"/></dir><dir name="etc"><file name="config.xml" hash="b2afeedfeafb134b15a05d8609f365b2"/><file name="system.xml" hash="f07fbaf6394a3488bb62b68a07742cb0"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

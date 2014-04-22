@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MySales_Email>
+            <version>0.0.1</version>
+        </MySales_Email>
+    </modules>
+    <global>
+        <models>
+            <sales>
+                <rewrite>
+          		<order>Mysales_Model_Sales_order</order>
+                </rewrite>
+            </sales>
+        </models>
+    </global>
+</config>

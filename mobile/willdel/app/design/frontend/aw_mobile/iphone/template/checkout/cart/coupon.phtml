@@ -1,0 +1,62 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="discount-codes box">
+    <form id="discount-coupon-form" action="" method="post">
+    <table align="center">
+        <tr>
+            <td valign="middle"><h4><?php echo $this->__('Discount Codes') ?></h4></td>
+            <td valign="middle">
+                <input type="hidden" name="remove" id="remove-coupone" value="0"/>
+                <?php if(!strlen($this->getCouponCode())): ?>
+                <div><input class="input-text" id="coupon_code" name="coupon_code" value="<?php echo $this->htmlEscape($this->getCouponCode()) ?>" /></div>
+                <?php else: ?>
+                <div><input class="input-text" id="coupon_code" name="coupon_code" value="<?php echo $this->htmlEscape($this->getCouponCode()) ?>" /></div>
+                <?php endif;?>
+                <div class="clear"></div>
+            </td>
+            </tr>
+           <tr>
+               <td align="center" valign="middle" colspan="2">
+                <?php if(!strlen($this->getCouponCode())): ?>
+                    &nbsp;<button class="form-button" onclick="mobileCart.postCouponForm(); return false;" type="button" value="<?php echo $this->__('Apply Coupon') ?>"><span><span><?php echo $this->__('Apply Coupon') ?></span></span></button>
+                <?php else: ?>
+                    &nbsp;<button class="form-button" onclick="mobileCart.postCouponForm(); return false;" type="button"  value="<?php echo $this->__('Apply') ?>"><span><span><?php echo $this->__('Apply') ?></span></span></button>
+                    &nbsp;<button class="form-button" type="button" onclick="mobileCart.postCouponForm(true); return false;" value="<?php echo $this->__('Cancel') ?>"><span><span><?php echo $this->__('Cancel') ?></span></span></button>
+                <?php endif;?>
+           </td>
+        </tr>
+        <tr><td colspan="2" align="center" class="description"><?php echo $this->__('Enter your coupon code if you have one.') ?></td></tr>
+    </table>
+</form>
+<script type="text/javascript">
+    mobileCart.registerCoupon('discount-coupon-form', '<?php echo $this->getUrl('awmobile/cart/couponPost') ?>');
+</script>
+</div>

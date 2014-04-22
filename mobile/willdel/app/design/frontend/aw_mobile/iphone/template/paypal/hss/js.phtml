@@ -1,0 +1,66 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div id="checkout-paypaliframe-load" class="authentication"></div>
+<script type="text/javascript">
+//<![CDATA[
+Review.prototype.save = function() {
+    if (checkout.loadWaiting!=false) return;
+    checkout.setLoadWaiting('review');
+    var params = Form.serialize(payment.form);
+    if (this.agreementsForm) {
+        params += '&'+Form.serialize(this.agreementsForm);
+    }
+    params.save = true;
+    var request = new Ajax.Request(
+        this.saveUrl,
+        {
+            method:'post',
+            parameters:params,
+            onComplete: function(transport) {
+                if (transport && transport.responseText) {
+                    try{
+                        response = eval('(' + transport.responseText + ')');
+                    }
+                    catch (e) {
+                        response = {};
+                    }
+                    if (response.error_messages) {
+                        checkout.setLoadWaiting(false);
+                    }
+                }
+            },
+            onSuccess: this.onSave,
+            onFailure: checkout.ajaxFailure.bind(checkout)
+        }
+    );
+}
+//]]>
+</script>

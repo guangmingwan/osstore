@@ -1,0 +1,38 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE-COMMUNITY.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Collpur
+ * @version    1.0.2
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE-COMMUNITY.txt
+ */
+?>
+<?php
+?>
+<tr class="awcp_coupons_showhide" <?php if ($this->getElement()->getDisableRow()): ?>style="display:none"<?php endif; ?>>
+        <td class="label"><?php echo $this->getElement()->getLabel(); ?></td>
+        <td class="value">
+            <label for="coupons-qty"><?php echo $this->__('Coupons qty: ') ?></label>
+            <input id="coupons-qty" type="text" class="input-text validate-greater-than-zero-not-empty" style="width:30px" name="coupons-qty" />
+            <button class = "scalable save" type="button" onclick="generateCoupons('<?php echo $this->getUrl('collpur_admin/adminhtml_deal/generateCoupons') ?>')"><span><?php echo $this->__('Generate') ?></span></button>
+    </td>
+</tr>

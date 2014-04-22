@@ -1,0 +1,155 @@
+/**
+ * Styles for DatePicker
+ */
+
+.delivery-date-wrap,
+.customer-comment-wrap{
+	margin-bottom:10px;
+}
+#easycheckout-review .customer-comment-wrap textarea{
+	width:99%;
+}
+.delivery-date-wrap .delivery-date-field{
+	position:relative;
+	cursor:pointer;
+	zoom:1;
+}
+.delivery-date-wrap .delivery-date-field:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.delivery-date-wrap .delivery-date-field input{
+	cursor:pointer;
+	float:left;
+}
+.delivery-date-wrap img.handler{
+	left: -22px;
+    margin-right: -100%;
+    position: relative;
+    top: 2px;
+    float:left;
+}
+.delivery-date-wrap .input-date{
+	width:160px;
+}
+.datepickerControl {
+	border:				1px solid #CCCCCC;
+	background-color:	#FFF;
+	padding:			2px;
+	-moz-border-radius: 5px 5px 5px 5px;
+    -moz-box-shadow: 0 0 15px #666666;
+}
+
+.datepickerControl td {
+	text-align:			center;
+	vertical-align: middle;
+	font-family:		sans-serif;
+	font-size:			11px;
+	line-height: 20px;
+	width:				27px;
+	height:				20px;
+	
+}
+.datepickerControl .calendarRow td{
+	-moz-border-radius: 3px 3px 3px 3px;
+	
+}
+
+.datepickerControl tr.monthLabel td {
+	background-color:	#FFFFFF;
+	border-width:0 !important;
+	font-weight:		bold;
+}
+
+.datepickerControl tr.navigation td {
+	cursor:				pointer;
+	border-width:0 !important;
+}
+
+.datepickerControl tr.navigation td:hover {
+	text-decoration:	underline;
+}
+
+.datepickerControl tr.dayLabel td {
+	/*
+	border:				1px solid #C0D8EA;
+	background-color:	#C0D8EA;
+	*/
+	border-width:0 !important;
+	border-bottom:		1px solid #ccc !important;
+	color:				#2F2F2F;
+}
+
+.datepickerControl td.day, .datepickerControl td.dayothermonth {
+	cursor:				pointer;
+	background-color:	#FFFFFF;
+	border:				0 !important;
+	border-left:1px solid #FFF !important;
+	border-top:1px solid #FFF !important;
+	
+}
+
+.datepickerControl td.dayothermonth {
+	color:				#999999;
+}
+
+.datepickerControl td.day:hover {
+	background-color:	#EBE4C0;
+} 
+
+.datepickerControl td.weekend {
+	
+	color:red;
+}
+
+.datepickerControl td.today {
+	font-weight:		bold;
+}
+
+.datepickerControl td.hour {
+	cursor:				pointer;
+	background-color:	#FFFFFF;
+	border:				1px solid #EEEEEE;
+	width:				2em;
+}
+
+.datepickerControl td.minute {
+	cursor:				pointer;
+	background-color:	#FFFFFF;
+	border:				1px solid #EEEEEE;
+	width:				2em;
+}
+
+.datepickerControl td input,
+.datepickerControl td button {
+	font-size:			11px;
+	padding:			0;
+	border:				1px solid #999999;
+	text-align:			center;
+}
+
+.datepickerControl td.ampm {
+	cursor:				pointer;
+	background-color:	#CCCCCC;
+	border:				1px solid #EEEEEE;
+	width:				2em;
+}
+
+.datepickerControl td.current {
+	color:#fff;
+	background-color:	#498CE2;
+}
+
+.datepickerControl input.current {
+	background-color:	#EBC2C0;
+}
+
+.datepickerControl td.current:hover {
+	background-color:	#EBC2C0;
+}
+.datepickerControl td.disabled{
+	cursor:default;
+	background-color: #EFEFEF !important;
+	color: #CCCCCC !important;
+}

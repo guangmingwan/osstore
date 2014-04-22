@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+	
+	
+	<checkout_onepage_index>
+		<reference name="head">
+			<action method="addItem"><type>skin_css</type><name>css/ecommerceteam/datepicker.css</name><params/></action>
+			<action method="addJs"><script>ecommerceteam/prototype-date-extensions.js</script></action>
+			<action method="addJs"><script>ecommerceteam/datepicker.js</script></action>
+		</reference>
+		
+		<reference name="checkout.onepage.shipping_method">
+			
+			<action method="unsetChildren" />
+			
+			<block type="checkout/onepage_shipping_method_available" name="checkout.onepage.shipping_method.available" as="available" template="checkout/onepage/shipping_method/available.phtml"/>
+            <block type="ecommerceteam_ddc/shipping_method_additional" name="checkout.onepage.shipping_method.additional" as="additional" template="checkout/onepage/shipping_method/additional.phtml"/>
+			
+		</reference>
+	</checkout_onepage_index>
+	
+	<checkout_onepage_additional>
+        <!-- Mage_Checkout -->
+        <remove name="right"/>
+        <remove name="left"/>
+		<remove name="root" />
+		
+        <block type="ecommerceteam_ddc/shipping_method_additional" name="ddc.root" output="toHtml" template="checkout/onepage/shipping_method/additional.phtml">
+            <action method="setDontDisplayContainer"><param>1</param></action>
+        </block>
+    </checkout_onepage_additional>
+	
+</layout>

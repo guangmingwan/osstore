@@ -1,0 +1,170 @@
+﻿<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="footer-container">
+	<div class="footer">
+
+         <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('community-block')->toHtml() ?>
+	 <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-cms-links')->toHtml() ?>
+
+<div class="footer_block">
+			<ul class="mar_t2">
+				<li><span>Compnay Info</span>
+					<ul class="mar_t1">
+						<li><a 
+							href="<?php echo $this->getbaseurl() ?>about">About Us</a></li>
+						<li><a 
+							href="<?php echo $this->getbaseurl() ?>category">Site Map</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>about">Location & Working Hours</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">Online Live Chat</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">Contact Us</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>Company Policies</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">User Agreement</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Return Policy</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Privacy Policy</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">Trade Brokers</a></li>
+						<li><a rel="nofollow" 
+							href="<?php echo $this->getbaseurl() ?>contacts">Affiliate Program</a></li>
+					</ul></li>
+			</ul>
+			<ul class="mar_t2">
+				<li><span>Payment & Shipping</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Payment Methods</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Shipping Method Guide</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Locations We Ship To</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Estimated Delivery Time</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Track Order</a></li>
+					</ul></li>
+			</ul>
+
+			<ul class="mar_t2">
+				<li><span>Customer Service</span>
+					<ul class="mar_t1">
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Help & Knowledge Page</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Submit Request</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">RMA Request</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">How to Buy</a></li>
+						<li><a rel="nofollow" href="<?php echo $this->getbaseurl() ?>">Supplier 寻求供应商</a></li>
+					</ul></li>
+			</ul>
+			
+			
+			
+			<ul class="follow_box">
+				<li><span>Follow Us</span></li>
+					<ul class="follow_us">
+						<li><a rel="nofollow"
+							class="icn fb"
+							href="https://www.facebook.com/osstore">facebook</a></li>
+						<li><a rel="nofollow"
+							class="icn b"
+							href="http://www.linkedin.com/in/osstore">linkedin</a></li>
+						<li><a rel="nofollow"
+							class="icn tw"
+							href="http://www.twitter.com/osstore/">twitter</a></li>
+						<li><a rel="nofollow"
+							class="icn tb"
+							href="http://www.youtube.com/osstore">youtube</a></li>
+						<li><a rel="nofollow"
+							class="icn db"
+							href="http://blog.os-store.com">osblog</a></li>
+						<li><a rel="nofollow"
+							class="icn g"
+							href="https://plus.google.com/106733744390762472275/posts">google+</a></li>
+					</ul>
+					
+					<?php echo $this->getChildHtml('footer.newsletter')?>
+					
+
+			</ul>
+
+			
+		<ul  class="allsites" >
+		<div class="sites0">
+			<div class="sites">
+			<?php /*
+				United States
+					<b class="gf-if gspr flus"></b>
+					<b id="gf-fbtn-arr"></b>
+				*/ ?>
+					<a href="<?php echo $this->getbaseurl() ?>site"><img src="<?php echo $this->getskinurl() ?>images/USA_icon.jpg" /></a>
+			</div>
+			<?php /*
+			<div class="subsites" id="site">
+			<a href="<?php echo $this->getbaseurl() ?>site"><img src="<?php echo $this->getskinurl() ?>images/allsites.jpg" /></a>
+			</div>
+			*/ ?>
+		</div>
+		
+
+		</ul>
+			
+		<ul style="float:left;margin-left:0;margin-top:10px;margin-bottom:-10px;">
+		<?php echo $this->getChildHtml('topSearch2') ?>
+		</ul>
+		
+					<div class="os_b2b">
+					<a href="http://www.os-trade.com">
+					<img src="<?php echo $this->getskinurl() ?>images/os_b2b.gif">
+					</a>
+					</div>
+		
+		
+
+			<div class="clear">&nbsp;</div>
+		</div>
+
+		<?php /* 
+		<div class="tag-newsletter">
+	     <?php //echo $this->getChildHtml('tags_popular') ?>
+	     <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('map')->toHtml()?>
+	     <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('secure')->toHtml()?>
+	     <?php //echo $this->getChildHtml('footer.newsletter')?>
+	 </div>
+	 */ ?>
+		<div style="text-align: center;">
+			<img src="<?php echo $this->getSkinUrl('images/payment.gif') ?>" />
+		</div>
+
+		<address><?php echo $this->getCopyright() ?> 
+			  <div style="text-align:center;margin-left:5px;float:left;"><script src="http://s11.cnzz.com/stat.php?id=2937650&web_id=2937650&show=pic" language="JavaScript"></script></div></address>
+
+
+
+	</div>
+<div id="scroll" onclick="goTop();return false;"></div>
+</div>
+

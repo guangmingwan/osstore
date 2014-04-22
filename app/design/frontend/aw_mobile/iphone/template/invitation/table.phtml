@@ -1,0 +1,74 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<div class="account-block">
+    <?php if (count($this->getInvitationCollection())): ?>
+
+    <table class="data-table" id="invitations-list-table" cellpadding="0">
+        <col />
+        <col width="100" />
+        <thead>
+            <tr>
+                <th>
+                    <?php echo Mage::helper('enterprise_invitation')->__('Email'); ?>
+                </th>
+                <th>
+                    <?php echo Mage::helper('enterprise_invitation')->__('Status'); ?>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <?php foreach ($this->getInvitationCollection() as $invitation): ?>
+            <tr>
+                <td>
+                    <?php echo $this->htmlEscape($invitation->getEmail()); ?>
+                </td>
+                <td>
+                    <?php echo $this->helper('enterprise_invitation')->getInvitationStatusText($invitation);?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('invitations-list-table')</script>
+
+    <?php else: ?>
+
+    <div id="cookie-notice">
+        <ul class="messages">
+            <li class="notice-msg">
+                <ul><li><?php echo Mage::helper('enterprise_invitation')->__('There are no sent invitations yet'); ?></li></ul>
+            </li>
+        </ul>
+    </div>
+    <?php endif; ?>
+    <div class="a-center button-space invitations">
+        <a href="<?php echo $this->helper('enterprise_invitation')->getCustomerInvitationFormUrl(); ?>" class="button"><span><?php echo $this->__('Send Invitations') ?></span></a>
+    </div>    
+</div>

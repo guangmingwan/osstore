@@ -1,0 +1,13 @@
+<?php 
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2011 Amasty (http://www.amasty.com)
+* @package Amasty_Social
+*/
+$_imageUrl = $this->getImageUrl();
+if ($_imageUrl):
+?>
+    <div style="padding-bottom: 20px;">
+        <a href="#" onclick="amsocialPopupShow(); return false;"><img src="<?php echo $_imageUrl; ?>" alt="<?php echo $this->getHeader(); ?>" /></a>
+    </div>
+<?php endif; ?>

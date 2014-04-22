@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Ecom_ProductPromotion>
+            <version>0.0.1</version>
+        </Ecom_ProductPromotion>
+    </modules>
+	<global>
+	    <models>
+            <productpromotion>
+                <class>Ecom_ProductPromotion_Model</class>
+                <resourceModel>productpromotion_resource</resourceModel>
+            </productpromotion>
+        </models>
+
+	      <helpers>
+            <productpromotion>
+                <class>Ecom_ProductPromotion_Helper</class>
+            </productpromotion>
+        </helpers>
+		 <blocks>
+            <productpromotion>
+                <class>Ecom_ProductPromotion_Block</class>
+            </productpromotion>
+        </blocks>
+		 <template>
+            <email>
+                <productpromotion_email_email_template translate="label" module="productpromotion">
+                    <label>Product Promotion</label>
+                    <file>product_promotion.html</file>
+                    <type>html</type>
+                </productpromotion_email_email_template>
+                <productpromotion_email_error_email_template translate="label" module="productpromotion">
+                    <label>Product Promotion Cron error</label>
+                    <file>product_promotion_cron_error.html</file>
+                    <type>html</type>
+                </productpromotion_email_error_email_template>
+            </email>
+        </template>
+	 </global>
+  <frontend>
+       <layout>
+            <updates>
+                <productpromotion>
+                    <file>productpromotion.xml</file>
+                </productpromotion>
+            </updates>
+        </layout>
+        <routers>
+            <productpromotion>
+                <use>standard</use>
+                <args>
+                    <module>Ecom_ProductPromotion</module>
+                    <frontName>productpromotion</frontName>
+                </args>
+            </productpromotion>
+        </routers>  
+    </frontend>
+
+    <adminhtml>
+	<acl>
+        <resources>
+		    <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <productpromotion translate="title" module="productpromotion">
+                                        <title>Product Promotion Section</title>
+                                    </productpromotion>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    </adminhtml>
+
+	  <default>
+	  <productpromotion>
+	        <cron>
+                <enabled>1</enabled>
+            </cron>
+			<email>
+			    <email_template>productpromotion_email_email_template</email_template>
+				<email_identity>general</email_identity>
+				<error_email_recipient><![CDATA[hello@example.com]]></error_email_recipient>
+                <error_email_template>productpromotion_email_error_email_template</error_email_template>
+                <error_email_identity>general</error_email_identity>
+                
+            </email>
+	  </productpromotion>
+	  </default>
+	   <crontab>
+        <jobs>
+            <productpromotion_cron>
+                <run>
+                    <model>productpromotion/observer::process</model>
+                </run>
+            </productpromotion_cron>
+        </jobs>
+    </crontab>
+</config>

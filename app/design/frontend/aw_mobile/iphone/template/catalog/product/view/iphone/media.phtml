@@ -1,0 +1,64 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php $_product = $this->getProduct() ?>
+<?php if ((($_product->getImage() != 'no_selection') && $_product->getImage()) || count($this->getGalleryImages())): ?>
+<br />
+<div class="head"><h4><?php echo $this->__('Product Views') ?></h4></div>
+<div class="media-eye">
+    <?php if (Mage::helper('awmobile')->wantNavigationTools()): ?>
+    <a class="abutton left" href="#" onclick="/*mobileButtons.pressLeft(); */return false;" onmousedown="mobileButtons.mouseDown('left');" onmouseup="mobileButtons.mouseUp();" onmouseout="mobileButtons.mouseUp();"></a>
+        <a class="abutton right" href="#" onclick="/*mobileButtons.pressRight(); */return false;" onmousedown="mobileButtons.mouseDown('right');" onmouseup="mobileButtons.mouseUp();" onmouseout="mobileButtons.mouseUp();"></a>
+    <?php endif; ?>
+    <div class="slide-line" id="slide_line" style="-webkit-transform: translate3d(0, 0, 0);">
+        <?php if (!$this->getGalleryImages()->getSize() && ($_product->getImage() != 'no_selection') && $_product->getImage()): ?>
+            <div class="image">
+                <img id="image" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(270); ?>" alt="<?php echo $this->htmlEscape($this->getImageLabel()) ?>" title="<?php echo $this->htmlEscape($this->getImageLabel()) ?>" />
+            </div>
+        <?php endif; ?>
+        <?php foreach ($this->getGalleryImages() as $_image): ?>
+            <div class="image">
+                <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(270); ?>" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>" />
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>  
+<?php endif; ?>
+<script type="text/javascript">
+    var media = new MobileMedia($j('div.slide-line'), <?php echo (count($this->getGalleryImages()) + ((($_product->getImage() != 'no_selection') && $_product->getImage()) ? 1 : 0)); ?>);
+    <?php if (Mage::helper('awmobile')->wantNavigationTools()): ?>
+    if (!isTouchDevice() || (<?php echo Mage::helper('awmobile')->isOldAndroid() ? 'true' : 'false'; ?>)){
+        $j(document).ready(function(e){
+            showNavigationButtons();
+        });
+    }    
+    <?php endif; ?>
+</script>
+

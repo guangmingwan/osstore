@@ -1,0 +1,30 @@
+<?php
+	
+/*
+ * Magento EsayCheckout Extension
+ *
+ * @copyright:	EcommerceTeam (http://www.ecommerce-team.com)
+ * @version:	1.1
+ *
+ */
+	
+?><div class="easy-step" id="easycheckout-review">
+	<h2><?php echo $this->__('Order Review');?></h2>
+	<div class="info" id="easycheckout-review-info">
+		<?php echo $this->getChildHtml('info');?>
+	</div>
+	<?php
+		if((int)Mage::getStoreConfig('checkout/deliverydatecomment/enabled_comment') == 2){
+	    	
+	    	if($block = $this->getLayout()->createBlock('ecommerceteam_ddc/form')){
+	    		
+	    		echo $block->setTemplate('ecommerceteam/ddc/comment.phtml')->toHtml();
+	    		
+	    	}
+	    	
+    	}
+    ?>
+	<div class="agreements">
+		<?php echo $this->getChildHtml('agreements') ?>
+	</div>
+</div>

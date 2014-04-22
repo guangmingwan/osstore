@@ -1,0 +1,59 @@
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td ><h3 class="icon-head head-permissions-role"><?php echo $this->__('Import') ?></h3></td>
+            <td class="form-buttons">
+            
+            <button id="button" type="button" class="scalable add" onclick="document.getElementById('importform').submit();" style=""><span>Import Save</span></button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="entry-edit">
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Import</h4>
+    <div class="form-buttons"></div>
+</div>
+<div class="fieldset " id="tags_form">
+    <div class="hor-scroll">
+                  <form action="<?php echo $this->getUrl('*/*/importdata') ?>" method="post" enctype="multipart/form-data" id="importform"><input type="hidden" name="form_key" value="<? echo $this->getFormKey(); ?>" />  
+   
+   <table> 
+   		
+        <tr>
+        			
+            <td>
+				  <?php echo $this->__("Import File");?>:          
+            </td>
+            <td>
+            	
+                <input type="file" name="fileupload" id="fileupload" />
+            
+            </td>
+
+        </tr>
+        
+         <tr>
+        			
+            <td>&nbsp;
+				        
+            </td>
+            <td>
+            	
+            <a href="<?php echo $this->getUrl('*/*/downloadsimple') ?>">Download an example</a></td>
+
+        </tr>
+   
+   </table>
+   
+   
+   
+</form> 
+            </div>
+        </div>
+
+
+</div>
+<script type="text/javascript">
+    var roleForm = new varienForm('importform');
+</script>

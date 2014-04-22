@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for disabling RSS Observer methods
+ *
+ * @package     Alpha_DisableRSSObserver
+ * @copyright   AlphaQuad (M Stephens) 2012
+ */
+-->
+<config>
+    <modules>
+        <Alpha_DisableRSSObserver>
+            <version>0.1.0</version>
+        </Alpha_DisableRSSObserver>
+    </modules>
+    <frontend>
+        <events>
+            <sales_order_item_save_after>
+                <observers>
+                    <notifystock>
+                        <type>disabled</type>
+                    </notifystock>
+                </observers>
+            </sales_order_item_save_after>
+            <sales_order_item_save_after>
+                <observers>
+                    <ordernew>
+                        <type>disabled</type>
+                    </ordernew>
+                </observers>
+            </sales_order_item_save_after>
+        </events>
+    </frontend>
+</config>

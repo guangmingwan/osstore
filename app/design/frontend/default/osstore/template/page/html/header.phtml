@@ -1,0 +1,190 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php /*
+<div class="header-container">
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+        <div class="quick-access">
+            <?php echo $this->getChildHtml('topSearch') ?>
+            <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+            <?php echo $this->getChildHtml('topLinks') ?>
+            <?php echo $this->getChildHtml('store_language') ?>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+</div>
+<?php echo $this->getChildHtml('topMenu') ?>
+*/ ?>
+
+
+<div class="topbox">
+	<div id="logo">
+		<h1 class="osst-logo">
+		<a title="Go to the os-store.com homepage" href="<?php echo $this->getUrl('') ?>"><img src="<?php echo $this->getSkinUrl('images/osstore/os_store_logo.gif')?>" title="wireless card,wireless cards for laptops" alt="os-store.com" /></a>
+		</h1>
+	</div>
+	<div class="top-right1">
+		<div class="top-welcome">
+			 <?php echo $this->getWelcome() ?>
+		 </div>
+		<div class="quick-access">
+			<div id="menu-access">
+			<?php echo $this->getChildHtml('topLinks') ?>
+			</div>
+		 </div>
+	</div>
+	<div class="top-right2">
+		<div id="searchblock" class="searchbg a-right">
+		    <form method="get" action="<?php echo $this->getURL("catalogsearch/result/") ?>" id="search_mini_form">
+		    <label>
+		    <input id="search" type="text" class="infoinput" name="<?php echo $this->helper('catalogSearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogSearch')->getEscapedQueryText() ?>" />
+		    </label>
+
+			<label>
+				<input type="submit" id="search-submit" alt="<?php echo $this->__('Search') ?>" value="SEARCH">&nbsp
+				<a rel="nofollow" href="<?php echo $this->getUrl('catalogsearch/advanced')?>" class="AdvSearchId">Advanced search</a>
+				<div class="search-autocomplete" id="search_autocomplete" style="" ></div>
+		            <script type="text/javascript">
+		            //<![CDATA[
+		                var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search entire store here...') ?>');
+		                searchForm.initAutocomplete('<?php echo $this->helper('catalogSearch')->getSuggestUrl() ?>', 'search_autocomplete');
+		            //]]>
+		            </script>
+		    </label>
+		<!--label style="font-size:12px;float:left;padding-left:10px;margin-top:10px;font-weight:normal;color:#ff0000">This is test site, pls order in <a href="http://www.os-store.com"> www.os-store.com</a> </label-->
+		    </form>
+		</div>
+	
+		<script language="javascript">
+		function getTop(e){
+			var offset=e.offsetTop;
+			if(e.offsetParent!=null) offset+=getTop(e.offsetParent);
+			return offset;
+			}
+		
+			function getLeft(e){
+			var offset=e.offsetLeft;
+			if(e.offsetParent!=null) offset+=getLeft(e.offsetParent);
+			return offset;
+			}
+			var delayCloseTimer;
+			function closeMenu()
+			{
+				$("menublock").hide();
+				//$("category_search_field").show();
+				//FadeEffect("menublock");	
+			}
+			function showMenu()
+			{
+				$("menublock").show();
+				//$("category_search_field").hide();
+			}
+			$("menublock").observe('mouseleave', function() {
+				//delayCloseTimer = setTimeout('closeMenu()',500);
+				//FadeEffect("menublock");
+			});
+			$("menublock").observe('mouseenter', function() {
+				//clearTimeout(delayCloseTimer);
+			});
+			$("menucategory").observe('mouseleave', function() {
+				//delayCloseTimer = setTimeout('closeMenu()',500);
+				//FadeEffect("menublock");
+			});
+			 function FadeEffect(element){
+			       new Effect.Fade(element, 
+			       { duration:1});
+			   }
+			 
+				//showMenu();	 
+			    $("menucategory").observe('mouseenter', function() {
+			    return; 
+			    	$("menublock").absolutize();
+		
+					$("menublock").style.top =  getTop(document.getElementById("searchblock")) - 12 + "px";
+					$("menublock").style.left =  getLeft(document.getElementById("searchblock")) + "px";
+			    showMenu();
+				clearTimeout(delayCloseTimer);
+				
+				 
+		
+				}); 
+		</script>
+	
+
+		 <div class="googletrans" >
+		    <!--google Translated!------->
+		                 <div id="google_translate_element"></div>
+						<script>
+							function googleTranslateElementInit() {
+		  						new google.translate.TranslateElement({
+		    						pageLanguage: 'en',
+		    						includedLanguages: 'ar,is,pl,da,de,ru,fr,cr,nl,cs,no,pt,ja,sv,th,iw,el,es,hu,it,zh-CN,zh-TW, be,tr,ko'}, 'google_translate_element');
+							}
+				    	</script>
+				    	<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		    
+		</div>  
+
+	    
+	  </div>
+       <div class="img-fbt" >
+	  <a href="http://www.facebook.com/osstore/">
+	  <img style="margin-right:5px;display:block;float:left" src="<?php echo $this->getSkinUrl('images/webamy/facebook.jpg')?>" >
+	  </a>
+	  <a href="http://www.osstore.blog.com/">
+	  <img style="margin-right:5px;display:block;float:left" src="<?php echo $this->getSkinUrl('images/webamy/blog.jpg')?>" >
+	  </a>
+	  <a  href="http://www.twitter.com/osstore/">
+	  <img style="margin-right:5px;display:block;float:left" src="<?php echo $this->getSkinUrl('images/webamy/twitter.jpg')?>" >
+	  </a>
+  	</div>   
+
+<div class="clear"></div>
+</div>
+<div class="navigation">	       
+	<ul>		     
+	<li><a href="<?php echo $this->getUrl('') ?>">Home</a></li>			 
+	<li><a href="<?php echo $this->getUrl('category') ?>">Categories</a></li>			 
+	<li><a href="<?php echo $this->getUrl('how-to-buy') ?>">How to buy</a></li>			 
+	<li><a href="<?php echo $this->getURL('about')?>">About</a></li>			 
+	<li><a href="<?php echo $this->getUrl('supplier') ?>">Supplier</a></li>			 
+	<li><a href="<?php echo $this->getURL('help')?>">Help</a></li>			 
+	<li><a href="<?php echo $this->getURL('contacts')?>">Contact us</a></li>	
+	</ul>
+	  <div class="currency">
+	    	<?php echo $this->getChildHtml('topCurrency') ?>	
+	   </div>
+
+
+</div>

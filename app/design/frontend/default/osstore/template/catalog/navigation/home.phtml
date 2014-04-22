@@ -1,0 +1,22 @@
+
+<div class="home-callout box base-mini mini-product-view">
+    <div class="head">
+        <h4><span><?php echo $this->__('Categories') ?></span></h4>
+    </div>
+
+<div id="light_menu" class="menu">
+      
+
+<ul>
+
+        <?php foreach ($this->getStoreCategories() as $_category): ?>
+            <?php echo $this->drawleftmenuitem($_category) ?>
+        <?php endforeach ?>
+
+</ul>	
+
+
+
+</div>
+</div>
+

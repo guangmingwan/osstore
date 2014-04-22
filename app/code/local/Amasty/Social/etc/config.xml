@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Amasty_Social>
+            <version>1.0.3</version>
+        </Amasty_Social>
+    </modules>
+
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Amasty_Social>
+                    <files>
+                        <default>Amasty_Social.csv</default>
+                    </files>
+                </Amasty_Social>
+            </modules>
+        </translate>
+        
+        <layout>
+            <updates>
+                <amsocial>
+                    <file>amsocial.xml</file>
+                </amsocial>
+            </updates>
+        </layout>
+        
+        <routers>
+            <social>
+                <use>standard</use>
+                <args>
+                    <module>Amasty_Social</module>
+                    <frontName>social</frontName>
+                </args>
+            </social>
+        </routers>
+    </frontend>
+    
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <Amasty_Social>
+                    <files>
+                        <default>Amasty_Social.csv</default>
+                    </files>
+                </Amasty_Social>
+            </modules>
+        </translate>
+    
+        <layout>
+            <updates>
+                <amsocial module="Amasty_Social">
+                    <file>amsocial.xml</file>
+                </amsocial>
+            </updates>
+        </layout>
+        
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <amsocial translate="title" module="amsocial">
+                                            <title>Facebook &amp; Twitter Promo</title>
+                                        </amsocial>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    
+    
+    <global>
+    
+        <models>
+            <amsocial>
+                <class>Amasty_Social_Model</class>
+                <resourceModel>amsocial_mysql4</resourceModel>
+            </amsocial>
+            <amsocial_mysql4>
+                <class>Amasty_Social_Model_Mysql4</class>
+                <entities>
+                    <field>
+                        <table>amasty_amsocial_field</table>
+                    </field>
+                    <order_field>
+                        <table>amasty_amsocial_order_field</table>
+                    </order_field>
+                </entities>
+            </amsocial_mysql4>
+            
+        </models>
+        
+		<resources>
+             <amsocial_setup>
+                <setup>
+                    <module>Amasty_Social</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </amsocial_setup>
+		    <amsocial_write>
+		        <connection><use>core_write</use></connection>
+		    </amsocial_write>
+		    <amsocial_read>
+		        <connection><use>core_read</use></connection>
+		    </amsocial_read>
+		</resources>
+		  
+        
+        <blocks>
+            <amsocial>
+                <class>Amasty_Social_Block</class>
+            </amsocial>
+
+        </blocks>
+        
+        <helpers>
+            <amsocial>
+                <class>Amasty_Social_Helper</class>
+            </amsocial>
+        </helpers>
+
+        
+    </global>
+    
+    <default>
+        <amsocial>
+            <general>
+                <header>Get Promo Code!</header>
+                <note><![CDATA[<strong>5% off on any purchase</strong><br />Rate us at Google Plus, Tweet or Like us on Facebook to get instant 5% off on any purchase from our store.]]></note>
+                <checkout_image>be_social.png</checkout_image>
+                <side_image>be_social_sidebar.png</side_image>
+            </general>
+            <twitter>
+                <enabled>0</enabled>
+            </twitter>
+            <facebook>
+                <enabled>0</enabled>
+            </facebook>
+            <google>
+                <enabled>0</enabled>
+            </google>
+        </amsocial>
+    </default>
+    
+</config>

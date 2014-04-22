@@ -1,0 +1,77 @@
+.main { width:970px; margin:0 auto; min-height:400px; padding:10px 0;  text-align:left; }\
+.product-collateral{width:970px; float:left;}
+
+/************product-detail-additional**********/
+.sp_bg_amy{margin-top:10px;width:970px;float:left;font-family:Verdana, Arial, Helvetica, sans-serif;background:url(http://www.os-store.com/html/description/aa.png) repeat 0 0;margin-bottom:10px;}
+.shipping_amy{float:left;}
+.shipping_title_amy{background:#ff0000;color:#ffffff;text-align:center;font-weight:bold;font-size:20px;height:30px;}
+.shipping_text_amy{border:#ff0000 1px solid;border-top:none;text-align:center;padding:5px;}
+.text_amy{text-align:left;line-height:20px;font-size:13px;margin:10px;}
+.red_amy{color:#ff0000;}
+.blue_amy{color:#0000ff;}
+.payment_amy{float:right;}
+.payment_title_amy{background:#0000ff;color:#ffffff;text-align:center;font-weight:bold;font-size:20px;height:30px;}
+.payment_text_amy{border:#0000ff 1px solid;border-top:none;text-align:center;padding:5px;}
+
+
+/******amy add description start******/
+.lefttop,.leftbottom{display: block;background: transparent;font-size: 1px;}
+.left1, .left2, .left3, .left4 {display: block;overflow: hidden;}
+.left1, .left2, .left3 {height: 1px;}
+.left2, .left3, .left4 {
+	background:#ffffff; /* content bg colour */
+	border-left: 1px solid #999999; /* border colour */
+	border-right: 1px solid #999999; /* border colour */
+}
+.left1 {margin: 0 5px;background:#999999; /* border colour */}
+.left2 {margin: 0 3px;border-width: 0 2px;}
+.left3 {margin: 0 2px;}
+.left4 {height: 2px;margin: 0 1px;}
+
+.ds_bg{
+	background:url(http://www.os-store.com/html/description/aa.png) repeat 0 0;
+	width:970px;
+	color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	}
+.ds_border{border:#999999 1px solid; border-top:none;border-bottom:none;padding:15px 0;line-height:35px;}
+.ds_border td {
+    padding-left: 10px;
+    padding-right:20px;
+}
+.ds_border a{color:#0000FF;text-decoration:underline;}
+.ds_title{font-size:26px;}
+.ds_info{font-size:22px;color:#3300FF;}
+.ds_value{font-size:22px;}
+.ds_red{color:#FF0000;font-size:22px;}
+.ds_image{width:968px; padding:10px 1px;}
+.ds_product{background: url(http://www.os-store.com/html/description/ds_product_bg.jpg) no-repeat 0 0;height:35px;width:900px;color:#ffffff;font-size:22px;font-weight:bold;text-align:center;}
+.ds_product_border{border:1px solid #000792;border-top:none;padding:10px;}
+.ds_product_title{font-size:24px;color:#3300FF;padding-top:5px;}
+.ds_product_text{font-size:18px;line-height:25px;}
+.ds_product_info{font-size:18px;font-weight:bold;}
+.ds_product_value{font-size:18px;padding-left:10px;}
+/******amy add description end******/
+
+/*************amy add description tea *************/
+.tea_border{line-height:35px;
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background:url(http://www.os-store.com/html/tea/bb.png) repeat 0 0;	
+	width:1008px;
+}
+.tea_border p{line-height:30px;}
+.tea_border li{list-style: disc outside none;}
+.tea_title{font-size:15px;font-weight:bold;}
+.tea_info{font-size:18px;color:#b1b42f;}
+.tea_value{font-size:18px;}
+.tea_a{font-size:18px;color:#000000}
+.tea_a a{font-size:18px; color:#0000FF;}
+.tea_red{color:#FF0000;font-size:18px;}
+.tea_product{background: url(http://www.os-store.com/html/tea/tea_product_bg.jpg) no-repeat 0 0;height:35px;width:1008px;color:#ffffff;font-size:20px;font-weight:bold;text-align:left;padding-left:30px;}
+.tea_product_border{border:1px solid #898c0e;border-top:none;padding:10px 30px ;}
+.tea_product_title{font-size:24px;color:#3300FF;padding-top:5px;}
+.tea_product_text{font-size:17px;line-height:25px;}
+.tea_product_info{font-size:18px;font-weight:bold;}
+.tea_product_value{font-size:18px;padding-left:10px;}

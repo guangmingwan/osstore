@@ -1,0 +1,52 @@
+<div class="category-images">
+<?php
+if (Mage::getStoreConfig('easy_catalogimg/general/showOnMain')):
+    
+$columnsCount = Mage::getStoreConfig('easy_catalogimg/general/columnsCount');
+$_categories = $this->getStoreCategories();
+$showImageThumbnails = (bool)Mage::getStoreConfig('easy_catalogimg/general/showImageThumbnails');
+$showSubChild = (bool)Mage::getStoreConfig('easy_catalogimg/general/showSubChild');
+$height = Mage::getStoreConfig('easy_catalogimg/general/height');
+$width = Mage::getStoreConfig('easy_catalogimg/general/width');
+$countSubChild = Mage::getStoreConfig('easy_catalogimg/general/countSubChild');
+
+if (is_array($_categories)) {
+    $_collectionSize = count($_categories);
+} else {
+    $_collectionSize = $_categories->count();
+}
+
+?>     
+<div class="mobile_home">
+    <?php $i=0; foreach ($_categories as $_category): 
+        if (!$_category->getIsActive()): continue; endif;
+        $cur_category = Mage::getModel('catalog/category')->load($_category->getId());
+        $imageUrl = $cur_category->getImageUrl();
+        if (empty($imageUrl)): $imageUrl = Mage::getBaseUrl('media').'catalog/category/np_thumb2.gif'; endif;
+    ?>
+    <?php if($i++%$columnsCount==0): ?>
+
+    <?php endif; ?>
+        <li class="item">
+            <div>
+                <?php if ($showImageThumbnails) : ?>
+                <a href="<?php echo $cur_category->getUrl() ?>" title="<?php echo $this->htmlEscape($_category->getName()) ?>" class="product-image" >
+                	<?php if(!Mage::getStoreConfig('easy_catalogimg/general/resizeImageThumbnails')){ ?>
+                    	<img src="<?php echo $imageUrl ?>" <?php echo !empty($height) ? ' height="' . $height . '"' : ''; echo !empty($width) ? ' width="' . $width . '"' : '' ?> alt="<?php echo $this->htmlEscape($_category->getName()) ?>" />
+					<?php } else { ?>
+						<img src="<?php echo Mage::helper('easycatalogimg/image')->resize($imageUrl, $width , $height) ?>" width="<?php echo $width; ?>" alt="<?php echo $this->htmlEscape($_category->getName()) ?>" />
+					<?php } ?>
+                </a>
+                <?php endif; ?>
+                <h2><a href="<?php echo $cur_category->getUrl() ?>" title="<?php echo $this->htmlEscape($_category->getName()) ?>"  class="easycategoriesroot"><?php echo $this->htmlEscape($_category->getName()) ?></a></h2>
+            </div>
+        </li>   
+    <?php if($i%$columnsCount==0 || $i==$_collectionSize): ?>
+    <?php endif; ?>
+	<?php if($i==4) {break;} ?>
+    <?php endforeach ?> 
+
+</div>
+        
+<?php endif; ?>
+</div>

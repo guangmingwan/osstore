@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @copyright  Copyright (c) 2010-2011 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+-->
+<layout version="0.1.0">
+<!--
+Default layout, loads most of the pages
+-->
+    <default>
+        <block type="page/html" name="root" output="toHtml" template="page/1column.phtml">
+            <block type="page/html_head" name="head" as="head">
+                <action method="addJs"><script>prototype/prototype.js</script></action>
+                <action method="addJs"><script>lib/ccard.js</script></action>
+                <action method="addJs"><script>prototype/validation.js</script></action>
+                <action method="addJs"><script>scriptaculous/builder.js</script></action>
+                <action method="addJs"><script>scriptaculous/effects.js</script></action>
+                <action method="addJs"><script>scriptaculous/dragdrop.js</script></action>
+                <action method="addJs"><script>scriptaculous/controls.js</script></action>
+                <action method="addJs"><script>scriptaculous/slider.js</script></action>
+                <action method="addJs"><script>varien/js.js</script></action>
+                <action method="addJs"><script>varien/form.js</script></action>
+                <action method="addJs"><script>varien/menu.js</script></action>
+                <action method="addJs"><script>mage/translate.js</script></action>
+                <action method="addJs"><script>mage/cookies.js</script></action>
+
+                <action method="addJs"><script>aw_mobile/jquery.1.3.2.min.js</script></action>                
+                <action method="addJs"><script>aw_mobile/aw_mobile_iphone.js</script></action>
+                <action method="addJs"><script>aw_mobile/cart.js</script></action>               
+                <action method="addCss"><stylesheet>css/iphone.css</stylesheet></action>
+
+
+
+                <!--Fix 1.3.3.0 Zip Codes problem-->
+                <remove name="optional_zip_countries"/>
+            </block>
+
+            <block type="core/text_list" name="after_body_start" as="after_body_start"/>
+
+            <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
+
+            <block type="page/html_header" name="header" as="header">
+                <block name="user_links" as="user_links" type="page/template_links" />
+                
+            </block>
+            <block type="awmobile/page_template_links" name="awmobile.top.links" as="awTopLinks" template="page/template/links.phtml"/>
+
+            <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+
+            <!-- block type="core/text_list" name="left" as="left"/ -->
+
+
+            <block type="core/text_list" name="content" as="content"/>
+
+            <block type="core/template" name="cart.links" as="cartLinks" template="page/template/cart/links.phtml" />
+
+            <block type="core/text_list" name="cart.content" as="cartContent">
+                <block type="checkout/cart" name="checkout.cart">
+                    <action method="setCartTemplate"><value>checkout/cart.phtml</value></action>
+                    <action method="setEmptyTemplate"><value>checkout/cart/noItems.phtml</value></action>
+                    <action method="chooseTemplate"/>
+                    <action method="addItemRender"><type>bundle</type><block>bundle/checkout_cart_item_renderer</block><template>checkout/cart/item/default.phtml</template></action>
+                    <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/item/default.phtml</template></action>
+                    <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/item/default.phtml</template></action>
+                    <action method="addItemRender"><type>downloadable</type><block>downloadable/checkout_cart_item_renderer</block><template>downloadable/checkout/cart/item/default.phtml</template></action>
+                    
+                    <block type="checkout/multishipping_link" name="checkout.cart.methods.multishipping" as="multishipping_link" template="checkout/multishipping/link.phtml"/>
+                    <block type="core/text_list" name="checkout.cart.top_methods" as="top_methods">
+                        <block type="checkout/onepage_link" name="checkout.cart.methods.onepage" template="checkout/onepage/link.phtml"/>
+                    </block>
+
+                    <block type="core/text_list" name="checkout.cart.methods" as="methods" />
+
+<!--                    <block type="checkout/cart_totals" name="checkout.cart.totals" as="totals" template="checkout/cart/totals.phtml"/>-->
+                    <block type="awmobile/checkout_cart_totals" name="checkout.cart.totals" as="totals" template="checkout/cart/totals.phtml"/>
+
+                    <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="checkout/cart/coupon.phtml"/>
+    <!--                <block type="checkout/cart_shipping" name="checkout.cart.shipping" as="shipping" template="checkout/cart/shipping.phtml"/>
+                    <block type="checkout/cart_crosssell" name="checkout.cart.crosssell" as="crosssell" template="checkout/cart/crosssell.phtml"/>-->
+                </block>
+            </block>
+           
+            <!-- block type="core/text_list" name="right" as="right"/ -->
+
+            <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+                <action method="setData"><key>cache_lifetime</key><value>0</value></action>
+                
+                <block type="page/template_links" name="aw_footer_links" as="aw_footer_links" template="page/template/footer/links.phtml">
+                    <action method="addLink" translate="label title" module="cms"><label>About</label><url>about-magento-demo-store</url><title>About</title><prepare>true</prepare></action>
+                    <action method="addLink" translate="label title" module="cms"><label>Customer Service</label><url>customer-service</url><title>Customer Service</title><prepare>true</prepare></action>                    
+                </block>
+				
+                <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+				<block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>									
+				<block type="page/template_links" name="switcher_links" as="switcher_links" template="page/template/footer/switcher.phtml">						
+                        <action method="addLink" translate="label title" module="awmobile"  ifconfig="awmobile/behaviour/switcher"><label>Desktop Version</label><url>awmobile/switch/toDesktop</url><title>Desktop Version</title><prepare>true</prepare><position>1</position><liParams>id="desktop_switcher"</liParams></action>
+                    </block>
+            </block>
+
+            <block type="core/text_list" name="before_body_end" as="before_body_end"/>
+        </block>
+
+        <block type="core/profiler" output="toHtml" name="core_profiler"/>
+    </default>
+
+    <print>
+        <!-- Mage_Page -->
+        <block type="page/html" name="root" output="toHtml" template="page/print.phtml">
+
+            <block type="page/html_head" name="head" as="head">
+                <action method="addJs"><script>prototype/prototype.js</script></action>
+                <action method="addJs"><script>mage/translate.js</script></action>
+
+                <action method="addCss"><stylesheet>css/reset.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/boxes.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/clears.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/menu.css</stylesheet></action>
+
+                <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+            </block>
+
+            <block type="core/text_list" name="content" as="content"/>
+
+        </block>
+    </print>
+
+     <!-- Custom page layout handles -->
+    <page_empty>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>
+    </page_empty>
+
+    <page_one_column>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>
+    </page_one_column>
+
+    <page_two_columns_left>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>
+    </page_two_columns_left>
+
+    <page_two_columns_right>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>
+    </page_two_columns_right>
+
+    <page_three_columns>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>
+    </page_three_columns>
+</layout>

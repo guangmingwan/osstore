@@ -1,0 +1,64 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="page-head">
+    <h2><?php echo $this->__('Send confirmation link') ?></h2>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<div class="account-block">
+<form action="" method="post" id="form-validate">
+    <div class="fieldset">
+        <h4 class="legend"><?php echo $this->__('Retrieve your confirmation link here') ?></h4>
+        <p><?php echo $this->__('Please enter your email below and we\'ll send you confirmation link for it.') ?></p>
+        <ul class="form-list">
+            <li>
+                <label for="email_address" class="required"><em>*</em>&nbsp;<?php echo $this->__('Email Address') ?></label>
+                <div class="input-box">
+                    <input type="text" name="email" id="email_address" title="<?php echo $this->__('Email Address') ?>" class="input-text required-entry validate-email" value="<?php echo $this->htmlEscape($this->getEmail()) ?>" />
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+        <br />
+    </div>
+    <div class="button-space a-center">
+        <a class="button grey left" href="<?php echo $this->helper('customer')->getLoginUrl() ?>"><?php echo $this->__('Back') ?></a>
+        <a class="button grey" href="#" onclick="$j('#form-validate').submit(); return false;"><?php echo $this->__('Submit') ?></a>
+    </div>
+    <br />
+</form>
+ </div>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+//]]>
+</script>

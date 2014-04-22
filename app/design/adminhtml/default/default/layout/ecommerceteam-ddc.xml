@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+    <adminhtml_sales_order_view>
+    	<reference name="order_info">
+            <block type="core/template" name="order_info.ecommerceteam" template="ecommerceteam/sales/order/view/info.phtml">
+            	<block type="ecommerceteam_ddc/adminhtml_sales_order_view_info_block" name="order_info.ecommerceteam.customercomment" template="ecommerceteam/sales/order/view/info/comment.phtml" />
+            	<block type="ecommerceteam_ddc/adminhtml_sales_order_view_info_block" name="order_info.ecommerceteam.deliverydate" template="ecommerceteam/sales/order/view/info/date.phtml" />
+            </block>
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

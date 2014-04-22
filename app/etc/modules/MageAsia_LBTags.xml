@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageAsia_LBTags>
+            <active>true</active>
+            <codePool>community</codePool>
+        </MageAsia_LBTags>
+    </modules>
+</config> 

@@ -1,0 +1,143 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   design_default
+ * @package    Mage
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @see Mage_Customer_Block_Form_Register
+ */
+?>
+<div class="regtitle"><span style="color:#5D5D5D; font-size:25px;">Hi Ready to register with OS-STORE</span>
+    <div class="fontbold titlehelptext"><span class="titleHelpText" style="padding-bottom: 22px;">It's your typical registration - it's free and fairly simple to complete.</span></div>
+    <div>Already registered or want to make changes to your account?<a href="#"> Sign in.</a><br />
+      <a href="<?php echo $this->getUrl('help_create_account_for_company')?>">Want to open an account for your company?</a> </div>
+  </div>
+
+
+<div class="regarea">
+<?php 
+echo $this->getMessagesBlock()->getGroupedHtml();
+Mage::getSingleton("customer/session")->getMessages(true);
+ ?>
+<div class="regbg"><h7><?php echo $this->__('Personal Information') ?></h7></div>
+
+<?php
+// Getting Messages from Session
+//$messages=Mage::getSingleton("customer/session")->getMessages(true);
+ 
+// Creating Block Mage_Core_Block_Messages
+// Setting Message
+// echoing the Message's HTML
+//echo $this->getLayout()->createBlock("core/messages")->setMessages($messages)->getGroupedHtml();
+
+?>
+<form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
+    <fieldset class="group-select-none wide">
+    <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
+    <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
+
+        <ul>
+            <li style="float:left;width:100%">
+                <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getFormData())->toHtml() ?>
+            </li>
+            <li style="float:left;width:100%">
+                <div class="input-box"> 
+                    <label for="email_address"><?php echo $this->__('Email Address') ?> <span class="required">*</span></label><br/>
+                    <input type="text" name="email" id="email_address" value="<?php echo $this->htmlEscape($this->getFormData()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="validate-email required-entry input-text" />
+                </div>
+            </li>
+            <?php if ($this->isNewsletterEnabled()): ?><br />
+            <li style="float:left;width:100%">
+                <input type="checkbox" name="is_subscribed" title="<?php echo $this->__('Sign Up for Newsletter') ?>" value="1" id="is_subscribed" <?php if($this->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif ?> />
+                <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter') ?></label>
+            </li>
+            <?php endif ?>
+<?php $_dob = $this->getLayout()->createBlock('customer/widget_dob') ?>
+<?php if ($_dob->isEnabled()): ?>
+            <li style="float:left;width:100%"><?php echo $_dob->setDate($this->getFormData()->getDob())->toHtml() ?></li>
+<?php endif ?>
+<?php $_taxvat = $this->getLayout()->createBlock('customer/widget_taxvat') ?>
+<?php if ($_taxvat->isEnabled()): ?>
+            <li style="float:left;width:100%"><?php echo $_taxvat->setTaxvat($this->getFormData()->getTaxvat())->toHtml() ?></li>
+<?php endif ?>
+        </ul>
+    </fieldset>
+
+<div class="regbg"><h7><?php echo $this->__('Login Information') ?></h7></div>
+    <fieldset class="group-select-none wide">
+
+
+        <ul>
+            <li>
+                <div class="input-box">
+                    <label for="password"><?php echo $this->__('Password') ?> <span class="required">*</span></label><br/>
+                    <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="required-entry validate-password input-text" />
+                </div>
+                <div class="input-box">
+                    <label for="confirmation"><?php echo $this->__('Confirm Password') ?> <span class="required">*</span></label><br />
+                    <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="required-entry validate-cpassword input-text" />
+                </div>
+            </li>
+        </ul>
+    </fieldset>
+
+<fieldset style="padding:5px 25px">
+        <ul>
+            <li>
+		
+                <div style="padding:5px 0pt 0pt 10px;">
+                <span class="resetMargins">
+                <input type="checkbox" value="1" name="acceptq1" class="required-entry">
+                </span>
+                <img width="3" src="<?php echo $this->getSkinUrl("s.gif"); ?>">I agree that:
+                <div style="margin: 0px 0px 20px; padding: 0px; display: block;" class="TextSpace">
+                <div class="liindent" style="margin:5px 0;">* I accept the <a tabindex="1" target="ua" href="<?php echo $this->getBaseUrl() . "user-agreement.html"; ?>" >User Agreement</a> and <a target="pp" href="<?php echo $this->getBaseUrl() ."privacy-policy.html"; ?>">Privacy Policy</a>.</div>
+                <div class="liindent" style="margin:5px 0;">* I may receive communications from OS-STORE and can change my notification preferences in My OS-STORE.</div>
+                <div class="liindent" style="margin:5px 0;">I'm at least 18 years old.</div>
+                </div>
+
+            </li>
+        </ul>
+        <?php /*
+		<li><span style="color: rgb(255, 0, 0);">Please Enter The Verification Code</span>:</li>
+		<div class="input-box" style="margin-top:20px;">
+		<img width="50" id="captcha" name="seccode" height="25" src="<?php echo $this->getUrl("customer/account/verification"),"/sec/code.jpg"; ?>">
+		<a style="border: none;" href="javascript:;" title="refresh image" onclick="document.getElementById('captcha').src = '<?php echo $this->getUrl("customer/account/verification"),"/sec/code.jpg"; ?>?' + Math.random(); return false"><img src="<?php echo $this->getSkinUrl("images/refresh.gif");?>" alt="refresh image" border="0" onclick="this.blur()" /></a>
+		<input style="width:50px;height:25px;margin-top:-15px;"type="text" class="required-entry " title="sec code" value="" name="seccode" id="seccode" gtbfieldid="8" size="4" />
+		</div>
+		*/ ?>
+    </fieldset>
+        <button class="form-button5" type="submit"><span style="display:none;"><?php echo $this->__('Submit') ?></span></button>
+
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+//]]>
+</script>
+</div>
+<div class="regad"></div>

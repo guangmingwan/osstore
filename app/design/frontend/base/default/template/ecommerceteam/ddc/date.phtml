@@ -1,0 +1,37 @@
+<?php
+	
+	$helper = Mage::helper('ecommerceteam_ddc');
+	
+	$selected_date = $this->getDeliveryDate();
+    $start_date    = $this->getStartDate();
+	
+?>
+<div class="delivery-date-wrap">
+<h5><?php echo $this->getDateLabel()?></h5>
+
+<div class="delivery-date-field">
+	<input readonly="readonly" type="text" id="delivery_date" name="delivery_date" class="input-text input-date" value="<?php echo $selected_date;?>"/>
+	<img id="delivery_date_handler"  class="handler" src="<?php echo $this->getSkinUrl('images/ecommerceteam/calendar2.png')?>" alt="" />
+</div>
+
+<?php if($description = trim($helper->getConfigData('description'))):?>
+<div class="delivery-date-description">
+	<?php echo nl2br($description);?>
+</div>
+<?php endif;?>
+
+<script type="text/javascript">
+//<!--
+
+var picker = new Control.DatePicker($('delivery_date'), {
+	dateFormat: 'dd MMM yyyy',
+    today:'<?php echo $start_date;?>',
+	handler:$('delivery_date_handler'),
+	disable_week_days:[<?php echo $helper->getConfigData('disable_week_days')?>],
+	disable_month_days:[<?php echo $helper->getConfigData('disable_month_days')?>],
+	min_day:<?php echo (int)$helper->getConfigData('min_day')?>,
+	max_day:<?php echo (int)$helper->getConfigData('max_day')?>
+});
+//-->
+</script>
+</div>

@@ -1,0 +1,42 @@
+.points-notice-sidebar-msg
+{
+    margin: 5px;
+    padding: 5px;
+    background-color: #90EE90;
+}
+
+
+
+#invitelist-table.data-table thead th{
+    background-color: #E5E8E9;
+    border-right: 1px solid #C2D3E0;
+    border-bottom: 1px solid #C2D3E0;
+}
+
+#invitelist-table.data-table tbody th, #invitelist-table.data-table tbody td{
+    border-right: 1px solid #D9DDE3;
+}
+
+#invitelist-table.data-table tbody tr{
+    border-bottom: 1px solid #D9DDE3;
+}
+
+#invitelist-table.data-table tbody tr.last{
+    border-bottom: 0px;
+}
+
+#invitelist-table.data-table tbody th.last, #invitelist-table.data-table tbody td.last{
+    border-right: 0px;
+}
+
+#invitelist-table  td.last {
+    width: 270px;
+}
+
+#invitelist-table {
+    border-spacing: 0px;
+}
+
+#invitelist-table td{
+    text-align: center;
+}

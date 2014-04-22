@@ -1,0 +1,41 @@
+
+<sdiv class="wired-home">
+<div class="promo">
+	<div id="slider-wrapper">
+		<div id="slider" style="position: relative;">
+			<div class="panel" >
+			<img src="{{skin url="images/media/01.jpg"}}" alt="Flowing Rock" />
+			</div>
+			<div class="panel">
+			<img src="{{skin url="images/media/02.jpg"}}" alt="Other" />
+			</div>
+			<div id="controls"></div>
+		</div>
+	</div>
+	<div class="promo-right">
+	{{block type="catalog/navigation" name="catalog.left" before="_" template="catalog/navigation/left.phtml"/}}
+	</div>
+
+</div>
+<div class="subpromo">
+	<div class="offers">
+		<a href="#"><img src="{{skin url="images/media/promo6.jpg}}" alt="Promotion 2" /></a>
+		<a href="#"><img src="{{skin url="images/media/promo7.jpg}}" alt="Promotion 2" /></a>
+	</div>
+	<div class="brands">
+	<a href="#"><img src="{{skin url="images/media/promo5.jpg}}" alt="Promotion 2" /></a>
+	</div>
+</div>
+
+<div class="featured-social">
+
+{{block type="catalog/product" template="catalog/product/homeproduct.phtml"/}}
+
+<div class="subscribe"><strong>Stay Connected</strong>
+	<p>Receive Promotions and Discounts, sign up today to receive yours!</p>
+{{block type="newsletter/subscribe" name="newsletter" as="newsletter" template="newsletter/subscribe-home.phtml"/}}
+</div>
+
+
+</div>
+</div>

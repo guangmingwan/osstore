@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Amasty_Paction>
+            <version>1.3.4</version>
+        </Amasty_Paction>
+    </modules>
+    
+    <admin>
+        <routers>
+            <ampaction>
+                <use>admin</use>
+                <args>
+                    <module>Amasty_Paction</module>
+                    <frontName>ampaction</frontName>
+                </args>
+            </ampaction>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <events>
+            <am_product_grid_massaction>
+                <observers>
+                    <ampaction>
+                        <type>singleton</type>
+                        <class>Amasty_Paction_Model_Observer</class>
+                        <method>handleAmProductGridMassaction</method>
+                    </ampaction>
+                </observers>
+            </am_product_grid_massaction>
+        </events> 
+            
+        <translate>
+            <modules>
+                <Amasty_Paction>
+                    <files>
+                        <default>Amasty_Paction.csv</default>
+                    </files>
+                </Amasty_Paction>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ampaction translate="title" module="ampaction">
+                                            <title>Product Mass Actions</title>
+                                        </ampaction>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    <global>
+        <models>
+            <ampaction>
+                <class>Amasty_Paction_Model</class>
+                <resourceModel>ampaction_mysql4</resourceModel>
+            </ampaction>
+            <ampaction_mysql4>
+                <class>Amasty_Paction_Model_Mysql4</class>
+            </ampaction_mysql4>
+        </models>
+        
+		<resources>
+             <ampaction_setup>
+                <setup>
+                    <module>Amasty_Paction</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ampaction_setup>
+		    <ampaction_write>
+		        <connection><use>core_write</use></connection>
+		    </ampaction_write>
+		    <ampaction_read>
+		        <connection><use>core_read</use></connection>
+		    </ampaction_read>
+		</resources>
+		  
+        <blocks>
+            <ampaction>
+                <class>Amasty_Paction_Block</class>
+            </ampaction>
+            
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_grid>Amasty_Paction_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        
+        <helpers>
+            <ampaction>
+                <class>Amasty_Paction_Helper</class>
+            </ampaction>
+        </helpers>
+    </global>
+    
+    
+    <default>
+        <ampaction>
+           <general>
+                <rounding>0</rounding>
+                <categories>1</categories>
+                <attr></attr>
+           </general>
+           <links>           
+                <upsell>0</upsell>
+                <crosssell>0</crosssell>
+                <relate>0</relate>            
+           </links>
+        </ampaction>
+    </default>
+    
+</config>

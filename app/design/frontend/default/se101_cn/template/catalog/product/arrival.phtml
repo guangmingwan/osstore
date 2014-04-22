@@ -1,0 +1,65 @@
+	
+<div class="category-products">
+	
+<?php
+	$bestseller =Mage::getModel('catalog/category')->load(10);
+	$best_collection = $bestseller->getProductCollection()->setOrder('position', 'asc');	
+	$i = 0;									
+?>
+
+<ul class="products-tab" >
+	<?php foreach ($best_collection as $best_product)
+				{				
+				$best_product_id =  $best_product->getId();
+				$product_model = Mage::getModel('catalog/product');
+				$_product = $product_model->load($best_product_id);	
+	?>
+	<li class="item">
+							<div class="tab-product-img">
+								<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getName(); ?>">
+									<img src="<?php echo $this->helper('catalog/image')->init($product_model, 'image')->resize(85,85); ?>" width="85" height="85" alt="<?php echo $_product->getName(); ?>" title="<?php echo $_product->getName(); ?>" />
+								</a>
+							</div>
+							<div class="tab-other-info">
+
+							
+							<h2 class="product-name" style="height:65px;width:150px;overflow:hidden;">
+								<a title='<?php echo $_product->getName(); ?>' href='<?php echo $_product->getProductUrl() ?>'>
+								
+									<?php 
+									if(strlen($_product->getName())<=65)
+									echo $_product->getName();
+									else
+									echo substr($_product->getName(),0,65).'...';
+									?>
+								</a>
+							</h2>
+							
+							
+							
+							<div class="price-box">
+							
+								<!--Price-->
+												<?php $_taxHelper  = $this->helper('tax');?>
+												<?php $_coreHelper  = $this->helper('core');?>
+												<?php $_simplePricesTax = ($_taxHelper->displayPriceIncludingTax() || $_taxHelper->displayBothPrices());?>
+												<?php $_regularPrice = $_taxHelper->getPrice($_product, $_product->getPrice(), $_simplePricesTax) ?>
+												<?php $_finalPrice = $_taxHelper->getPrice($_product, $_product->getData('special_price')) ?>
+								<!--Price end-->
+
+								<div class="regular-price">
+									<span class="price" ><?php echo $_coreHelper->currency($_regularPrice,true,false);?></span>
+								</div>
+								
+								
+								
+						
+							</div>
+
+						
+						</div>
+	
+	</li>
+	<?php $i++; if($i>=9)	break;}?>
+</ul>
+</div>

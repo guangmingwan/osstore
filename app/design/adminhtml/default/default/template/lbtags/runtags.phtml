@@ -1,0 +1,143 @@
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td ><h3 class="icon-head head-permissions-role"><?php echo $this->__('Product Auto Tags') ?></h3></td>
+            <td class="form-buttons">
+            
+            <button id="button" type="button" class="scalable add" onclick="document.getElementById('importform').submit();" style=""><span>Start</span></button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="entry-edit">
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Product Name Auto Tags</h4>
+    <div class="form-buttons"></div>
+</div>
+<div class="fieldset " id="tags_form">
+    <div class="hor-scroll">
+                  <form action="<?php echo $this->getUrl('*/*/runtagsbegin') ?>" method="get" enctype="multipart/form-data" id="importform"><input type="hidden" name="form_key" value="<? echo $this->getFormKey(); ?>" />  
+   
+   <table width="600"> 
+   		
+        <tr>
+        			
+            <td width="344">
+				  <?php echo $this->__("Product Limit");?>:          
+            </td>
+            <td width="244">
+            	
+                <input type="text" name="product_limit" id="product_limit" value="2" />
+                            
+            </td>
+
+        </tr> <tr>
+        			
+            <td colspan="2"><strong><br />
+              2 Words&nbsp;
+              
+            </strong></td>
+            </tr>
+         <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum length of words for 2 word phrases");?>:          
+            </td>
+            <td>
+            	
+                <input type="text" name="min_2words_length" id="min_2words_length" value="3" /> 
+                            
+            </td>
+
+        </tr>
+        
+         <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum length of 2 word phrases");?>:          
+            </td>
+            <td>
+         
+                <input type="text" name="min_2words_phrase_length" id="min_2words_phrase_length" value="10"  /> 
+                            
+            </td>
+
+        </tr>
+         
+        
+        
+          <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum occur of 2 words phrase  ");?>:          
+            </td>
+            <td>
+         
+                <input type="text" name="min_2words_phrase_occur" id="min_2words_phrase_occur" value="1" />  
+                            
+            </td>
+
+        </tr>
+        
+        <tr>
+        			
+            <td colspan="2"><br />
+              <strong>              3 Words&nbsp;
+              
+            </strong></td>
+          </tr>
+         <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum length of words for 3 word phrases");?>:          
+            </td>
+            <td>
+            	
+                <input type="text" name="min_3words_length" id="min_3words_length" value="3" /> 
+                            
+            </td>
+
+        </tr>
+        
+         <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum length of 3 word phrases");?>:          
+            </td>
+            <td>
+         
+                <input type="text" name="min_3words_phrase_length" id="min_3words_phrase_length" value="10"  /> 
+                            
+            </td>
+
+        </tr>
+         
+        
+        
+          <tr>
+        			
+            <td>
+				  <?php echo $this->__("minimum occur of 3 words phrase  ");?>:          
+            </td>
+            <td>
+         
+                <input type="text" name="min_3words_phrase_occur" id="min_3words_phrase_occur" value="1" />  
+                            
+            </td>
+
+        </tr>
+        
+         
+   </table>
+   
+   
+   
+</form> 
+            </div>
+        </div>
+
+
+</div>
+<script type="text/javascript">
+    var roleForm = new varienForm('importform');
+</script>

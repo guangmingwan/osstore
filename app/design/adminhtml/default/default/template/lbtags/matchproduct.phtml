@@ -1,0 +1,153 @@
+ <?php
+   
+   function get_categories() {
+    $category = Mage::getModel('catalog/category');
+    $tree = $category->getTreeModel();
+    $tree->load();
+    $ids = $tree->getCollection()->getAllIds();
+    $arr = array();
+    $arrayCategories = array();
+    if ($ids) {
+        foreach ($ids as $id) {
+            $cat = Mage::getModel('catalog/category');
+            $cat->load($id);
+ 
+          //  if($id!=1){
+ 
+                $arrayCategories[$id] =
+                        array("parent_id" => $cat->getParentId(),
+                            "name" => $cat->getName(),
+                            "cat_id" => $cat->getId(),
+                            "cat_level" => $cat->getLevel(),
+                            "cat_url" => $cat->getUrl()
+                );
+          //  }
+        }// for each ends
+        return $arrayCategories;
+        /*
+          echo 'PK<pre>';
+          print_r($arrayCategories);
+          echo '</pre>';
+         */
+    }//if ids present
+}
+$arrayCategories = get_categories();
+ 
+function createTree($array, $currentParent, $currLevel = 0, $prevLevel = -1) {
+    foreach ($array as $categoryId => $category) {
+        if ($currentParent == $category['parent_id']) {
+          //  if ($currLevel > $prevLevel)
+              //  echo "<selevct name='catid' id='ul_".$categoryId."'>";
+            if ($currLevel == $prevLevel)
+               /// echo " </li> ";
+ 
+                    $cat_id_hidden = array('1','2');//set category id hidden
+                    if(in_array($categoryId,$cat_id_hidden)){
+                       // $display = 'none';
+                    }
+                    else{
+                       // $display = 'block';
+                    }
+ 
+            //class="level_'.$category['cat_level'].' "
+            echo '<option value="'.$categoryId.'">';
+           // echo '<a id="a_'.$categoryId.'" target="_blank" href="'. $category['cat_url'].'">';
+            //    echo '<span id="span_'.$categoryId.'">'.$category['name'].'</span>';
+            //echo '</a>';
+			echo str_repeat("--",$currLevel);
+			echo $category['name'];
+			  echo " </option> ";
+            //echo '<input type="text" id="m_cat_id_'.$category['cat_id'].'" name="m_cat_id_'.$category['cat_id'].'" value="id = '.$category['cat_id'].' : level = '.$category['cat_level'].' "/>';
+            if ($currLevel > $prevLevel) {
+                $prevLevel = $currLevel;
+            }
+            $currLevel++;
+            createTree($array, $categoryId, $currLevel, $prevLevel);
+            $currLevel--;
+        }
+    }
+  //  if ($currLevel == $prevLevel)
+       // echo " </li></ul> ";
+}
+   
+   ?><div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td ><h3 class="icon-head head-permissions-role"><?php echo $this->__('Tags auto match product') ?></h3></td>
+            <td class="form-buttons">
+            
+            <button id="button" type="button" class="scalable add" onclick="document.getElementById('importform').submit();" style=""><span>Start</span></button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="entry-edit">
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Product Auto Tags</h4>
+    <div class="form-buttons"></div>
+</div>
+<div class="fieldset " id="tags_form">
+    <div class="hor-scroll">
+                  <form action="<?php echo $this->getUrl('*/*/runtagsmatchproduct') ?>" method="get" enctype="multipart/form-data" id="importform"><input type="hidden" name="form_key" value="<? echo $this->getFormKey(); ?>" />  
+   
+   <table width="700"> 
+   		
+        <tr>
+        			
+            <td width="284">
+				  <?php echo $this->__("Tags Limit");?>:          
+            </td>
+            <td width="404">
+            	
+                <input type="text" name="tags_limit" id="tags_limit" value="2" />
+                            
+            </td>
+
+        </tr>
+          <tr>
+          <td> <?php echo $this->__("Product In Tags Limit");?>:    </td>
+          <td><input type="text" name="product_tags_limit" id="product_tags_limit" value="10" /></td>
+        </tr>
+        <tr>
+          <td> <?php echo $this->__("Max Products");?>:    </td>
+          <td><input type="text" name="max_product" id="max_product" value="8" /></td>
+        </tr>
+          <tr>
+          <td> <?php echo $this->__("Product Categories");?>:    </td>
+          <td>
+          <select name="catid">
+          <?php createTree($arrayCategories, 0); ?>
+          </select>
+          </td>
+        </tr>
+        <?php
+		$selecttags=$_REQUEST['lbtags'];
+		
+		if(count($selecttags)>0){
+		
+		?>
+         <tr>
+          <td> <?php echo $this->__("Select Tags Count");?>:    </td>
+          <td>
+         <?php echo count($selecttags);?>
+          </td>
+        </tr>
+    
+    <?php
+		}
+	?>
+        
+         
+   </table>
+   
+   <input type="hidden" name="tagids" value="<?php echo implode($_REQUEST['lbtags']);?>" />
+   
+</form> 
+            </div>
+        </div>
+
+
+</div>
+<script type="text/javascript">
+    var roleForm = new varienForm('importform');
+</script>

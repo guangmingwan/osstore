@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Order # 20131223081304 Notification(s)]]></title>
+    <link>http://www.os-store.com/sales/order/view/order_id/1702/</link>
+    <description><![CDATA[Order # 20131223081304 Notification(s)]]></description>
+    <pubDate>Mon, 21 Apr 2014 20:26:24 +0000</pubDate>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Details for Creditmemo #20131223081304]]></title>
+      <link>http://www.os-store.com/sales/order/creditmemo/order_id/1702/</link>
+      <description><![CDATA[<p>Notified Date: 1/23/14<br/>Comment: Credit memo has been created automatically<br/></p>]]></description>
+      <pubDate>Mon, 21 Apr 2014 20:26:24 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Details for Creditmemo #20131223081304]]></title>
+      <link>http://www.os-store.com/sales/order/creditmemo/order_id/1702/</link>
+      <description><![CDATA[<p>Notified Date: 3/8/14<br/>Comment: Credit memo has been created automatically<br/></p>]]></description>
+      <pubDate>Mon, 21 Apr 2014 20:26:24 +0000</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Order #20131223081304 created at 12/23/13]]></title>
+      <link>http://www.os-store.com/sales/order/view/order_id/1702/</link>
+      <description><![CDATA[<p>Current Status: Complete<br/>Total: <span class="price">$94.99</span><br/></p>]]></description>
+      <pubDate>Mon, 21 Apr 2014 20:26:24 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

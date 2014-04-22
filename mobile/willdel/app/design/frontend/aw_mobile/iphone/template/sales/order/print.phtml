@@ -1,0 +1,88 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php $_order = $this->getOrder() ?>
+<h3><?php echo $this->__('Order #%s', $_order->getRealOrderId()) ?></h3>
+<div class="divider"></div>
+<div class="col2-set">
+    <div class="col-1">
+        <h4><?php echo $this->__('Shipping Address') ?></h4>
+        <address><?php echo $_order->getShippingAddress()->format('html') ?></address>
+    </div>
+    <div class="col-2">
+        <h4><?php echo $this->__('Billing Address') ?></h4>
+        <address><?php echo $_order->getBillingAddress()->format('html') ?></address>
+    </div>
+</div>
+<br />
+<div class="col2-set">
+    <div class="col-1">
+        <h4><?php echo $this->__('Shipping Method') ?></h4>
+         <?php echo $_order->getShippingDescription() ?>
+    </div>
+    <div class="col-2">
+        <h4><?php echo $this->__('Payment Method') ?></h4>
+        <?php echo $this->getPaymentInfoHtml() ?>
+    </div>
+</div>
+<br />
+<h4><?php echo $this->__('Items Ordered') ?></h4>
+<table cellspacing="0" class="data-table">
+    <thead>
+        <tr>
+            <th><?php echo $this->__('Product Name') ?></th>
+            <th class="a-right" width="15%"><?php echo $this->__('Price') ?></th>
+            <th class="a-center" width="10%"><?php echo $this->__('Qty Ordered') ?></th>
+            <th class="a-center" width="10%"><?php echo $this->__('Qty Shipped') ?></th>
+            <th class="a-right last" width="20%"><?php echo $this->__('Subtotal') ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php $_items = $_order->getItemsCollection(); ?>
+        <?php $_count = $_items->count(); ?>
+        <?php $_index = 0; ?>
+        <?php foreach ($_items as $_item): ?>
+            <tr<?php echo ($_index++ > $_count ? ' class="last"' : '') ?>>
+            <td>
+                <?php echo $this->htmlEscape($_item->getName()) ?>
+                <?php echo $this->htmlEscape($_item->getDescription()) ?>
+            </td>
+            <td class="a-right nowrap"><?php echo $_order->formatPrice($_item->getPrice()) ?></td>
+            <td class="a-center"><?php echo $_item->getQtyOrdered()*1 ?></td>
+            <td class="a-center"><?php echo $_item->getQtyShipped()*1 ?></td>
+            <td class="last a-right nowrap"><?php echo $_order->formatPrice($_item->getRowTotal()) ?></td>
+        <?php endforeach; ?>
+        </tr>
+    </tbody>
+    <tfoot>
+        <?php echo $this->getChildHtml('order_totals') ?>
+    </tfoot>
+</table>
+<script type="text/javascript">window.print();</script>

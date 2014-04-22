@@ -1,0 +1,60 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+/**
+ * @see AW_Mobile_Block_Customer_Account_Dashboard_Info
+ */
+?>
+<?php $_items = $this->getItems(); ?>
+<?php if(count($_items)): ?>
+<table class="data-table" cellpadding="0" cellspacing="0" id="my-downloadable-products-table">
+        <col width="1" />
+        <col />
+        <col width="1" />
+        <tbody>
+            <?php $_odd = ''; ?>
+            <?php foreach ($_items as $_item): ?>
+                <tr>
+                    <td class="first"><a href="<?php echo $this->getOrderViewUrl($_item->getPurchased()->getOrderId()) ?>" title="<?php echo Mage::helper('downloadable')->__('View Order') ?>"><?php echo $_item->getPurchased()->getOrderIncrementId() ?></a></td>                    
+                    <td><?php echo $this->htmlEscape($_item->getPurchased()->getProductName()) ?> - <div class="link-inline">
+                            <?php if ($_item->getStatus() == 'available'): ?>                            
+                            <a href="<?php echo $this->getDownloadUrl($_item) ?>" title="<?php echo Mage::helper('downloadable')->__('Start Download') ?>" <?php echo $this->getIsOpenInNewWindow()?'onclick="this.target=\'_blank\'"':''; ?>><?php echo $_item->getLinkTitle() ?></a>
+                            <?php else: ?>
+                            <a href="<?php echo $this->getUnavailableUrl() ?>" title="<?php echo Mage::helper('downloadable')->__('Start Download') ?>"><?php echo $_item->getLinkTitle() ?></a>
+                            <?php endif; ?>
+                        </div></td>
+                    <td><em><?php echo ucfirst($_item->getStatus()) ?></em></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <script type="text/javascript">decorateTable('my-downloadable-products-table')</script>
+<?php else: ?>
+    <p><?php echo Mage::helper('downloadable')->__('You have not purchased any downloadable products yet.'); ?></p>
+<?php endif; ?>

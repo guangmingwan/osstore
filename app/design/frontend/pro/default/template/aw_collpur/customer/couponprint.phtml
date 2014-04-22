@@ -1,0 +1,48 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE-COMMUNITY.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Collpur
+ * @version    1.0.2
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE-COMMUNITY.txt
+ */
+?>
+<?php if ($couponId = Mage::app()->getRequest()->getParam('id')): ?>
+<?php
+    $coupon = Mage::getModel('collpur/coupon')->load($couponId);
+    $deal = Mage::getModel('collpur/deal')->load($coupon->getDealId());
+    $purchase = Mage::getModel('collpur/dealpurchases')->load($coupon->getData('purchase_id'));
+    $customer = Mage::getSingleton('customer/session')->getCustomer();
+?>
+    <?php if ($purchase->getData('customer_id') == $customer->getId()): ?>
+        <p>
+            <?php echo $this->__('Dear %s', $customer->getName()) ?>
+        </p>
+        <p>
+            <?php echo $this->__('Your coupon code for deal %s', $deal->getDealName()) ?>
+        </p>
+        <p>
+            <?php echo $coupon->getData('coupon_code') ?>
+        </p>
+        <script type="text/javascript">window.print();</script>
+    <?php endif; ?>
+<?php endif; ?>

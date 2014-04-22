@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>yulinmufeng</LastAuthor>
+  <LastSaved>2013-07-15T06:04:52Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet 1">
+  <Table ss:ExpandedColumnCount="54" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="16.5">
+   <Column ss:Index="9" ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="369"/>
+   <Row>
+    <Cell><Data ss:Type="String">store</Data></Cell>
+    <Cell><Data ss:Type="String">websites</Data></Cell>
+    <Cell><Data ss:Type="String">attribute_set</Data></Cell>
+    <Cell><Data ss:Type="String">type</Data></Cell>
+    <Cell><Data ss:Type="String">category_ids</Data></Cell>
+    <Cell><Data ss:Type="String">sku</Data></Cell>
+    <Cell><Data ss:Type="String">has_options</Data></Cell>
+    <Cell><Data ss:Type="String">price</Data></Cell>
+    <Cell><Data ss:Type="String">name</Data></Cell>
+    <Cell><Data ss:Type="String">product_name</Data></Cell>
+    <Cell><Data ss:Type="String">meta_title</Data></Cell>
+    <Cell><Data ss:Type="String">meta_description</Data></Cell>
+    <Cell><Data ss:Type="String">meta_keyword</Data></Cell>
+    <Cell><Data ss:Type="String">gift_message_available</Data></Cell>
+    <Cell><Data ss:Type="String">options_container</Data></Cell>
+    <Cell><Data ss:Type="String">image_label</Data></Cell>
+    <Cell><Data ss:Type="String">small_image_label</Data></Cell>
+    <Cell><Data ss:Type="String">thumbnail_label</Data></Cell>
+    <Cell><Data ss:Type="String">model_number</Data></Cell>
+    <Cell><Data ss:Type="String">resolution</Data></Cell>
+    <Cell><Data ss:Type="String">status</Data></Cell>
+    <Cell><Data ss:Type="String">visibility</Data></Cell>
+    <Cell><Data ss:Type="String">enable_googlecheckout</Data></Cell>
+    <Cell><Data ss:Type="String">custom_layout_update</Data></Cell>
+    <Cell><Data ss:Type="String">weight</Data></Cell>
+    <Cell><Data ss:Type="String">qty</Data></Cell>
+    <Cell><Data ss:Type="String">min_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_min_qty</Data></Cell>
+    <Cell><Data ss:Type="String">is_qty_decimal</Data></Cell>
+    <Cell><Data ss:Type="String">backorders</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_backorders</Data></Cell>
+    <Cell><Data ss:Type="String">min_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_min_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">max_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_max_sale_qty</Data></Cell>
+    <Cell><Data ss:Type="String">is_in_stock</Data></Cell>
+    <Cell><Data ss:Type="String">low_stock_date</Data></Cell>
+    <Cell><Data ss:Type="String">notify_stock_qty</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_notify_stock_qty</Data></Cell>
+    <Cell><Data ss:Type="String">manage_stock</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_manage_stock</Data></Cell>
+    <Cell><Data ss:Type="String">stock_status_changed_auto</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_enable_qty_inc</Data></Cell>
+    <Cell><Data ss:Type="String">enable_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">is_decimal_divided</Data></Cell>
+    <Cell><Data ss:Type="String">stock_status_changed_automatically</Data></Cell>
+    <Cell><Data ss:Type="String">use_config_enable_qty_increments</Data></Cell>
+    <Cell><Data ss:Type="String">store_id</Data></Cell>
+    <Cell><Data ss:Type="String">product_type_id</Data></Cell>
+    <Cell><Data ss:Type="String">product_status_changed</Data></Cell>
+    <Cell><Data ss:Type="String">product_changed_websites</Data></Cell>
+    <Cell><Data ss:Type="String">Notice / Comments:field:0:5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013133</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14D311</Data></Cell>
+    <Cell><Data ss:Type="String">640x480</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013135</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14D412</Data></Cell>
+    <Cell><Data ss:Type="String">640x480</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013137</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X01</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013139</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X02</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013141</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">New A+ Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X03</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013134</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D311 640*480</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14D311</Data></Cell>
+    <Cell><Data ss:Type="String">640x480</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013136</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14D412 640*480</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14D412</Data></Cell>
+    <Cell><Data ss:Type="String">640x480</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013138</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X01 LQ14X01E 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X01</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013140</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X02 LQ14X02E 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X02</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">admin</Data></Cell>
+    <Cell><Data ss:Type="String">base,eu,ca,uk,cn,hk,se,fr,at,za,ru,jp,nz,de,pl,mobile</Data></Cell>
+    <Cell><Data ss:Type="String">LCD Panel</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String">3,219,464</Data></Cell>
+    <Cell><Data ss:Type="String">osst-20120715013142</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Sharp 13.8&quot; LCD CCFL Display Screen Panel LQ14X03 LQ14X03E LQ14X03F 1024*768</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell><Data ss:Type="String">Block after Info Column</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LQ14X03</Data></Cell>
+    <Cell><Data ss:Type="String">1024x768</Data></Cell>
+    <Cell><Data ss:Type="String">Enabled</Data></Cell>
+    <Cell><Data ss:Type="String">Catalog, Search</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">simple</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">:fixed:0.0000::30</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <LeftColumnVisible>3</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>11</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>name</Sort>
+  </Sorting>
+ </Worksheet>
+ <x:ExcelWorkbook></x:ExcelWorkbook>
+</Workbook>

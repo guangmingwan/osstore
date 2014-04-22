@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+
+<cms_index_index>
+            <reference name="cms_page">
+				<block type="catalog/navigation" name="catalog.categoriesImgTopNav" template="easycatalogimg/homepage.phtml"/>
+        </reference>
+</cms_index_index>
+</layout>
+
+

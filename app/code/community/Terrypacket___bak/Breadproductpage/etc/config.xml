@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Terrypacket_Breadproductpage>
+            <version>1.0.21</version>
+        </Terrypacket_Breadproductpage>
+    </modules>
+	
+  
+        
+    <global>
+		<helpers>
+			<breadproductpage>
+				<class>Terrypacket_Breadproductpage_Helper</class>
+			</breadproductpage>
+
+			<catalog>
+				<rewrite>
+					<data>Terrypacket_Breadproductpage_Helper_Data</data>
+				</rewrite>
+			</catalog>
+		</helpers>
+
+    </global>
+</config>

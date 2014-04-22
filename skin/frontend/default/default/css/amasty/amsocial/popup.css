@@ -1,0 +1,112 @@
+.amsocial-iframe
+{
+    width: 580px;
+    height: 340px;
+    position: fixed;
+    top: -340px;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -290px;
+    border: 3px solid #faa819;
+    background-color: white;
+    z-index: 9999;
+}
+
+.amsocial-header
+{
+    height: 40px;
+    font-size: 22px;
+    color: white;
+    background: #faa819;
+    padding-top: 3px;
+}
+
+.amsocial-header a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.amsocial-note
+{
+    font-size: 14px;
+    color: #515151;
+    text-align: left;
+    line-height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+hr.amsocial-hr
+{
+    color: #faa819;
+    border: 0px none;
+    height: 1px;
+    text-align: left;
+    background-color: #faa819;
+    margin-left: 9px;
+    width: 562px;
+}
+
+.amsocial-items
+{
+    text-align: center;
+}
+
+.amsocial-items div
+{
+    float: left;
+    width: 55px;
+}
+
+.amsocial-popup table
+{
+   padding-top: 15px;
+   padding-bottom: 27px;
+  padding-right: 20px;
+}
+
+.amsocial-icons{
+    margin-left: 20px;
+}
+
+.amsocial-popup table .title
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#ccode_placeholder
+{
+    border: 1px solid #bbbbbb;
+    height: 32px;
+    width: 210px;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-left: 8px;
+    color: #00940a;
+}
+
+.amsocial-nocode
+{
+    color: #bbbbbb !important;
+}
+
+.amsocial-codecomment
+{
+    padding-top: 3px;
+    color: #bbbbbb;
+}
+
+/* Side image styling */
+
+.amsocial-side-image
+{
+    display: block;
+    position: fixed;
+    right: -0px;
+    top: 320px;
+    z-index: 9999;
+}

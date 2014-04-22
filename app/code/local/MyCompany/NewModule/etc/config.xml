@@ -1,0 +1,9 @@
+<global>
+    <models>
+        <sales>
+            <rewrite>
+                <order>MyCompany_NewModule_Model_Order</order>
+            </rewrite>
+        </sales>
+    </models>
+</global>

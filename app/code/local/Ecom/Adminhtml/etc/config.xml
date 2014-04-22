@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Ecom_Adminhtml>
+            <version>0.0.1</version>
+        </Ecom_Adminhtml>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+				<rewrite>
+					   <sales_order_grid>Ecom_Adminhtml_Block_Sales_Order_Grid</sales_order_grid>
+				</rewrite>
+            </adminhtml>
+        </blocks>
+		 <models>
+			<sales_resource>
+				<rewrite>
+					<order_grid_collection>Ecom_Adminhtml_Model_Resource_Order_Grid_Collection</order_grid_collection>
+				</rewrite>
+			</sales_resource>
+	    </models>
+    </global>
+
+   <admin>  
+        <routers>  
+            <adminhtml>  
+                <args>  
+                    <modules>  
+                        <Ecom_Adminhtml before="Mage_Adminhtml">Ecom_Adminhtml</Ecom_Adminhtml>  
+                    </modules>  
+                </args>  
+            </adminhtml>  
+        </routers>  
+    </admin> 
+	<adminhtml>
+        <layout>
+            <updates>
+                <ecom>
+                    <file>ecom.xml</file>
+                </ecom>
+            </updates>
+        </layout>
+   </adminhtml>
+</config>

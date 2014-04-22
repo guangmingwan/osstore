@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<config>
+        <tabs>
+        <magentasia_ext translate="label" module="lbtags">
+            <label>Magento Asia</label>
+            <sort_order>199</sort_order>
+        </magentasia_ext>
+    </tabs>
+    <sections>
+        <magasialbtags translate="label" module="lbtags">
+            <label>Tags</label>
+            <tab>magentasia_ext</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>51</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+			
+				<tagsetting translate="label">
+                    <label>Tags Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                       <developer>
+                   <frontend_model>lbtags/developer</frontend_model>
+                   <sort_order>999</sort_order>
+                   <show_in_default>1</show_in_default>
+                   <show_in_website>1</show_in_website>
+                   <show_in_store>1</show_in_store>
+               </developer>
+					   
+					    <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+					   
+					   
+					   <mageasia_tags_modulename translate="label">
+								<label>Module Name</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 
+							</mageasia_tags_modulename>
+					   		<mageasia_tags_routename translate="label">
+								<label>Route Name</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>3</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[set Popular Tags size.]]></comment>
+							</mageasia_tags_routename>
+					   
+					   	
+						 	<mageasia_tags_polulartags_home_size translate="label">
+								<label>Home Popular Tags Size</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[set Popular Tags size.]]></comment>
+							</mageasia_tags_polulartags_home_size>
+							
+						
+							<mageasia_tags_list_size translate="label">
+								<label>Tags List Page Size</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>10</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[set tags list page size.]]></comment>
+							</mageasia_tags_list_size>
+							
+							<mageasia_tags_detail_size translate="label">
+								<label>Tags Detail Page Size</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>10</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[set tags list page size.]]></comment>
+							</mageasia_tags_detail_size>
+							
+							<mageasia_tags_polulartags_block_size translate="label">
+								<label> Popular Tags Block Size</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>30</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[set Popular Tags block size.]]></comment>
+							</mageasia_tags_polulartags_block_size>
+							
+						</fields>
+						</tagsetting> 
+						
+			
+                <tagsseosetting translate="label">
+                    <label>Tags SEO Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                       
+						 
+						
+						<mageasia_lbtags_home_title translate="label">
+								<label>Home page Title</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>11</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/ set home page title.]]></comment>
+							</mageasia_lbtags_home_title>
+							
+								<mageasia_lbtags_home_metakeyword translate="label">
+								<label>Home page meta keyword</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>21</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/ set home page meta keyword.]]></comment>
+							</mageasia_lbtags_home_metakeyword>
+							
+								<mageasia_lbtags_home_metadescription translate="label">
+								<label>Home page meta description</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>31</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/ set home page meta keyword.]]></comment>
+							</mageasia_lbtags_home_metadescription>
+							
+							
+							
+							<mageasia_lbtags_tagslist_title translate="label">
+								<label>Tags list page title</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>41</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/A set list page title. %tag% is a tag,  <br/> eg: set List %tag% for xxx.com ]]></comment>
+							</mageasia_lbtags_tagslist_title>
+							
+							
+							<mageasia_lbtags_tagslist_metakeyword translate="label">
+								<label>Tags list page keyword</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>51</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/A set list page keyword. %tag% is a tag,  <br/> eg: set List %tag% for xxx.com ]]></comment>
+							</mageasia_lbtags_tagslist_metakeyword>
+							
+							
+							<mageasia_lbtags_tagslist_metadescription translate="label">
+								<label>Tags list page description</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>61</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/A set list page keyword. %tag% is a tag,  <br/> eg: set List %tag% for xxx.com ]]></comment>
+							</mageasia_lbtags_tagslist_metadescription>
+							
+							
+							
+							
+							<mageasia_lbtags_tagsdetail_title translate="label">
+								<label>Tags detail page title</label>
+								<frontend_type>text</frontend_type>
+							 
+								<sort_order>71</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/tagname.html set detail page title. Can use %metakeywords%,%metatitle% . ]]></comment>
+							</mageasia_lbtags_tagsdetail_title>
+							
+							
+							<mageasia_lbtags_tagsdetail_metakeyword translate="label">
+								<label>Tags detail page keyword</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>81</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/tagname.html set detail page keyword. Can use %metakeywords%,%metatitle% .    ]]></comment>
+							</mageasia_lbtags_tagsdetail_metakeyword>
+							
+							
+							<mageasia_lbtags_tagsdetail_metadescription translate="label">
+								<label>Tags detail page description</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>91</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/tagname.html set detail page description. Can use %metakeywords%,%metatitle%,%metadescription% .    ]]></comment>
+							</mageasia_lbtags_tagsdetail_metadescription>
+							
+							
+							<mageasia_lbtags_tagsdetail_comment translate="label">
+								<label>Tags detail page comment</label>
+								<frontend_type>textarea</frontend_type>
+							 
+								<sort_order>101</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								 <comment><![CDATA[/tags/tagname.html set detail page description. Can use %metakeywords%,%metatitle%,%metadescription% .    ]]></comment>
+							</mageasia_lbtags_tagsdetail_comment>
+							
+							
+							 	
+					 
+                    </fields>
+                </tagsseosetting>
+				
+				 
+				 
+                 		
+            </groups>
+        </magasialbtags>
+    </sections>
+</config>

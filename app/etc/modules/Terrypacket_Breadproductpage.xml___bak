@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Make by Terry,
+ *my website:www.magentouse.com
+-->
+
+<config>
+    <modules>
+        <Terrypacket_Breadproductpage>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Terrypacket_Breadproductpage>
+    </modules>
+</config>

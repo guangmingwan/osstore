@@ -1,0 +1,27 @@
+.mordel{width:740px;margin:0 auto;    
+		color: #000000;
+    	font: 13px/1.231 arial,helvetica,clean,sans-serif;background:#FFFFFF;
+		position:relative;}
+.mordel1{width:740px;margin:0 auto;    }
+
+/****************home add amy********************/
+.home-email{width:740px;}
+.top_seller-email{margin-bottom: 5px;padding-bottom:10px;width: 740px;}
+.product_name{background:url("http://www.os-store.com/media/email/blockbg.gif") repeat-x scroll 0 0 transparent;height:22px;width:740px;clear:both;}
+.title-email{float: left;line-height: 22px;padding-left: 10px;font-weight:bold;color:#A72D2C;}
+.more-email {font-weight:bold;float:right;padding-right:10px;line-height: 22px;}
+.more-email a{color:#333333;text-decoration:none;}
+.more-email a:hover{color:#1E7EC8;text-decoration:underline;} 
+.recommend-email{font-size:14px;}
+.recommend-email a{color:#333333;text-decoration:none;}
+.recommend-email a:hover{color:#1E7EC8;text-decoration:underline;} 
+.recommend-email img{border:none;}
+
+.cmsblockbottom a{text-decoration:none;color:#000000;}
+.how-amy a{color:#666666;text-decoration:none;}
+
+.mordel td {
+    font-weight: normal;
+    text-align: center;
+    vertical-align: top;
+}

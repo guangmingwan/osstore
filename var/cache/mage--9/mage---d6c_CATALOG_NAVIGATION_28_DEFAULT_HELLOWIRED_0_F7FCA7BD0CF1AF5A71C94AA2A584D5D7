@@ -1,0 +1,16 @@
+                                                                    <div class="nav-container">
+    <ul id="nav">
+
+
+                 <li class="home active"><a href="http://www.os-trade.com/?___SID=U"><span>Home</span></a></li> 
+    
+                <li class="level0 parent"><a href="http://www.os-trade.com/" class=""><span>Company</span></a></li>
+        <li class="level0 parent"><a href="http://www.os-trade.com/" class=""><span>Products</span></a></li>
+        <li class="level0 parent"><a href="http://www.os-trade.com/" class=""><span>How to sell</span></a></li>
+        <li class="level0 parent"><a href="http://www.os-trade.com/how-to-buy-b2b" class=""><span>How to buy</span></a></li>
+        <li class="level0 parent"><a href="http://www.os-trade.com/recyle" class=""><span>Recyle</span></a></li>
+        <li class="level0 parent"><a href="http://www.os-trade.com/contacts" class=""><span>Contact Us</span></a></li>
+        <li class="top_menu">
+		<a href="http://www.os-store.com"><span style="text-indent:-10000px;width:80px;">Global Site B2C STore</span></a></li>
+    </ul>
+</div>

@@ -1,0 +1,49 @@
+#aw_sendinvitation h2  {
+    padding-bottom: 10px;
+
+}
+
+#aw_sendinvitation .form-list label  {
+    width: 50px;
+    text-align: right;
+    padding-right: 9px;
+    float: left;
+
+}
+#aw_sendinvitation .form-list label.required{
+    margin: 0px;
+}
+#aw_sendinvitation .form-list label.required em  {
+    right: 20px;
+
+}
+
+#aw_sendinvitation .form-list .validation-advice  {
+    margin-left: 190px;
+
+}
+
+.aw_points_input{
+    width: 254px !important;
+}
+
+.aw_legend{
+    margin-bottom: 10px;
+    color: #666666;
+    font-weight: bold;
+    text-align:center
+}
+
+.buttons-set{
+    margin-top:10px;
+    padding-left:10px;
+}
+
+fieldset{
+    margin: 10px;
+}
+
+.back-link{
+    margin-top:10px;
+}
+

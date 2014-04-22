@@ -1,0 +1,61 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="dashboard-block">
+    <?php /*
+    <div class="page-head">
+        <h3><?php echo $this->__('Address Book') ?></h3>
+        <a class="edit" href="<?php echo $this->getAddressBookUrl() ?>"><img src="<?php echo $this->getSkinUrl('images/edit.gif') ?>" alt="<?php echo $this->__('Manage Addresses') ?>" /></a>
+        <div class="clear"></div>
+    </div>
+     *
+     */ ?>
+
+    <div class="page-head">
+        <h3><?php echo $this->__('Default Billing Address') ?></h3>
+         <a class="edit" href="<?php echo $this->getPrimaryBillingAddressEditUrl() ?>"><img src="<?php echo $this->getSkinUrl('images/edit.gif') ?>" alt="<?php echo $this->__('Edit Address') ?>" /></a>
+    </div>
+    <div class="content bottom-space">
+        <address>
+            <?php echo $this->getPrimaryBillingAddressHtml() ?><br />
+        </address>
+    </div>
+    <div class="page-head">
+        <h3><?php echo $this->__('Default Shipping Address') ?></h3>
+        <a class="edit" href="<?php echo $this->getPrimaryShippingAddressEditUrl() ?>"><img src="<?php echo $this->getSkinUrl('images/edit.gif') ?>" alt="<?php echo $this->__('Edit Address') ?>" /></a>
+    </div>
+    <div class="content bottom-space">
+        <address>
+            <?php echo $this->getPrimaryShippingAddressHtml() ?><br />
+        </address>
+    </div>
+    <div class="a-center bottom-space"><button type="button" class="form-button" onclick="window.location='<?php echo $this->getUrl('customer/address/form') ?>';"><span><span><?php echo $this->__('Add New Address') ?></span></span></button></div>
+</div>
+

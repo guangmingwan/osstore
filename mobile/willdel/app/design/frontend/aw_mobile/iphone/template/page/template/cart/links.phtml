@@ -1,0 +1,46 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php 
+    $isCartEmpty = !Mage::getSingleton('checkout/session')->getQuote()->hasItems();
+?>
+
+<div>
+    <ul class="cart-links">
+        <li class="first"><a class="button grey left" href="#" onclick="cartBack(); return false;" title="<?php echo $this->__('Back'); ?>" ><span class="nowrap"><span><?php echo $this->__('Back'); ?></span></span></a></li>
+        <li class="title"><h1><?php echo $this->__('My Cart'); ?></h1></li>
+        <li class="last">
+            <?php if (Mage::getStoreConfig('checkout/options/onepage_checkout_enabled') || !Mage::getStoreConfig('checkout/options/onepage_checkout_disabled')): ?>
+            <a id="checkout-button" class="button red checkout back" href="<?php echo $this->getUrl('checkout'); ?>" title="<?php echo $this->__('Checkout'); ?>" <?php if($isCartEmpty):?>style="display:none;"<?php endif;?>><span class="nowrap"><span><?php echo $this->__('Checkout'); ?></span></span></a>
+            <?php endif; ?>
+        </li>
+    </ul>
+    <div class="clear"></div>
+</div>

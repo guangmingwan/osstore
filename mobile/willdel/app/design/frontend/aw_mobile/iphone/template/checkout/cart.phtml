@@ -1,0 +1,92 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+/**
+ * Shopping cart template
+ *
+ * @see Mage_Checkout_Block_Cart
+ */
+
+Mage::helper('awmobile')->prepareCartMessages($this->getMessagesBlock());
+?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<form id="cart-form" action="" method="post" class="cart-update-form-data">
+<table cellspacing="0" id="shopping-cart-table" class="data-table box-table shopping-cart">
+    <tfoot>
+        <tr>
+            <td colspan="1" class="a-left">
+                <button class="form-button shopping-cart form-button-alt" type="submit"><span><span><?php echo $this->__('Update Cart') ?></span></span></button>
+            </td>
+            <td colspan="100" class="totals-container">
+                <div class="shopping-cart-totals">
+                    <?php echo $this->getChildHtml('totals'); ?>
+                    <script type="text/javascript">decorateTable('shopping-cart-totals-table')</script>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+    <tbody>
+    <?php foreach($this->getItems() as $_item): ?>
+        <?php echo $this->getItemHtml($_item) ?>
+        <?php $renderer = $this->getItemRenderer($_item->getProductType())->setItem($_item); $deleteUrl =  $renderer->getDeleteUrl(); ?>
+    <?php endforeach ?>
+    </tbody>
+</table>
+<?php echo $this->getChildHtml('multishipping_link'); ?>
+<?php echo $this->getChildHtml('paypal_checkout_button'); ?>
+
+<script type="text/javascript">decorateTable('shopping-cart-table')</script>
+</form>
+<script type="text/javascript">
+    $j(document).ready(function(e){
+        mobileCart.registerSubmit('cart-form', '<?php echo $this->getUrl('awmobile/cart/updatePost') ?>');
+        mobileCart.contentUrl = '<?php echo $this->getUrl('awmobile/cart/content'); ?>';
+    });
+</script>
+<div class="clear"></div>
+<?php echo $this->getChildHtml('coupon') ?>
+<div class="clear"></div>
+<?php echo $this->getChildHtml('giftcards') ?>
+<div class="clear"></div>
+<?php if(!$this->hasError()): ?>
+<div class="p-methods">
+    <ul class="checkout-types">
+        <?php if($this->getMethods('methods')): ?>
+            <?php foreach ($this->getMethods('methods') as $method): ?>
+                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                <li><?php echo $methodHtml; ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php else:?>
+                <?php echo $this->getChildHtml('methods') ?>
+
+        <?php endif; ?>
+    </ul>
+</div>
+<?php endif; ?>

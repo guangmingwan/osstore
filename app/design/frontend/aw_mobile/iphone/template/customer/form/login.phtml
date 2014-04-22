@@ -1,0 +1,81 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php
+/**
+ * Customer login form template
+ *
+ * @see Mage_Customer_Block_Form_Login
+ */
+?>
+<div class="page-head"><h2><?php echo $this->__('Login or Create an Account') ?></h2></div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<div class="login-box">
+<form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
+    <div class="registered-users">
+        <div class="content">
+            <h4><?php echo $this->__('Registered Customers') ?></h4>
+            <p><?php echo $this->__('If you have an account with us, please log in.') ?></p>
+            <ul class="form-list">
+                <li class="email-input-data">
+                    <div class="innerbox"><label for="email"><?php echo $this->__('Email Address') ?> <span class="required">*</span></label></div>
+                    <div class="input-box"><input name="login[username]" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" title="<?php echo $this->__('Email Address') ?>" id="email" type="text" class="input-text required-entry validate-email" /></div>
+                </li>
+                <li class="last"><div class="col2-alt-set">
+                      <div class="col-1"><label for="pass"><?php echo $this->__('Password') ?> <span class="required">*</span></label></div>
+                      <div class="col-2 a-right innerbox">
+                         <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="recover"><?php echo $this->__('Forgot Your Password?') ?></a>
+                      </div>
+                     <div class="clear"></div>
+                    </div>
+                    <div class="input-box"><input name="login[password]" type="password" class="input-text required-entry validate-password" id="pass" /></div>
+                </li>
+            </ul>
+        </div>
+                <p class="a-right required"><?php echo $this->__('* Required Fields') ?></p>
+                <div class="a-center">
+                    <button class="form-button" type="submit" name="send" id="send2"><span><span><?php echo $this->__('Login') ?></span></span></button><br />
+                </div>
+    </div>
+    <div class="new-users">
+        <div class="content">
+            <h4><?php echo $this->__('New Customers') ?></h4>
+            <p><?php echo $this->__('By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.') ?></p>
+        </div>
+        <div class="button-set a-center">
+            <button class="form-button" onclick="window.location='<?php echo $this->getCreateAccountUrl() ?>';" type="button"><span><span><?php echo $this->__('Create an Account') ?></span><span></button>
+        </div>
+    </div>
+</form>
+
+</div>
+<script type="text/javascript">
+    var dataForm = new VarienForm('login-form', true);
+</script>

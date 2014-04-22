@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Mage_Mycheckout>
+			<version>0.0.1</version>
+		</Mage_Mycheckout>
+	</modules>
+	<frontend>
+		<routers>
+			<mycheckout>
+				<use>standard</use>
+				<args>
+					<module>Mage_Mycheckout</module>
+					<frontName>mycheckout</frontName>
+				</args>
+			</mycheckout>
+		</routers>
+		<layout>
+			<updates>
+				<mycheckout>
+					<file>mycheckout.xml</file>
+				</mycheckout>
+			</updates>
+		</layout>
+		<events>
+			<checkout_cart_add_product_complete>
+				<observers>
+					<mage_mycheckout_observer>
+						<type>singleton</type>
+						<class>mycheckout/observer</class>
+						<method>checkout_cart_add_product_complete</method>
+					</mage_mycheckout_observer>
+
+				</observers>
+			</checkout_cart_add_product_complete>
+		</events>
+	</frontend>
+</config>

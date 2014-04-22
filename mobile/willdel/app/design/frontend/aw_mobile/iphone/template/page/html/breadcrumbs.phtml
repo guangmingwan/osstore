@@ -1,0 +1,64 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<?php if($crumbs && is_array($crumbs)):
+    unset($crumbs['home']);
+    if (Mage::registry('current_product')){
+        $lastK = null;
+        foreach ($crumbs as $k => $val){
+            if (!$val['link']){
+                unset($crumbs[$k]);
+            } else {
+                $lastK = $k;
+            }
+        }
+        $crumbs[$lastK]['last'] = true;
+    }
+    if (count($crumbs)):
+?>
+<h4 class="no-display"><?php echo $this->__("You are currently on:") ?></h4>
+<ul class="breadcrumbs">
+    <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
+        <li class="<?php echo $_crumbName ?>">
+        <?php if(@$_crumbInfo['link']): ?>
+            <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->htmlEscape(@$_crumbInfo['title']) ?>"><?php echo $this->htmlEscape(@$_crumbInfo['label']) ?></a>
+        <?php elseif(@$_crumbInfo['last']): ?>
+            <strong><?php echo $this->htmlEscape(@$_crumbInfo['label']) ?></strong>
+        <?php else: ?>
+            <?php echo $this->htmlEscape(@$_crumbInfo['label']) ?>
+        <?php endif; ?>
+        </li>
+        <?php if(!@$_crumbInfo['last']): ?>
+        <li> / </li>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</ul>
+  <?php endif; ?>
+<?php endif; ?>

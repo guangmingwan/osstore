@@ -1,0 +1,56 @@
+<?php
+/**
+* aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento COMMUNITY edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Mobile
+ * @version    1.6.0
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?>
+<?php
+?>
+<div class="page-head button-level">
+    <h3><?php echo $this->__('Change Billing Address') ?></h3>
+</div>
+<div class="in-page">
+    <div class="a-center button-space">
+        <button type="button" class="form-button" onclick="setLocation('<?php echo $this->getAddNewUrl() ?>')"><span><?php echo $this->__('Add New Address') ?></span></button>
+    </div>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <?php foreach ($this->getAddressCollection() as $_address): ?>
+    <div class="multishipping-container">
+        <div class="top-header">
+            <a href="<?php echo $this->getEditAddressUrl($_address) ?>"><?php echo $this->__('Edit Address') ?></a><span class="separator"> | </span>
+            <a href="<?php echo $this->getSetAddressUrl($_address) ?>"><strong><?php echo $this->__('Select Address') ?></strong></a>
+        </div>
+        <address>
+            <?php echo $_address->format('html') ?>
+            <?php if($this->isAddressDefaultBilling($_address)): ?>
+            <br/><strong><?php echo $this->__('Default Billing') ?></strong>
+            <?php endif; ?>
+            <?php if($this->isAddressDefaultShipping($_address)): ?>
+            <br/><strong><?php echo $this->__('Default Shipping') ?></strong>
+            <?php endif; ?>
+        </address>
+    </div>
+    <?php endforeach; ?>
+</div>
