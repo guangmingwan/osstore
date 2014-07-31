@@ -36,7 +36,7 @@ class Ecom_Adminhtml_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_Widget_
         ));
 
         if (!Mage::app()->isSingleStoreMode()) {
-            $this->addColumn('store_id', array(
+            $this->addColumn('main_table.store_id', array(
                 'header'    => Mage::helper('sales')->__('Purchased From (Store)'),
                 'index'     => 'store_id',
                 'type'      => 'store',
