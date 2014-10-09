@@ -149,8 +149,12 @@ class Mage_Paypal_Model_Ipn
             }
             $this->_debugData['postback_result'] = $response;
 
-            $response = preg_split('/^\r?$/m', $response, 2);
-            $response = trim($response[1]);
+            //$response = preg_split('/^\r?$/m', $response, 2);
+            //$response = trim($response[1]);
+		
+	    $response = preg_split('/^\r?$/m', $response);
+	    $response = trim(end($response));
+
             if ($response != 'VERIFIED') {
                 throw new Exception('PayPal IPN postback failure. See ' . self::DEFAULT_LOG_FILE . ' for details.');
             }
