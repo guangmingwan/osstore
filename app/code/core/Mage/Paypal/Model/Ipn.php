@@ -139,14 +139,16 @@ class Mage_Paypal_Model_Ipn
             $this->_debugData['postback'] = $sReq;
             $this->_debugData['postback_to'] = $this->_config->getPaypalUrl();
 
-            $httpAdapter->setConfig(array('verifypeer' => $this->_config->verifyPeer));
-            $httpAdapter->write(Zend_Http_Client::POST, $this->_config->getPaypalUrl(), '1.1', array(), $sReq);
-            try {
-                $response = $httpAdapter->read();
-            } catch (Exception $e) {
-                $this->_debugData['http_error'] = array('error' => $e->getMessage(), 'code' => $e->getCode());
-                throw $e;
-            }
+            //$httpAdapter->setConfig(array('verifypeer' => $this->_config->verifyPeer));
+            //$httpAdapter->write(Zend_Http_Client::POST, $this->_config->getPaypalUrl(), '1.1', array(), $sReq);
+            //try {
+            //    $response = $httpAdapter->read();
+            //} catch (Exception $e) {
+            //    $this->_debugData['http_error'] = array('error' => $e->getMessage(), 'code' => $e->getCode());
+            //    throw $e;
+            //}
+	    $cmd = "curl -d \"" . $sReq . "\" " . $this->_config->getPaypalUrl();
+	    $response = system($cmd);
             $this->_debugData['postback_result'] = $response;
 
             //$response = preg_split('/^\r?$/m', $response, 2);
